@@ -15,6 +15,14 @@
   <body>
     <header class="header">
       <p class="header-text">Buy one coffee, get one free — this week only (April 14-20)</p>
+      <button
+        class="header-btn"
+        type="button"
+        title="Close notification"
+        aria-label="Close notification"
+      >
+        <img src="./images/home-page/hero-images/close-btn.svg" alt="" />
+      </button>
       <nav>
         <ul class="header-list list">
           <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
@@ -34,24 +42,27 @@
     <main>
       <!-- Hero section -->
       <section class="hero">
-        <h1 class="hero-title">Life Begins <br />After Coffee</h1>
         <p class="hero-text">Because great coffee is the start of something even greater.</p>
+        <h1 class="hero-title">Life Begins <br />After Coffee</h1>
         <img
-          src="./images/home-page/hero-images/Images.jpg"
+          class="hero-img"
+          src="./images/home-page/hero-images/Images-png.png"
           alt="A cup of coffee"
           width="1440"
           height="520"
         />
-        <ul class="hero-list">
-          <li class="hero-item"><a class="hero-link link" href="./menu.html">Explore Menu</a></li>
+        <ul class="hero-list list">
           <li class="hero-item">
-            <a class="hero-link link" href="./locations.html">Our Locations</a>
+            <a class="hero-link link primary" href="./menu.html">Explore Menu</a>
+          </li>
+          <li class="hero-item">
+            <a class="hero-link link secondary" href="./locations.html">Our Locations</a>
           </li>
         </ul>
       </section>
       <!-- Ticker section -->
-      <section>
-        <h2 class="ticker-title">Our advantages</h2>
+      <section class="ticker">
+        <h2 class="ticker-title visually-hidden">Our advantages</h2>
         <ul class="ticker-list list">
           <li class="ticker-item">
             <p class="ticker-text">Great Coffee</p>
@@ -205,25 +216,27 @@
           </li>
           <li class="about-item">
             <img class="about-img" src="./images/home-page/about-images/smile.svg" alt="" />
-            <p class="about-text">Speedy Service with a Smile</p>
+            <p class="about-text">Speedy Service with a Smile</p>
           </li>
           <li class="about-item">
             <img class="about-img" src="./images/home-page/about-images/home.svg" alt="" />
             <p class="about-text">Local & Sustainable</p>
           </li>
         </ul>
-        <ul>
-          <li>
+        <ul class="about-images list">
+          <li class="about-image-item">
             <img
               class="about-img"
               src="./images/home-page/about-images/barista.jpg"
               alt="Barista"
             />
           </li>
-          <li>
+          <li class="about-image-item">
             <img class="about-img" src="./images/home-page/about-images/holl.jpg" alt="Holl" />
           </li>
-          <li><img class="about-img" src="./images/home-page/about-images/cup.jpg" alt="Cup" /></li>
+          <li class="about-image-item">
+            <img class="about-img" src="./images/home-page/about-images/cup.jpg" alt="Cup" />
+          </li>
         </ul>
       </section>
       <!--Testimonials section -->
