@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CoffeeShop</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400&family=Calistoga&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Calistoga&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
     <header class="header">
@@ -62,50 +63,87 @@
       </section>
       <!-- Ticker section -->
       <section class="ticker">
-        <h2 class="ticker-title visually-hidden">Our advantages</h2>
+        <h2 class="visually-hidden">Our advantages</h2>
         <ul class="ticker-list list">
           <li class="ticker-item">
             <p class="ticker-text">Great Coffee</p>
-            <img src="./images/home-page/ticker-images/smiley.svg" alt="Great Coffee" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/smiley.svg"
+              alt="Great Coffee"
+            />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Fast Service</p>
-            <img src="./images/home-page/ticker-images/bolt.svg" alt="Fast Service" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/bolt.svg"
+              alt="Fast Service"
+            />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Cozy Space</p>
-            <img src="./images/home-page/ticker-images/instagram.svg" alt="Cozy Space" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/instagram.svg"
+              alt="Cozy Space"
+            />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Handcrafted Drinks</p>
             <img
+              class="ticker-icon"
               src="./images/home-page/ticker-images/sweat-waterdrop.svg"
               alt="Handcrafted Drinks"
             />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Local Roasts</p>
-            <img src="./images/home-page/ticker-images/smiley-love.svg" alt="Local Roasts" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/smiley-love.svg"
+              alt="Local Roasts"
+            />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Global Flavor</p>
-            <img src="./images/home-page/ticker-images/element.svg" alt="Global Flavor" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/element.svg"
+              alt="Global Flavor"
+            />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Friendly Baristas</p>
-            <img src="./images/home-page/ticker-images/crown.svg" alt="Friendly Baristas" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/crown.svg"
+              alt="Friendly Baristas"
+            />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Great Coffee</p>
-            <img src="./images/home-page/ticker-images/smiley.svg" alt="Great Coffee" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/smiley.svg"
+              alt="Great Coffee"
+            />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Fast Service</p>
-            <img src="./images/home-page/ticker-images/bolt.svg" alt="Fast Service" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/bolt.svg"
+              alt="Fast Service"
+            />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Cozy Space</p>
-            <img src="./images/home-page/ticker-images/instagram.svg" alt="Cozy Space" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/instagram.svg"
+              alt="Cozy Space"
+            />
           </li>
         </ul>
       </section>
@@ -115,30 +153,33 @@
         <ul class="category-list list">
           <li class="category-item">
             <img
-              src=".//images/home-page/category-images/coffee.jpg"
+              class="category-img"
+              src=".//images/home-page/category-images/coffee-png.png"
               alt="The cup of coffee"
-              width="288"
-              height="288"
+              width="288 px"
+              height="288 px"
             />
-            <p class="category-text">Coffee</p>
+            <h3 class="category-subtitle">Coffee</h3>
           </li>
           <li class="category-item">
             <img
-              src=".//images/home-page/category-images/cold-drinks.jpg"
+              class="category-img"
+              src=".//images/home-page/category-images/cold-drink.png"
               alt="Cold drinks"
-              width="288"
-              height="288"
+              width="288 px"
+              height="288 px"
             />
-            <p class="category-text">Cold Drinks</p>
+            <h3 class="category-subtitle">Cold Drinks</h3>
           </li>
           <li class="category-item">
             <img
-              src=".//images/home-page/category-images/bakery.jpg"
+              class="category-img"
+              src=".//images/home-page/category-images/bakery1.png"
               alt="Bakery"
-              width="288"
-              height="288"
+              width="288 px"
+              height="288 px"
             />
-            <p class="category-text">Bakery</p>
+            <h3 class="category-subtitle">Bakery</h3>
           </li>
         </ul>
       </section>
@@ -155,8 +196,7 @@
               width="282"
               height="282"
             />
-            <p class="popular-text">Cold Brew</p>
-            <p class="popular-text">&#36;6.75</p>
+            <h3 class="popular-subtitle">Cold Brew <span class="popular-price">&#36;6.75</span></h3>
           </li>
           <li class="popular-item">
             <img
@@ -166,8 +206,9 @@
               width="282"
               height="282"
             />
-            <p class="popular-text">Iced Latte</p>
-            <p class="popular-text">&#36;4.45</p>
+            <h3 class="popular-subtitle">
+              Iced Latte <span class="popular-price">&#36;4.45</span>
+            </h3>
           </li>
           <li class="popular-item">
             <img
@@ -177,8 +218,7 @@
               width="282"
               height="282"
             />
-            <p class="popular-text">Macarons</p>
-            <p class="popular-text">&#36;2.60</p>
+            <h3 class="popular-subtitle">Macarons <span class="popular-price">&#36;2.60</span></h3>
           </li>
           <li class="popular-item">
             <img
@@ -188,8 +228,9 @@
               width="282"
               height="282"
             />
-            <p class="popular-text">Cappuccino</p>
-            <p class="popular-text">&#36;5.25</p>
+            <h3 class="popular-subtitle">
+              Cappuccino <span class="popular-price">&#36;5.25</span>
+            </h3>
           </li>
         </ul>
         <a class="popular-link link" href="./menu.html">Explore Menu</a>
@@ -208,34 +249,34 @@
               src="./images/home-page/about-images/sweat-waterdrop.svg"
               alt=""
             />
-            <p class="about-text">Great Coffee, Tasty Sips</p>
+            <h3 class="about-subtitle">Great Coffee, Tasty Sips</h3>
           </li>
           <li class="about-item">
             <img class="about-img" src="./images/home-page/about-images/heart.svg" alt="" />
-            <p class="about-text">Warm, Cozy Atmosphere</p>
+            <h3 class="about-subtitle">Warm, Cozy Atmosphere</h3>
           </li>
           <li class="about-item">
             <img class="about-img" src="./images/home-page/about-images/smile.svg" alt="" />
-            <p class="about-text">Speedy Service with a Smile</p>
+            <h3 class="about-subtitle">Speedy Service with a Smile</h3>
           </li>
           <li class="about-item">
             <img class="about-img" src="./images/home-page/about-images/home.svg" alt="" />
-            <p class="about-text">Local & Sustainable</p>
+            <h3 class="about-subtitle">Local & Sustainable</h3>
           </li>
         </ul>
         <ul class="about-images list">
           <li class="about-image-item">
             <img
-              class="about-img"
+              class="about-poster"
               src="./images/home-page/about-images/barista.jpg"
               alt="Barista"
             />
           </li>
           <li class="about-image-item">
-            <img class="about-img" src="./images/home-page/about-images/holl.jpg" alt="Holl" />
+            <img class="about-poster" src="./images/home-page/about-images/holl.jpg" alt="Holl" />
           </li>
           <li class="about-image-item">
-            <img class="about-img" src="./images/home-page/about-images/cup.jpg" alt="Cup" />
+            <img class="about-poster" src="./images/home-page/about-images/cup.jpg" alt="Cup" />
           </li>
         </ul>
       </section>
@@ -249,11 +290,13 @@
               src="./images/home-page/testimonials-images/vector.svg"
               alt=""
             />
-            <blockquote class="testimonials-text">
+            <blockquote class="testimonials-subtitle">
               Brewhaus has spoiled other coffee shops for me - in the best way. Great espresso,
               fresh pastries, and a team that makes you feel like a regular from day one.
             </blockquote>
             <p class="testimonials-text">Patrick M. - Espresso lover</p>
+          </li>
+          <li class="testimonials-item">
             <img
               class="testimonials-img"
               src="./images/home-page/testimonials-images/espresso.jpg"
@@ -268,12 +311,13 @@
               src="./images/home-page/testimonials-images/vector.svg"
               alt=""
             />
-            <blockquote class="testimonials-text">
-              I stop by every morning before work, and it’s the best part of my day. The iced latte
-              is my go-to, but I’ve honestly never had a bad drink here. Everything tastes
-              handcrafted and full of care.
+            <blockquote class="testimonials-subtitle">
+              Always a warm, welcoming vibe — perfect for a quick coffee or a quiet read. The banana
+              bread? Totally addictive.
             </blockquote>
             <p class="testimonials-text">Jordan T. - Iced latte addict</p>
+          </li>
+          <li class="testimonials-item">
             <img
               class="testimonials-img"
               src="./images/home-page/testimonials-images/iced-latte.jpg"
@@ -288,11 +332,14 @@
               src="./images/home-page/testimonials-images/vector.svg"
               alt=""
             />
-            <blockquote class="testimonials-text">
-              Always a warm, welcoming vibe — perfect for a quick coffee or a quiet read. The banana
-              bread? Totally addictive.
+            <blockquote class="testimonials-subtitle">
+              I stop by every morning before work, and it's the best part of my day. The iced latte
+              is my go-to, but I've honestly never had a bad drink here. Everything tastes
+              handcrafted and full of care.
             </blockquote>
             <p class="testimonials-text">Sofia R. - Coffee fan</p>
+          </li>
+          <li class="testimonials-item">
             <img
               class="testimonials-img"
               src="./images/home-page/testimonials-images/coffee.jpg"
@@ -319,46 +366,55 @@
         <ul class="location-list list" id="locations">
           <li class="location-item">
             <p class="location-text">Brooklyn</p>
-            <address class="location-address">123 Bedford Ave, Brooklyn, NY 11211</address>
+            <address class="location-address">
+              123 Bedford Ave,<br />
+              Brooklyn, NY 11211
+            </address>
             <p class="location-text">Open daily: 7AM - 7PM</p>
             <a class="location-link link" href="#">Get Directions</a>
           </li>
           <li class="location-item">
             <p class="location-text">Manhattan</p>
-            <address class="location-address">456 Spring St, New York, NY 10012</address>
+            <address class="location-address">
+              456 Spring St,<br />
+              New York, NY 10012
+            </address>
             <p class="location-text">Open daily: 7AM - 8PM</p>
             <a class="location-link link" href="#">Get Directions</a>
           </li>
           <li class="location-item">
             <p class="location-text">Queens</p>
-            <address class="location-address">789 Broadway, Queens, NY 11106</address>
+            <address class="location-address">789 Broadway, <br />Queens, NY 11106</address>
             <p class="location-text">Open daily: 7AM - 6PM</p>
             <a class="location-link link" href="#">Get Directions</a>
           </li>
           <li class="location-item">
             <p class="location-text">Queens</p>
-            <address class="location-address">134-16 36th Road, Flushing, NY 11354</address>
+            <address class="location-address">
+              134-16 36th Road,<br />
+              Flushing, NY 11354
+            </address>
             <p class="location-text">Open daily: 8AM - 6PM</p>
             <a class="location-link link" href="#">Get Directions</a>
           </li>
         </ul>
         <h3 class="location-subtitle">Need Help?</h3>
-        <ul class="location-list list">
-          <li class="location-item">
-            <p class="location-text">General Inquiries</p>
-            <a class="location-link link" href="tel:+12125550198">+1 (212) 555-0198</a>
+        <ul class="help-list list">
+          <li class="help-item">
+            <p class="help-text">General Inquiries</p>
+            <a class="help-link link" href="tel:+12125550198">+1 (212) 555-0198</a>
           </li>
-          <li class="location-item">
-            <p class="location-text">Customer Support</p>
-            <a class="location-link link" href="tel:+17185550243">+1 (718) 555-0243</a>
+          <li class="help-item">
+            <p class="help-text">Customer Support</p>
+            <a class="help-link link" href="tel:+17185550243">+1 (718) 555-0243</a>
           </li>
-          <li class="location-item">
-            <p class="location-text">General Email</p>
-            <a class="location-link link" href="mailto:hello@bhaus.com">hello@bhaus.com</a>
+          <li class="help-item">
+            <p class="help-text">General Email</p>
+            <a class="help-link link" href="mailto:hello@bhaus.com">hello@bhaus.com</a>
           </li>
-          <li class="location-item">
-            <p class="location-text">Support Email</p>
-            <a class="location-link link" href="mailto:support@bhaus.com">support@bhaus.com</a>
+          <li class="help-item">
+            <p class="help-text">Support Email</p>
+            <a class="help-link link" href="mailto:support@bhaus.com">support@bhaus.com</a>
           </li>
         </ul>
       </section>
@@ -408,8 +464,9 @@
       </section>
       <!--Banner section -->
       <section class="banner">
+        <h2 class="visually-hidden">Online Ordering</h2>
         <img class="banner-img" src="./images/home-page/banner-images/hands.svg" alt="hands" />
-        <h2 class="banner-title">Order Online</h2>
+        <h3 class="banner-subtitle">Order Online</h3>
         <p class="banner-text">Get your favorites delivered fast.</p>
         <ul class="banner-list list">
           <li class="banner-item">
@@ -432,50 +489,87 @@
       </section>
       <!-- Ticker section -->
       <section class="ticker">
-        <h2 class="ticker-title">Our advantages</h2>
-        <ul class="ticker-list">
+        <h2 class="visually-hidden">Our advantages</h2>
+        <ul class="ticker-list list">
           <li class="ticker-item">
             <p class="ticker-text">Great Coffee</p>
-            <img src="./images/home-page/ticker-images/smiley.svg" alt="Great Coffee" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/smiley.svg"
+              alt="Great Coffee"
+            />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Fast Service</p>
-            <img src="./images/home-page/ticker-images/bolt.svg" alt="Fast Service" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/bolt.svg"
+              alt="Fast Service"
+            />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Cozy Space</p>
-            <img src="./images/home-page/ticker-images/instagram.svg" alt="Cozy Space" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/instagram.svg"
+              alt="Cozy Space"
+            />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Handcrafted Drinks</p>
             <img
+              class="ticker-icon"
               src="./images/home-page/ticker-images/sweat-waterdrop.svg"
               alt="Handcrafted Drinks"
             />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Local Roasts</p>
-            <img src="./images/home-page/ticker-images/smiley-love.svg" alt="Local Roasts" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/smiley-love.svg"
+              alt="Local Roasts"
+            />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Global Flavor</p>
-            <img src="./images/home-page/ticker-images/element.svg" alt="Global Flavor" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/element.svg"
+              alt="Global Flavor"
+            />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Friendly Baristas</p>
-            <img src="./images/home-page/ticker-images/crown.svg" alt="Friendly Baristas" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/crown.svg"
+              alt="Friendly Baristas"
+            />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Great Coffee</p>
-            <img src="./images/home-page/ticker-images/smiley.svg" alt="Great Coffee" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/smiley.svg"
+              alt="Great Coffee"
+            />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Fast Service</p>
-            <img src="./images/home-page/ticker-images/bolt.svg" alt="Fast Service" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/bolt.svg"
+              alt="Fast Service"
+            />
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Cozy Space</p>
-            <img src="./images/home-page/ticker-images/instagram.svg" alt="Cozy Space" />
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/instagram.svg"
+              alt="Cozy Space"
+            />
           </li>
         </ul>
       </section>
@@ -486,10 +580,17 @@
         src="./images/home-page/footer-images/logo.svg"
         alt="Coffee Shop Logo"
       />
-      <h2 class="footer-title">Life Begins After Coffee</h2>
+      <h2 class="footer-title">
+        Life Begins <br />
+        After Coffee
+      </h2>
       <address class="footer-contact">
-        <a class="footer-link link" href="tel:+12125550198">+1 (212) 555-0198</a>
-        <a class="footer-link link" href="mailto:hello@bhaus.com">hello@bhaus.com</a>
+        <a class="footer-link link" href="tel:+12125550198">
+          <img src="./images/home-page/footer-images/phone.svg" alt="" />+1 (212) 555-0198</a
+        >
+        <a class="footer-link link" href="mailto:hello@bhaus.com">
+          <img src="./images/home-page/footer-images/mail.svg" alt="" />hello@bhaus.com</a
+        >
       </address>
       <p class="footer-text">Main</p>
       <ul class="footer-list list">
@@ -515,29 +616,39 @@
       <p class="footer-text">Follow Us</p>
       <ul class="footer-list list">
         <li class="footer-item">
-          <a class="footer-social link" href=""
-            ><img src="./images/home-page/footer-images/instagram.svg" alt="Instagram"
+          <a class="footer-social link" href="" aria-label="Instagram"
+            ><img
+              class="footer-icon"
+              src="./images/home-page/footer-images/instagram.svg"
+              alt="Instagram"
           /></a>
         </li>
         <li class="footer-item">
-          <a class="footer-social link" href=""
-            ><img src="./images/home-page/footer-images/facebook.svg" alt="Facebook"
+          <a class="footer-social link" href="" aria-label="Facebook"
+            ><img
+              class="footer-icon"
+              src="./images/home-page/footer-images/facebook.svg"
+              alt="Facebook"
           /></a>
         </li>
 
         <li class="footer-item">
-          <a class="footer-social link" href=""
-            ><img src="./images/home-page/footer-images/twitter(X).svg" alt="Twitter"
+          <a class="footer-social link" href="" aria-label="Twitter"
+            ><img
+              class="footer-icon"
+              src="./images/home-page/footer-images/twitter(X).svg"
+              alt="Twitter"
           /></a>
         </li>
       </ul>
       <img
-        src="./images/home-page/footer-images/brewhouse.jpg"
+        class="footer-img"
+        src="./images/home-page/footer-images/brewhaus.svg"
         alt="Brewhouse"
         width="1200"
         height="213"
       />
-      <p class="footer-copy">2025 <span>&copy;</span> Brewhaus</p>
+      <p class="footer-text">2025 &copy; Brewhaus</p>
       <a class="footer-text link" href="./licenses.html">Licenses</a>
     </footer>
   </body>

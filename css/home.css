@@ -1,0 +1,546 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: #1d4e1a;
+  --secondary-text-color: #ffecb8;
+  --primary-link-color: #ffecb8;
+  --secondary-link-color: #ffecb8;
+  --primary-bg-color: #1d4e1a;
+  --secondary-bg-color: #ffecb8;
+  --white-bg-color: #fcf3d9;
+}
+
+body {
+  font-family: 'Cabin Condensed', sans-serif;
+  color: var(--primary-text-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 16px;
+  line-height: 1.24;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*-------------------Header styles-------------------*/
+.header {
+  background-color: var(--primary-bg-color);
+}
+
+.header-text {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+}
+.header-btn {
+}
+.header-list {
+}
+.header-item {
+}
+.header-link {
+  color: var(--primary-link-color);
+  font-size: 16px;
+  line-height: 1.24;
+  letter-spacing: 0.02em;
+}
+.header-link:hover,
+.header-link:focus {
+  color: tomato;
+}
+
+.header-logo {
+}
+/*-------------------Hero styles-------------------*/
+.hero {
+  background-color: #1d4e1a;
+}
+.hero-text {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+}
+.hero-title {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--secondary-text-color);
+  font-size: 96px;
+  line-height: 1.12;
+}
+.hero-img {
+  background-color: transparent;
+}
+.hero-list {
+  display: flex;
+}
+.hero-item {
+}
+.hero-link {
+  display: inline-block;
+  padding: 16px 10px 16px 12px;
+  text-align: center;
+  width: 141px;
+  height: 51px;
+  border-radius: 26px;
+  border: 1px solid var(--secondary-link-color);
+}
+
+.hero-link.primary {
+  color: var(--secondary-link-color);
+  background-color: var(--primary-bg-color);
+}
+.hero-link.secondary {
+  color: var(--primary-bg-color);
+  background-color: var(--secondary-link-color);
+}
+.hero-link.primary:hover,
+.hero-link.primary:focus {
+  color: black;
+  background-color: red;
+}
+.hero-link.secondary:hover,
+.hero-link.secondary:focus {
+  color: black;
+  background-color: red;
+}
+/*-------------------Ticker styles-------------------*/
+.ticker {
+  background-color: var(--secondary-bg-color);
+}
+
+.ticker-list {
+  display: flex;
+}
+
+.ticker-item {
+  display: flex;
+}
+.ticker-text {
+  font-size: 18px;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+}
+/*------------------Categories styles-----------------*/
+.category {
+  background-color: #fcf3d9;
+}
+.category-title {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--primary-text-color);
+  font-size: 64px;
+  line-height: 1.16;
+}
+.category-list {
+}
+.list {
+}
+.category-item {
+}
+.category-subtitle {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--primary-text-color);
+  font-size: 32px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.category-img {
+  background-color: #1d4e1a;
+  border-radius: 50%;
+}
+/*--------------Popular products styles--------------*/
+.popular {
+  background-color: rgba(29, 78, 26, 0.03);
+}
+.popular-title {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--primary-text-color);
+  font-size: 64px;
+  line-height: 1.16;
+}
+.popular-text {
+  font-size: 18px;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+}
+.popular-list {
+}
+.list {
+}
+.popular-item {
+}
+.popular-img {
+}
+.popular-link {
+  display: inline-block;
+  padding: 16px 10px 16px 12px;
+  text-align: center;
+  width: 141px;
+  height: 51px;
+  border-radius: 26px;
+
+  color: var(--primary-link-color);
+  border: 1px solid var(--primary-bg-color);
+  background-color: var(--primary-bg-color);
+}
+.popular-link:hover,
+.popular-link:focus {
+  color: black;
+  background-color: red;
+}
+.popular-subtitle {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--primary-text-color);
+  font-size: 20px;
+  line-height: 1.24;
+  letter-spacing: 0.01em;
+}
+.popular-price {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--primary-text-color);
+  font-size: 20px;
+  line-height: 1.24;
+  letter-spacing: 0.01em;
+  color: rgba(29, 78, 26, 0.7);
+}
+/*--------------About us styles--------------*/
+.about {
+  background-color: #fcf3d9;
+}
+
+.about-title {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--primary-text-color);
+  font-size: 64px;
+  line-height: 1.16;
+}
+.about-text {
+  font-size: 18px;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+}
+.about-subtitle {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--primary-text-color);
+  font-size: 20px;
+  line-height: 1.24;
+  letter-spacing: 0.01em;
+}
+.about-list {
+}
+
+.about-item {
+}
+.about-img {
+  background-color: var(--primary-bg-color);
+}
+.about-poster {
+  border-radius: 32px;
+}
+.about-image-item {
+}
+/*---------------Testimonials styles---------------*/
+.testimonials {
+  background-color: #fcf3d9;
+}
+.testimonials-title {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--primary-text-color);
+  font-size: 64px;
+  line-height: 1.16;
+}
+.testimonials-list {
+}
+
+.testimonials-item {
+}
+.testimonials-item:nth-child(odd) {
+  width: 384px;
+  height: 230px;
+  border: 1px solid rgba(29, 78, 26, 0.12);
+  background-color: rgba(29, 78, 26, 0.03);
+  border-radius: 24px;
+}
+.testimonials-img {
+  border-radius: 24px;
+}
+.testimonials-subtitle {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.32;
+  letter-spacing: 0.02em;
+}
+.testimonials-text {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+  color: rgba(29, 78, 26, 0.7);
+}
+.testimonials-link {
+  display: inline-block;
+  padding: 16px 10px 16px 12px;
+  text-align: center;
+  width: 141px;
+  height: 51px;
+  border-radius: 26px;
+
+  color: var(--primary-link-color);
+  border: 1px solid var(--primary-bg-color);
+  background-color: var(--primary-bg-color);
+}
+
+.testimonials-link:hover,
+.testimonials-link:focus {
+  color: black;
+  background-color: red;
+}
+/*-------------Location styles-------------*/
+.location {
+  background-color: var(--primary-bg-color);
+}
+
+.location-title {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--secondary-text-color);
+  font-size: 64px;
+  line-height: 1.16;
+}
+.location-text {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+  color: rgba(29, 78, 26, 0.7);
+}
+.location-subtitle {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--secondary-text-color);
+  font-size: 32px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.location-img {
+}
+.location-list {
+}
+
+.location-item {
+  width: 282px;
+  height: 210px;
+  background-color: var(--white-bg-color);
+  border-radius: 24px;
+}
+.location-address {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.32;
+  letter-spacing: 0.02em;
+}
+.location-link {
+  display: inline-block;
+  padding: 16px 10px 16px 12px;
+  text-align: center;
+  width: 234px;
+  height: 42px;
+  border-radius: 26px;
+
+  color: var(--primary-link-color);
+  border: 1px solid var(--primary-bg-color);
+  background-color: var(--primary-bg-color);
+}
+.location-link:hover,
+.location-link:focus {
+  color: black;
+  background-color: red;
+}
+.help-list {
+  display: flex;
+}
+.help-item {
+  border-radius: 20px;
+  padding: 24px;
+  width: 282px;
+  height: 99px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.help-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background-color: rgba(252, 243, 217, 0.07);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.help-text {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.help-link {
+  font-family: 'Calistoga', sans-serif;
+  font-size: 20px;
+  line-height: 1.24;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+
+/*-------------News styles-------------*/
+.news {
+  background-color: var(--secondary-bg-color);
+}
+.news-title {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--primary-text-color);
+  font-size: 64px;
+  line-height: 1.16;
+}
+
+.news-link {
+  display: inline-block;
+  padding: 16px 10px 16px 12px;
+  text-align: center;
+  width: 117px;
+  height: 42px;
+  border-radius: 26px;
+
+  color: var(--primary-link-color);
+  border: 1px solid var(--primary-bg-color);
+  background-color: var(--primary-bg-color);
+}
+.news-link:hover,
+.news-link:focus {
+  color: black;
+  background-color: red;
+}
+.news-list {
+  display: flex;
+}
+.news-item {
+  width: 384px;
+  height: 372px;
+}
+.news-img {
+  border-radius: 24px;
+}
+.news-text {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+  color: rgba(29, 78, 26, 0.7);
+}
+.news-subtitle {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--primary-text-color);
+  font-size: 20px;
+  line-height: 1.24;
+  letter-spacing: 0.01em;
+}
+/*------------Banner styles------------*/
+.banner {
+  background-color: rgba(29, 78, 26, 0.03);
+}
+.banner-img {
+}
+.banner-subtitle {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--primary-text-color);
+  font-size: 32px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.banner-text {
+  font-size: 18px;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+}
+.banner-list {
+  display: flex;
+}
+
+.banner-item {
+  background-color: var(--primary-bg-color);
+  border-radius: 12px;
+}
+.banner-item:first-child {
+  width: 137px;
+  height: 72px;
+}
+.banner-item:nth-child(n + 2) {
+  width: 72px;
+  height: 72px;
+}
+.banner-link {
+}
+.banner-link:hover,
+.banner-link:focus {
+  color: black;
+  background-color: red;
+}
+/*-------------------Footer styles-------------------*/
+.footer {
+  background-color: var(--primary-bg-color);
+}
+.footer-logo {
+}
+.footer-title {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--secondary-text-color);
+  font-size: 20px;
+  line-height: 1.24;
+  letter-spacing: 0.01em;
+}
+.footer-contact {
+  display: flex;
+}
+.footer-link {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.32;
+  letter-spacing: 0.02em;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.footer-list {
+}
+
+.footer-item {
+}
+.footer-social {
+}
+.footer-icon {
+  background-color: var(--secondary-bg-color);
+  border-radius: 50%;
+}
+.footer-img {
+}
