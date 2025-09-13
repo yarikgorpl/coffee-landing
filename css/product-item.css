@@ -71,69 +71,101 @@ body {
 
 .header-logo {
 }
-/*-------------------------Hero styles-------------------------*/
-.hero {
-  background-color: var(--primary-bg-color);
+/*-------------------------Product styles--------------*/
+
+.product {
+  background-color: var(--white-bg-color);
 }
-.hero-title {
+.product-img {
+}
+.product-title {
   font-family: 'Calistoga', sans-serif;
-  color: var(--secondary-text-color);
-  font-size: 96px;
-  line-height: 1.12;
+
+  font-size: 44px;
+  line-height: 1.16;
 }
 
-.hero-text {
-  color: var(--secondary-text-color);
-  font-size: 18px;
+.product-price {
+  font-family: 'Calistoga', sans-serif;
+  color: rgba(29, 78, 26, 0.7);
+  font-size: 20px;
+  line-height: 1.24;
+  letter-spacing: 0.01em;
+}
+.product-description {
+  font-size: 16px;
+  line-height: 1.24;
+  letter-spacing: 0.02em;
+}
+.product-variants {
+  font-family: 'Calistoga', sans-serif;
+  color: rgba(29, 78, 26, 0.7);
+  font-size: 16px;
+  line-height: 1.32;
+  letter-spacing: 0.02em;
+}
+.product-list {
+  display: flex;
+  gap: 6px;
+}
+
+.product-item {
+  border-radius: 6px;
+  background-color: rgba(29, 78, 26, 0.03);
+}
+.product-text {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+  color: rgba(29, 78, 26, 0.7);
+}
+
+.price-variant {
+  font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.02em;
 }
-.hero-list {
-  display: flex;
+.product-attention {
+  font-family: 'Calistoga', sans-serif;
+  color: rgba(29, 78, 26, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.32;
+  letter-spacing: 0.02em;
 }
 
-.hero-item {
+/*-------------------Popular styles------------------*/
+.popular {
+  background-color: var(--white-bg-color);
 }
-.hero-link {
+.popular-title {
+  font-family: 'Calistoga', sans-serif;
+  font-size: 32px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.popular-link {
   display: inline-block;
   padding: 16px 10px 16px 12px;
   text-align: center;
-  width: 141px;
-  height: 51px;
+  width: 117px;
+  height: 42px;
   border-radius: 26px;
-  border: 1px solid var(--secondary-link-color);
-}
 
-.hero-link.primary {
-  color: var(--secondary-link-color);
+  color: var(--primary-link-color);
+  border: 1px solid var(--primary-bg-color);
   background-color: var(--primary-bg-color);
 }
-.hero-link.secondary {
-  color: var(--primary-bg-color);
-  background-color: var(--secondary-link-color);
-}
-.hero-link.primary:hover,
-.hero-link.primary:focus {
-  color: black;
-  background-color: red;
-}
-.hero-link.secondary:hover,
-.hero-link.secondary:focus {
-  color: black;
-  background-color: red;
-}
-/*-------------------Menu styles-------------------*/
-.menu {
-  background-color: var(--white-bg-color);
+
+.popular-list {
+  display: flex;
+  gap: 24px;
 }
 
-.menu-filter {
+.popular-item {
+  border-radius: 24px;
 }
-
-.menu-item {
-}
-
-.menu-suptext {
+.popular-suptext {
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.03em;
@@ -143,51 +175,24 @@ body {
   border-radius: 12px;
   background-color: var(--secondary-bg-color);
 }
-.menu-link {
-  font-size: 20px;
-  line-height: 1.24;
-  letter-spacing: 0.01em;
-  color: var(--primary-bg-color);
+.popular-card {
+  color: var(--primary-text-color);
 }
-
-.menu-img-filter {
-  background-color: var(--primary-bg-color);
-  border-radius: 50%;
+.popular-img {
 }
-.menu-img {
-  background-color: var(--primary-bg-color);
-  border-radius: 24px;
-}
-.menu-title {
+.popular-name {
   font-family: 'Calistoga', sans-serif;
-
-  font-size: 32px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-}
-.menu-text {
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: 0.03em;
-}
-.menu-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.menu-subtitle {
-  font-family: 'Calistoga', sans-serif;
-
   font-size: 20px;
   line-height: 1.24;
   letter-spacing: 0.01em;
 }
-.menu-price {
+
+.popular-price {
   font-family: 'Calistoga', sans-serif;
+  font-size: 20px;
+  line-height: 1.24;
+  letter-spacing: 0.01em;
   color: rgba(29, 78, 26, 0.7);
-  font-size: 20px;
-  line-height: 1.24;
-  letter-spacing: 0.01em;
 }
 /*-------------------Ticker styles-------------------*/
 .ticker {
@@ -214,7 +219,7 @@ body {
 }
 .banner-subtitle {
   font-family: 'Calistoga', sans-serif;
-
+  color: var(--primary-text-color);
   font-size: 32px;
   line-height: 1.16;
   letter-spacing: 0.01em;

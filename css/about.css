@@ -71,9 +71,9 @@ body {
 
 .header-logo {
 }
-/*-------------------------Hero styles-------------------------*/
+/*-------------------Hero styles-------------------*/
 .hero {
-  background-color: var(--primary-bg-color);
+  background-color: #1d4e1a;
 }
 .hero-title {
   font-family: 'Calistoga', sans-serif;
@@ -81,114 +81,13 @@ body {
   font-size: 96px;
   line-height: 1.12;
 }
-
 .hero-text {
   color: var(--secondary-text-color);
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.02em;
 }
-.hero-list {
-  display: flex;
-}
 
-.hero-item {
-}
-.hero-link {
-  display: inline-block;
-  padding: 16px 10px 16px 12px;
-  text-align: center;
-  width: 141px;
-  height: 51px;
-  border-radius: 26px;
-  border: 1px solid var(--secondary-link-color);
-}
-
-.hero-link.primary {
-  color: var(--secondary-link-color);
-  background-color: var(--primary-bg-color);
-}
-.hero-link.secondary {
-  color: var(--primary-bg-color);
-  background-color: var(--secondary-link-color);
-}
-.hero-link.primary:hover,
-.hero-link.primary:focus {
-  color: black;
-  background-color: red;
-}
-.hero-link.secondary:hover,
-.hero-link.secondary:focus {
-  color: black;
-  background-color: red;
-}
-/*-------------------Menu styles-------------------*/
-.menu {
-  background-color: var(--white-bg-color);
-}
-
-.menu-filter {
-}
-
-.menu-item {
-}
-
-.menu-suptext {
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: 0.03em;
-  width: 40px;
-  height: 24px;
-  border: 1px solid rgba(29, 78, 26, 0.12);
-  border-radius: 12px;
-  background-color: var(--secondary-bg-color);
-}
-.menu-link {
-  font-size: 20px;
-  line-height: 1.24;
-  letter-spacing: 0.01em;
-  color: var(--primary-bg-color);
-}
-
-.menu-img-filter {
-  background-color: var(--primary-bg-color);
-  border-radius: 50%;
-}
-.menu-img {
-  background-color: var(--primary-bg-color);
-  border-radius: 24px;
-}
-.menu-title {
-  font-family: 'Calistoga', sans-serif;
-
-  font-size: 32px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-}
-.menu-text {
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: 0.03em;
-}
-.menu-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.menu-subtitle {
-  font-family: 'Calistoga', sans-serif;
-
-  font-size: 20px;
-  line-height: 1.24;
-  letter-spacing: 0.01em;
-}
-.menu-price {
-  font-family: 'Calistoga', sans-serif;
-  color: rgba(29, 78, 26, 0.7);
-  font-size: 20px;
-  line-height: 1.24;
-  letter-spacing: 0.01em;
-}
 /*-------------------Ticker styles-------------------*/
 .ticker {
   background-color: var(--secondary-bg-color);
@@ -205,6 +104,42 @@ body {
   font-size: 18px;
   line-height: 1.28;
   letter-spacing: 0.02em;
+}
+.about {
+  background-color: #fcf3d9;
+}
+
+/*-------------About styles------------*/
+.about-title {
+  font-family: 'Calistoga', sans-serif;
+
+  font-size: 64px;
+  line-height: 1.16;
+}
+.about-text {
+  font-size: 18px;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+}
+.about-subtitle {
+  font-family: 'Calistoga', sans-serif;
+
+  font-size: 20px;
+  line-height: 1.24;
+  letter-spacing: 0.01em;
+}
+.about-list {
+}
+
+.about-item {
+}
+.about-img {
+  background-color: var(--primary-bg-color);
+}
+.about-poster {
+  border-radius: 32px;
+}
+.about-image-item {
 }
 /*------------Banner styles------------*/
 .banner {

@@ -48,7 +48,6 @@ body {
 }
 
 .header-text {
-  color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
   line-height: 1.28;
   letter-spacing: 0.03em;
@@ -147,7 +146,7 @@ body {
 }
 .category-title {
   font-family: 'Calistoga', sans-serif;
-  color: var(--primary-text-color);
+
   font-size: 64px;
   line-height: 1.16;
 }
@@ -159,7 +158,7 @@ body {
 }
 .category-subtitle {
   font-family: 'Calistoga', sans-serif;
-  color: var(--primary-text-color);
+
   font-size: 32px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -174,7 +173,7 @@ body {
 }
 .popular-title {
   font-family: 'Calistoga', sans-serif;
-  color: var(--primary-text-color);
+
   font-size: 64px;
   line-height: 1.16;
 }
@@ -210,14 +209,14 @@ body {
 }
 .popular-subtitle {
   font-family: 'Calistoga', sans-serif;
-  color: var(--primary-text-color);
+
   font-size: 20px;
   line-height: 1.24;
   letter-spacing: 0.01em;
 }
 .popular-price {
   font-family: 'Calistoga', sans-serif;
-  color: var(--primary-text-color);
+
   font-size: 20px;
   line-height: 1.24;
   letter-spacing: 0.01em;
@@ -230,7 +229,7 @@ body {
 
 .about-title {
   font-family: 'Calistoga', sans-serif;
-  color: var(--primary-text-color);
+
   font-size: 64px;
   line-height: 1.16;
 }
@@ -241,7 +240,7 @@ body {
 }
 .about-subtitle {
   font-family: 'Calistoga', sans-serif;
-  color: var(--primary-text-color);
+
   font-size: 20px;
   line-height: 1.24;
   letter-spacing: 0.01em;
@@ -265,7 +264,7 @@ body {
 }
 .testimonials-title {
   font-family: 'Calistoga', sans-serif;
-  color: var(--primary-text-color);
+
   font-size: 64px;
   line-height: 1.16;
 }
@@ -286,7 +285,7 @@ body {
 }
 .testimonials-subtitle {
   font-family: 'Calistoga', sans-serif;
-  color: var(--primary-text-color);
+
   font-size: 16px;
   line-height: 1.32;
   letter-spacing: 0.02em;
@@ -352,7 +351,7 @@ body {
 }
 .location-address {
   font-family: 'Calistoga', sans-serif;
-  color: var(--primary-text-color);
+
   font-size: 16px;
   line-height: 1.32;
   letter-spacing: 0.02em;
@@ -415,7 +414,7 @@ body {
 }
 .news-title {
   font-family: 'Calistoga', sans-serif;
-  color: var(--primary-text-color);
+
   font-size: 64px;
   line-height: 1.16;
 }
@@ -455,7 +454,7 @@ body {
 }
 .news-subtitle {
   font-family: 'Calistoga', sans-serif;
-  color: var(--primary-text-color);
+
   font-size: 20px;
   line-height: 1.24;
   letter-spacing: 0.01em;
@@ -468,7 +467,7 @@ body {
 }
 .banner-subtitle {
   font-family: 'Calistoga', sans-serif;
-  color: var(--primary-text-color);
+
   font-size: 32px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -516,6 +515,7 @@ body {
 }
 .footer-contact {
   display: flex;
+  font-style: normal;
 }
 .footer-link {
   font-family: 'Calistoga', sans-serif;

@@ -71,124 +71,99 @@ body {
 
 .header-logo {
 }
-/*-------------------------Hero styles-------------------------*/
-.hero {
+.location {
   background-color: var(--primary-bg-color);
 }
-.hero-title {
+
+.location-title {
   font-family: 'Calistoga', sans-serif;
   color: var(--secondary-text-color);
-  font-size: 96px;
-  line-height: 1.12;
+  font-size: 64px;
+  line-height: 1.16;
 }
-
-.hero-text {
-  color: var(--secondary-text-color);
-  font-size: 18px;
-  line-height: 1.28;
-  letter-spacing: 0.02em;
-}
-.hero-list {
-  display: flex;
-}
-
-.hero-item {
-}
-.hero-link {
-  display: inline-block;
-  padding: 16px 10px 16px 12px;
-  text-align: center;
-  width: 141px;
-  height: 51px;
-  border-radius: 26px;
-  border: 1px solid var(--secondary-link-color);
-}
-
-.hero-link.primary {
-  color: var(--secondary-link-color);
-  background-color: var(--primary-bg-color);
-}
-.hero-link.secondary {
-  color: var(--primary-bg-color);
-  background-color: var(--secondary-link-color);
-}
-.hero-link.primary:hover,
-.hero-link.primary:focus {
-  color: black;
-  background-color: red;
-}
-.hero-link.secondary:hover,
-.hero-link.secondary:focus {
-  color: black;
-  background-color: red;
-}
-/*-------------------Menu styles-------------------*/
-.menu {
-  background-color: var(--white-bg-color);
-}
-
-.menu-filter {
-}
-
-.menu-item {
-}
-
-.menu-suptext {
+.location-text {
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.03em;
-  width: 40px;
-  height: 24px;
-  border: 1px solid rgba(29, 78, 26, 0.12);
-  border-radius: 12px;
-  background-color: var(--secondary-bg-color);
+  color: rgba(29, 78, 26, 0.7);
 }
-.menu-link {
-  font-size: 20px;
-  line-height: 1.24;
-  letter-spacing: 0.01em;
-  color: var(--primary-bg-color);
-}
-
-.menu-img-filter {
-  background-color: var(--primary-bg-color);
-  border-radius: 50%;
-}
-.menu-img {
-  background-color: var(--primary-bg-color);
-  border-radius: 24px;
-}
-.menu-title {
+.location-subtitle {
   font-family: 'Calistoga', sans-serif;
-
+  color: var(--secondary-text-color);
   font-size: 32px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
-.menu-text {
+.location-img {
+}
+.location-list {
+}
+
+.location-item {
+  width: 282px;
+  height: 210px;
+  background-color: var(--white-bg-color);
+  border-radius: 24px;
+}
+.location-address {
+  font-family: 'Calistoga', sans-serif;
+
+  font-size: 16px;
+  line-height: 1.32;
+  letter-spacing: 0.02em;
+}
+.location-link {
+  display: inline-block;
+  padding: 16px 10px 16px 12px;
+  text-align: center;
+  width: 234px;
+  height: 42px;
+  border-radius: 26px;
+
+  color: var(--primary-link-color);
+  border: 1px solid var(--primary-bg-color);
+  background-color: var(--primary-bg-color);
+}
+.location-link:hover,
+.location-link:focus {
+  color: black;
+  background-color: red;
+}
+.help-list {
+  display: flex;
+}
+.help-item {
+  border-radius: 20px;
+  padding: 24px;
+  width: 282px;
+  height: 99px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.help-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background-color: rgba(252, 243, 217, 0.07);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.help-text {
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
-.menu-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.menu-subtitle {
+.help-link {
   font-family: 'Calistoga', sans-serif;
-
   font-size: 20px;
   line-height: 1.24;
   letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
 }
-.menu-price {
-  font-family: 'Calistoga', sans-serif;
-  color: rgba(29, 78, 26, 0.7);
-  font-size: 20px;
-  line-height: 1.24;
-  letter-spacing: 0.01em;
-}
+
 /*-------------------Ticker styles-------------------*/
 .ticker {
   background-color: var(--secondary-bg-color);
@@ -205,47 +180,6 @@ body {
   font-size: 18px;
   line-height: 1.28;
   letter-spacing: 0.02em;
-}
-/*------------Banner styles------------*/
-.banner {
-  background-color: rgba(29, 78, 26, 0.03);
-}
-.banner-img {
-}
-.banner-subtitle {
-  font-family: 'Calistoga', sans-serif;
-
-  font-size: 32px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-}
-.banner-text {
-  font-size: 18px;
-  line-height: 1.28;
-  letter-spacing: 0.02em;
-}
-.banner-list {
-  display: flex;
-}
-
-.banner-item {
-  background-color: var(--primary-bg-color);
-  border-radius: 12px;
-}
-.banner-item:first-child {
-  width: 137px;
-  height: 72px;
-}
-.banner-item:nth-child(n + 2) {
-  width: 72px;
-  height: 72px;
-}
-.banner-link {
-}
-.banner-link:hover,
-.banner-link:focus {
-  color: black;
-  background-color: red;
 }
 /*-------------------Footer styles-------------------*/
 .footer {

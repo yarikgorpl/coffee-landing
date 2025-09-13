@@ -4,224 +4,319 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CoffeeShop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Calistoga&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/product-item.css" />
   </head>
   <body>
-    <header>
-      <p>Buy one coffee, get one free — this week only (April 14-20)</p>
+    <header class="header">
+      <p class="header-text">Buy one coffee, get one free — this week only (April 14-20)</p>
+      <button
+        class="header-btn"
+        type="button"
+        title="Close notification"
+        aria-label="Close notification"
+      >
+        <img src="./images/home-page/hero-images/close-btn.svg" alt="" />
+      </button>
       <nav>
-        <ul>
-          <li><a href="./menu.html">Menu</a></li>
-          <li><a href="">Locations</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">News</a></li>
+        <ul class="header-list list">
+          <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
+          <li class="header-item">
+            <a class="header-link link" href="./locations.html">Locations</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="./about.html">About Us</a>
+          </li>
+          <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
         </ul>
-        <a href="./index.html"
+        <a class="header-logo link" href="./index.html"
           ><img src="./images/home-page/hero-images/logo.svg" alt="Company logo"
         /></a>
       </nav>
     </header>
     <main>
       <!--Product info section -->
-      <section>
+      <section class="product">
         <img
+          class="product-img"
           src="./images/product-page/head-image.jpg"
           alt="The cup of coffee"
           width="400"
           height="400"
         />
-        <h1>Americano</h1>
-        <p>&dollar;5.30</p>
-        <p>
+        <h1 class="product-title">Americano</h1>
+        <p class="product-price">&dollar;5.30</p>
+        <p class="product-description">
           Our Americano is made by combining rich, full-bodied espresso with hot water, creating a
           perfectly balanced and smooth cup that's lighter than espresso but stronger than regular
           drip coffee.
         </p>
-        <b>Available Sizes</b>
-        <ul>
-          <li>
-            <p>Small</p>
+        <p class="product-variants">Available Sizes</p>
+        <ul class="product-list list">
+          <li class="product-item">
+            <p class="product-text">Small</p>
           </li>
-          <li>
-            <p>Medium <span>(+&dollar;1.10)</span></p>
+          <li class="product-item">
+            <p class="product-text">Medium <span class="price-variant">(+&dollar;1.10)</span></p>
           </li>
-          <li>
-            <p>Large <span>(+&dollar;1.65)</span></p>
-          </li>
-        </ul>
-        <strong>Allergen Risks*</strong>
-        <ul>
-          <li>
-            <p>Milk</p>
-          </li>
-          <li>
-            <p>Flavored Syrups</p>
-          </li>
-          <li>
-            <p>Sulphites</p>
+          <li class="product-item">
+            <p class="product-text">Large <span class="price-variant">(+&dollar;1.65)</span></p>
           </li>
         </ul>
-        <p>* Let our team know if you have any allergies before ordering.</p>
+        <strong class="product-attention">Allergen Risks*</strong>
+        <ul class="product-list list">
+          <li class="product-item">
+            <p class="product-text">Milk</p>
+          </li>
+          <li class="product-item">
+            <p class="product-text">Flavored Syrups</p>
+          </li>
+          <li class="product-item">
+            <p class="product-text">Sulphites</p>
+          </li>
+        </ul>
+        <p class="product-text">* Let our team know if you have any allergies before ordering.</p>
       </section>
-      <!--Other section -->
-      <section>
-        <h2>You'll Love These Too</h2>
-        <a href="./menu.html">Explore Menu</a>
-        <ul>
-          <li>
-            <a href="">
+      <!--Popular section -->
+      <section class="popular">
+        <h2 class="popular-title">You'll Love These Too</h2>
+        <a class="popular-link link" href="./menu.html">Explore Menu</a>
+        <ul class="popular-list list">
+          <li class="popular-item">
+            <a class="popular-card link" href="">
               <img
+                class="popular-img"
                 src="./images/product-page/cappuccino.jpg"
                 alt="The cup of Cappuccino"
                 width="304"
                 height="304"
               />
-              <p>Cappuccino</p>
-              <span>&dollar;5.25</span>
+              <p class="popular-name">Cappuccino<span class="popular-price">&dollar;5.25</span></p>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="popular-item">
+            <a class="popular-card link" href="">
               <img
+                class="popular-img"
                 src="./images/product-page/black-coffee.jpg"
                 alt="The cup of Black Coffee"
                 width="304"
                 height="304"
               />
-              <p>Black Coffee</p>
-              <span>&dollar;4.90</span>
+              <p class="popular-name">
+                Black Coffee <span class="popular-price">&dollar;4.90</span>
+              </p>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li lass="popular-item">
+            <p class="popular-suptext">New</p>
+            <a class="popular-card link" href="">
               <img
+                class="popular-img"
                 src="./images/product-page/macchiato.jpg"
                 alt="The cup of Macchiato"
                 width="304"
                 height="304"
               />
-              <p>Macchiato</p>
-              <span>&dollar;6.10</span>
+              <p class="popular-name">Macchiato<span class="popular-price">&dollar;6.10</span></p>
             </a>
           </li>
         </ul>
       </section>
       <!--Banner section -->
-      <section>
-        <img src="./images/home-page/banner-images/hands.svg" alt="hands" />
-        <h2>Order Online</h2>
-        <p>Get your favorites delivered fast.</p>
-        <ul>
-          <li>
-            <a href="" title="Order with Uber Eats">
+      <section class="banner">
+        <h2 class="visually-hidden">Online Ordering</h2>
+        <img class="banner-img" src="./images/home-page/banner-images/hands.svg" alt="hands" />
+        <h3 class="banner-subtitle">Order Online</h3>
+        <p class="banner-text">Get your favorites delivered fast.</p>
+        <ul class="banner-list list">
+          <li class="banner-item">
+            <a class="banner-link link" href="#" title="Order with Uber Eats">
               <img src="./images/home-page/banner-images/uber.svg" alt="Uber Eats" />
               <img src="./images/home-page/banner-images/eats.svg" alt="Eats" />
             </a>
           </li>
-          <li>
-            <a href="" title="Home">
+          <li class="banner-item">
+            <a class="banner-link link" href="" title="Home">
               <img src="./images/home-page/banner-images/home.svg" alt="Home" />
             </a>
           </li>
-          <li>
-            <a href="" title="More options"
-              ><img src="./images/home-page/banner-images/vector.svg" alt=""
-            /></a>
+          <li class="banner-item">
+            <a class="banner-link link" href="" title="More options">
+              <img src="./images/home-page/banner-images/vector.svg" alt="" />
+            </a>
           </li>
         </ul>
       </section>
       <!-- Ticker section -->
-      <section>
-        <h2>Our advantages</h2>
-        <ul>
-          <li>
-            <p>Great Coffee</p>
-            <img src="./images/home-page/ticker-images/smiley.svg" alt="Great Coffee" />
-          </li>
-          <li>
-            <p>Fast Service</p>
-            <img src="./images/home-page/ticker-images/bolt.svg" alt="Fast Service" />
-          </li>
-          <li>
-            <p>Cozy Space</p>
-            <img src="./images/home-page/ticker-images/instagram.svg" alt="Cozy Space" />
-          </li>
-          <li>
-            <p>Handcrafted Drinks</p>
+      <section class="ticker">
+        <h2 class="visually-hidden">Our advantages</h2>
+        <ul class="ticker-list list">
+          <li class="ticker-item">
+            <p class="ticker-text">Great Coffee</p>
             <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/smiley.svg"
+              alt="Great Coffee"
+            />
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Fast Service</p>
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/bolt.svg"
+              alt="Fast Service"
+            />
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Cozy Space</p>
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/instagram.svg"
+              alt="Cozy Space"
+            />
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Handcrafted Drinks</p>
+            <img
+              class="ticker-icon"
               src="./images/home-page/ticker-images/sweat-waterdrop.svg"
               alt="Handcrafted Drinks"
             />
           </li>
-          <li>
-            <p>Local Roasts</p>
-            <img src="./images/home-page/ticker-images/smiley-love.svg" alt="Local Roasts" />
+          <li class="ticker-item">
+            <p class="ticker-text">Local Roasts</p>
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/smiley-love.svg"
+              alt="Local Roasts"
+            />
           </li>
-          <li>
-            <p>Global Flavor</p>
-            <img src="./images/home-page/ticker-images/element.svg" alt="Global Flavor" />
+          <li class="ticker-item">
+            <p class="ticker-text">Global Flavor</p>
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/element.svg"
+              alt="Global Flavor"
+            />
           </li>
-          <li>
-            <p>Friendly Baristas</p>
-            <img src="./images/home-page/ticker-images/crown.svg" alt="Friendly Baristas" />
+          <li class="ticker-item">
+            <p class="ticker-text">Friendly Baristas</p>
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/crown.svg"
+              alt="Friendly Baristas"
+            />
           </li>
-          <li>
-            <p>Great Coffee</p>
-            <img src="./images/home-page/ticker-images/smiley.svg" alt="Great Coffee" />
+          <li class="ticker-item">
+            <p class="ticker-text">Great Coffee</p>
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/smiley.svg"
+              alt="Great Coffee"
+            />
           </li>
-          <li>
-            <p>Fast Service</p>
-            <img src="./images/home-page/ticker-images/bolt.svg" alt="Fast Service" />
+          <li class="ticker-item">
+            <p class="ticker-text">Fast Service</p>
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/bolt.svg"
+              alt="Fast Service"
+            />
           </li>
-          <li>
-            <p>Cozy Space</p>
-            <img src="./images/home-page/ticker-images/instagram.svg" alt="Cozy Space" />
+          <li class="ticker-item">
+            <p class="ticker-text">Cozy Space</p>
+            <img
+              class="ticker-icon"
+              src="./images/home-page/ticker-images/instagram.svg"
+              alt="Cozy Space"
+            />
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <img src="./images/home-page/footer-images/logo.svg" alt="Coffee Shop Logo" />
-      <h2>Life Begins After Coffee</h2>
-      <address>
-        <a href="tel:+12125550198">+1 (212) 555-0198</a>
-        <a href="mailto:hello@bhaus.com">hello@bhaus.com</a>
+    <footer class="footer">
+      <img
+        class="footer-logo"
+        src="./images/home-page/footer-images/logo.svg"
+        alt="Coffee Shop Logo"
+      />
+      <h2 class="footer-title">
+        Life Begins <br />
+        After Coffee
+      </h2>
+      <address class="footer-contact">
+        <a class="footer-link link" href="tel:+12125550198">
+          <img src="./images/home-page/footer-images/phone.svg" alt="" />+1 (212) 555-0198</a
+        >
+        <a class="footer-link link" href="mailto:hello@bhaus.com">
+          <img src="./images/home-page/footer-images/mail.svg" alt="" />hello@bhaus.com</a
+        >
       </address>
-      <p>Main</p>
-      <ul>
-        <li><a href="./menu.html">Menu</a></li>
-        <li><a href="./locations.html">Location</a></li>
-        <li><a href="./about.html">About us</a></li>
-        <li><a href="./news.html">News</a></li>
+      <p class="footer-text">Main</p>
+      <ul class="footer-list list">
+        <li class="footer-item"><a class="footer-link link" href="./menu.html">Menu</a></li>
+        <li class="footer-item">
+          <a class="footer-link link" href="./locations.html">Locations</a>
+        </li>
+        <li class="footer-item"><a class="footer-link link" href="./about.html">About us</a></li>
+        <li class="footer-item"><a class="footer-link link" href="./news.html">News</a></li>
       </ul>
-      <p>Categories</p>
-      <ul>
-        <li><a href="./menu.html#coffee">Coffee</a></li>
-        <li><a href="./menu.html#cold-drinks">Cold Drinks</a></li>
-        <li><a href="./menu.html#bakery">Bakery</a></li>
+      <p class="footer-text">Categories</p>
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a class="footer-link link" href="./menu.html#coffee">Coffee</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-link link" href="./menu.html#cold-drinks">Cold Drinks</a>
+        </li>
+        <li class="footer-item">
+          <a class="footer-link link" href="./menu.html#bakery">Bakery</a>
+        </li>
       </ul>
-      <p>Follow Us</p>
-      <ul>
-        <li>
-          <a href=""
-            ><img src="./images/home-page/footer-images/instagram.svg" alt="Instagram"
+      <p class="footer-text">Follow Us</p>
+      <ul class="footer-list list">
+        <li class="footer-item">
+          <a class="footer-social link" href="" aria-label="Instagram"
+            ><img
+              class="footer-icon"
+              src="./images/home-page/footer-images/instagram.svg"
+              alt="Instagram"
           /></a>
         </li>
-        <li>
-          <a href=""><img src="./images/home-page/footer-images/facebook.svg" alt="Facebook" /></a>
+        <li class="footer-item">
+          <a class="footer-social link" href="" aria-label="Facebook"
+            ><img
+              class="footer-icon"
+              src="./images/home-page/footer-images/facebook.svg"
+              alt="Facebook"
+          /></a>
         </li>
 
-        <li>
-          <a href=""><img src="./images/home-page/footer-images/twitter(X).svg" alt="Twitter" /></a>
+        <li class="footer-item">
+          <a class="footer-social link" href="" aria-label="Twitter"
+            ><img
+              class="footer-icon"
+              src="./images/home-page/footer-images/twitter(X).svg"
+              alt="Twitter"
+          /></a>
         </li>
       </ul>
       <img
-        src="./images/home-page/footer-images/brewhouse.jpg"
+        class="footer-img"
+        src="./images/home-page/footer-images/brewhaus.svg"
         alt="Brewhouse"
         width="1200"
         height="213"
       />
-      <p>2025 <span>&copy;</span> Brewhaus</p>
-      <a href="./licenses.html">Licenses</a>
+      <p class="footer-text">2025 &copy; Brewhaus</p>
+      <a class="footer-text link" href="./licenses.html">Licenses</a>
     </footer>
   </body>
 </html>
