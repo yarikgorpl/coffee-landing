@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: #1d4e1a;
+  --secondary-text-color: #ffecb8;
+  --primary-link-color: #ffecb8;
+  --secondary-link-color: #1d4e1a;
+  --primary-bg-color: #1d4e1a;
+  --secondary-bg-color: #ffecb8;
+  --white-bg-color: #fcf3d9;
+}
+
+body {
+  font-family: 'Cabin Condensed', sans-serif;
+  color: var(--primary-text-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 16px;
+  line-height: 1.24;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*-------------------Header styles-------------------*/
+.header {
+  background-color: var(--primary-bg-color);
+}
+
+.header-text {
+  background-color: var(--secondary-bg-color);
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+}
+.header-btn {
+}
+.header-list {
+}
+.header-item {
+}
+.header-link {
+  color: var(--primary-link-color);
+  font-size: 16px;
+  line-height: 1.24;
+  letter-spacing: 0.02em;
+}
+.header-link:hover,
+.header-link:focus {
+  color: tomato;
+}
+
+.header-logo {
+}
+/*-------------------Hero styles-------------------*/
+.hero {
+  background-color: #1d4e1a;
+}
+.hero-title {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--secondary-text-color);
+  font-size: 96px;
+  line-height: 1.12;
+}
+.hero-text {
+  color: var(--secondary-text-color);
+  font-size: 18px;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+}
+
+.hero-link {
+  display: inline-block;
+  padding: 16px 10px 16px 12px;
+  text-align: center;
+  width: 141px;
+  height: 51px;
+  border-radius: 26px;
+  color: var(--secondary-link-color);
+  background-color: var(--secondary-bg-color);
+}
+/*-------------------Ticker styles-------------------*/
+.ticker {
+  background-color: var(--secondary-bg-color);
+}
+
+.ticker-list {
+  display: flex;
+}
+
+.ticker-item {
+  display: flex;
+}
+.ticker-text {
+  font-size: 18px;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+}
+/*-------------------Footer styles-------------------*/
+.footer {
+  background-color: var(--primary-bg-color);
+}
+.footer-logo {
+}
+.footer-title {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--secondary-text-color);
+  font-size: 20px;
+  line-height: 1.24;
+  letter-spacing: 0.01em;
+}
+.footer-contact {
+  display: flex;
+  font-style: normal;
+}
+.footer-link {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.32;
+  letter-spacing: 0.02em;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.footer-list {
+}
+
+.footer-item {
+}
+.footer-social {
+}
+.footer-icon {
+  background-color: var(--secondary-bg-color);
+  border-radius: 50%;
+}
+.footer-img {
+}
