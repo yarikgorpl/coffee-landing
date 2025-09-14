@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: #1d4e1a;
+  --secondary-text-color: #ffecb8;
+  --primary-link-color: #ffecb8;
+  --secondary-link-color: #ffecb8;
+  --primary-bg-color: #1d4e1a;
+  --secondary-bg-color: #ffecb8;
+  --white-bg-color: #fcf3d9;
+}
+
+body {
+  font-family: 'Cabin Condensed', sans-serif;
+  color: var(--primary-text-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 16px;
+  line-height: 1.24;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  cursor: pointer;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*-------------------Header styles-------------------*/
+.header {
+  background-color: var(--primary-bg-color);
+}
+
+.header-text {
+  background-color: var(--secondary-bg-color);
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+}
+.header-btn {
+}
+.header-list {
+}
+.header-item {
+}
+.header-link {
+  color: var(--primary-link-color);
+  font-size: 16px;
+  line-height: 1.24;
+  letter-spacing: 0.02em;
+}
+.header-link:hover,
+.header-link:focus {
+  color: tomato;
+}
+
+.header-logo {
+}
+/*-------------------Hero styles-------------------*/
+.hero {
+  background-color: rgba(252, 243, 217, 0.12);
+}
+.hero-title {
+  font-family: 'Calistoga', sans-serif;
+  font-size: 96px;
+  line-height: 1.12;
+}
+.hero-text {
+  font-size: 18px;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+}
+/*-------------------News styles-------------*/
+.news {
+  background-color: rgba(252, 243, 217, 0.12);
+}
+
+.news-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.news-item {
+  width: 384px;
+  border-radius: 24px;
+}
+.news-link {
+}
+
+.news-img {
+}
+.news-text {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+}
+.news-subtitle {
+  font-family: 'Calistoga', sans-serif;
+  font-size: 20px;
+  line-height: 1.24;
+  letter-spacing: 0.01em;
+}
+/*-------------------Ticker styles-------------------*/
+.ticker {
+  background-color: var(--secondary-bg-color);
+}
+
+.ticker-list {
+  display: flex;
+}
+
+.ticker-item {
+  display: flex;
+}
+.ticker-text {
+  font-size: 18px;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+}
+/*-------------------Footer styles-------------------*/
+.footer {
+  background-color: var(--primary-bg-color);
+}
+.footer-logo {
+}
+.footer-title {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--secondary-text-color);
+  font-size: 20px;
+  line-height: 1.24;
+  letter-spacing: 0.01em;
+}
+.footer-contact {
+  display: flex;
+  font-style: normal;
+}
+.footer-link {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.32;
+  letter-spacing: 0.02em;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.footer-list {
+}
+
+.footer-item {
+}
+.footer-social {
+}
+.footer-icon {
+  background-color: var(--secondary-bg-color);
+  border-radius: 50%;
+}
+.footer-img {
+}

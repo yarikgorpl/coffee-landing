@@ -66,127 +66,112 @@ body {
 
 .header-logo {
 }
-/*-------------------------Product styles--------------*/
-
-.product {
-  background-color: var(--white-bg-color);
+/*-------------Article styles-----------*/
+.content {
+  background-color: rgba(252, 243, 217, 0.12);
 }
-.product-img {
+.content-img {
 }
-.product-title {
-  font-family: 'Calistoga', sans-serif;
-  font-size: 44px;
-  line-height: 1.16;
+.content-btn {
+  color: var(--primary-text-color);
 }
-
-.product-price {
-  font-family: 'Calistoga', sans-serif;
+.content-news {
+}
+.content-date {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
   color: rgba(29, 78, 26, 0.7);
+}
+
+.content-title {
+  font-family: 'Calistoga', sans-serif;
+  font-size: 32px;
+  line-height: 1.24;
+  letter-spacing: 0.01em;
+}
+.content-text {
+  font-size: 16px;
+  line-height: 1.24;
+  letter-spacing: 0.02em;
+}
+.content-suptitle {
+  font-family: 'Calistoga', sans-serif;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+}
+.content-description {
+  font-size: 18px;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+}
+.content-subtitle {
+  font-family: 'Calistoga', sans-serif;
   font-size: 20px;
   line-height: 1.24;
   letter-spacing: 0.01em;
 }
-.product-description {
-  font-size: 16px;
-  line-height: 1.24;
-  letter-spacing: 0.02em;
-}
-.product-variants {
-  font-family: 'Calistoga', sans-serif;
-  color: rgba(29, 78, 26, 0.7);
-  font-size: 16px;
-  line-height: 1.32;
-  letter-spacing: 0.02em;
-}
-.product-list {
+.content-list {
   display: flex;
   gap: 6px;
 }
 
-.product-item {
-  border-radius: 6px;
-  background-color: rgba(29, 78, 26, 0.03);
+.content-item {
 }
-.product-text {
+.content-hash {
   font-size: 14px;
   line-height: 1.28;
-  letter-spacing: 0.02em;
-  color: rgba(29, 78, 26, 0.7);
+  letter-spacing: 0.03em;
 }
-
-.price-variant {
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: 0.02em;
+/*-------------News styles-------------*/
+.news {
+  background-color: rgba(252, 243, 217, 0.12);
 }
-.product-attention {
+.news-title {
   font-family: 'Calistoga', sans-serif;
-  color: rgba(29, 78, 26, 0.7);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.32;
-  letter-spacing: 0.02em;
-}
-
-/*-------------------Popular styles------------------*/
-.popular {
-  background-color: var(--white-bg-color);
-}
-.popular-title {
-  font-family: 'Calistoga', sans-serif;
-  font-size: 32px;
+  font-size: 64px;
   line-height: 1.16;
-  letter-spacing: 0.01em;
 }
-.popular-link {
+
+.news-link {
   display: inline-block;
   padding: 16px 10px 16px 12px;
   text-align: center;
   width: 117px;
   height: 42px;
   border-radius: 26px;
-
   color: var(--primary-link-color);
   border: 1px solid var(--primary-bg-color);
   background-color: var(--primary-bg-color);
 }
-
-.popular-list {
+.news-link:hover,
+.news-link:focus {
+  color: black;
+  background-color: red;
+}
+.news-list {
   display: flex;
   gap: 24px;
 }
-
-.popular-item {
+.news-item {
+  width: 384px;
+  height: 372px;
+}
+.news-img {
   border-radius: 24px;
 }
-.popular-suptext {
+.news-text {
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.03em;
-  width: 40px;
-  height: 24px;
-  border: 1px solid rgba(29, 78, 26, 0.12);
-  border-radius: 12px;
-  background-color: var(--secondary-bg-color);
-}
-.popular-card {
-  color: var(--primary-text-color);
-}
-.popular-img {
-}
-.popular-name {
-  font-family: 'Calistoga', sans-serif;
-  font-size: 20px;
-  line-height: 1.24;
-  letter-spacing: 0.01em;
-}
-
-.popular-price {
-  font-family: 'Calistoga', sans-serif;
-  font-size: 20px;
-  line-height: 1.24;
-  letter-spacing: 0.01em;
   color: rgba(29, 78, 26, 0.7);
+}
+.news-subtitle {
+  font-family: 'Calistoga', sans-serif;
+  font-size: 20px;
+  line-height: 1.24;
+  letter-spacing: 0.01em;
 }
 /*-------------------Ticker styles-------------------*/
 .ticker {
@@ -204,46 +189,6 @@ body {
   font-size: 18px;
   line-height: 1.28;
   letter-spacing: 0.02em;
-}
-/*------------Banner styles------------*/
-.banner {
-  background-color: rgba(29, 78, 26, 0.03);
-}
-.banner-img {
-}
-.banner-subtitle {
-  font-family: 'Calistoga', sans-serif;
-  font-size: 32px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-}
-.banner-text {
-  font-size: 18px;
-  line-height: 1.28;
-  letter-spacing: 0.02em;
-}
-.banner-list {
-  display: flex;
-}
-
-.banner-item {
-  background-color: var(--primary-bg-color);
-  border-radius: 12px;
-}
-.banner-item:first-child {
-  width: 137px;
-  height: 72px;
-}
-.banner-item:nth-child(n + 2) {
-  width: 72px;
-  height: 72px;
-}
-.banner-link {
-}
-.banner-link:hover,
-.banner-link:focus {
-  color: black;
-  background-color: red;
 }
 /*-------------------Footer styles-------------------*/
 .footer {
