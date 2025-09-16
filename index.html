@@ -11,7 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Calistoga&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
     <header class="header">
@@ -22,47 +29,64 @@
         title="Close notification"
         aria-label="Close notification"
       >
-        <img src="./images/home-page/hero-images/close-btn.svg" alt="" />
+        <img src="./images/home-page/hero-images/close-btn.svg" alt="" width="8" height="8" />
       </button>
-      <nav>
-        <ul class="header-list list">
-          <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
-          <li class="header-item">
-            <a class="header-link link" href="./locations.html">Locations</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="./about.html">About Us</a>
-          </li>
-          <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
-        </ul>
-        <a class="header-logo link" href="./index.html"
-          ><img src="./images/home-page/hero-images/logo.svg" alt="Company logo"
-        /></a>
-      </nav>
+      <div class="container">
+        <nav class="header-nav">
+          <ul class="header-list list">
+            <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
+
+            <li class="header-item">
+              <a class="header-link link" href="./locations.html">Locations</a>
+            </li>
+
+            <li class="header-item">
+              <a class="header-logo link" href="./index.html"
+                ><img
+                  class="header-logo"
+                  src="./images/home-page/hero-images/logo.svg"
+                  alt="Company logo"
+                  width="24"
+                  height="26"
+              /></a>
+            </li>
+
+            <li class="header-item">
+              <a class="header-link link" href="./about.html">About Us</a>
+            </li>
+
+            <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <!-- Hero section -->
       <section class="hero">
-        <p class="hero-text">Because great coffee is the start of something even greater.</p>
-        <h1 class="hero-title">Life Begins <br />After Coffee</h1>
-        <img
-          class="hero-img"
-          src="./images/home-page/hero-images/Images-png.png"
-          alt="A cup of coffee"
-          width="1440"
-          height="520"
-        />
-        <ul class="hero-list list">
-          <li class="hero-item">
-            <a class="hero-link link primary" href="./menu.html">Explore Menu</a>
-          </li>
-          <li class="hero-item">
-            <a class="hero-link link secondary" href="./locations.html">Our Locations</a>
-          </li>
-        </ul>
+        <div class="container">
+          <p class="hero-text">Because great coffee is the start of something even greater.</p>
+          <h1 class="hero-title">Life Begins <br />After Coffee</h1>
+
+          <ul class="hero-list list">
+            <li class="hero-item">
+              <a class="hero-link link" href="./menu.html">Explore Menu</a>
+            </li>
+            <li class="hero-item">
+              <a class="hero-link link" href="./locations.html">Our Locations</a>
+            </li>
+          </ul>
+          <img
+            class="hero-img"
+            src="./images/home-page/hero-images/Images-png.png"
+            alt="A cup of coffee"
+            width="1200"
+            height="520"
+          />
+        </div>
       </section>
       <!-- Ticker section -->
       <section class="ticker">
+        <!-- <div class="container"> -->
         <h2 class="visually-hidden">Our advantages</h2>
         <ul class="ticker-list list">
           <li class="ticker-item">
@@ -146,510 +170,537 @@
             />
           </li>
         </ul>
+        <!-- </div> -->
       </section>
       <!-- Categories section -->
       <section class="category">
-        <h2 class="category-title">Find and Get <br />What You Love</h2>
-        <ul class="category-list list">
-          <li class="category-item">
-            <img
-              class="category-img"
-              src=".//images/home-page/category-images/coffee-png.png"
-              alt="The cup of coffee"
-              width="288 px"
-              height="288 px"
-            />
-            <h3 class="category-subtitle">Coffee</h3>
-          </li>
-          <li class="category-item">
-            <img
-              class="category-img"
-              src=".//images/home-page/category-images/cold-drink.png"
-              alt="Cold drinks"
-              width="288 px"
-              height="288 px"
-            />
-            <h3 class="category-subtitle">Cold Drinks</h3>
-          </li>
-          <li class="category-item">
-            <img
-              class="category-img"
-              src=".//images/home-page/category-images/bakery1.png"
-              alt="Bakery"
-              width="288 px"
-              height="288 px"
-            />
-            <h3 class="category-subtitle">Bakery</h3>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="category-title">Find and Get <br />What You Love</h2>
+          <ul class="category-list list">
+            <li class="category-item">
+              <img
+                class="category-img"
+                src=".//images/home-page/category-images/coffee-png.png"
+                alt="The cup of coffee"
+                width="288 px"
+                height="288 px"
+              />
+              <h3 class="category-subtitle">Coffee</h3>
+            </li>
+            <li class="category-item">
+              <img
+                class="category-img"
+                src=".//images/home-page/category-images/cold-drink.png"
+                alt="Cold drinks"
+                width="288 px"
+                height="288 px"
+              />
+              <h3 class="category-subtitle">Cold Drinks</h3>
+            </li>
+            <li class="category-item">
+              <img
+                class="category-img"
+                src=".//images/home-page/category-images/bakery1.png"
+                alt="Bakery"
+                width="288 px"
+                height="288 px"
+              />
+              <h3 class="category-subtitle">Bakery</h3>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Popular section   -->
       <section class="popular">
-        <h2 class="popular-title">Loved by Locals</h2>
-        <p class="popular-text">Local go-to's everyone loves — handpicked and always fresh.</p>
-        <ul class="popular-list list">
-          <li class="popular-item">
-            <img
-              class="popular-img"
-              src="./images/home-page/popular-images/cold-brew.jpg"
-              alt="The cup of Cold Brew"
-              width="282"
-              height="282"
-            />
-            <h3 class="popular-subtitle">Cold Brew <span class="popular-price">&#36;6.75</span></h3>
-          </li>
-          <li class="popular-item">
-            <img
-              class="popular-img"
-              src="./images/home-page/popular-images/iced-latte.jpg"
-              alt="The cup of iced-latte"
-              width="282"
-              height="282"
-            />
-            <h3 class="popular-subtitle">
-              Iced Latte <span class="popular-price">&#36;4.45</span>
-            </h3>
-          </li>
-          <li class="popular-item">
-            <img
-              class="popular-img"
-              src="./images/home-page/popular-images/macarons.jpg"
-              alt="The macaroons "
-              width="282"
-              height="282"
-            />
-            <h3 class="popular-subtitle">Macarons <span class="popular-price">&#36;2.60</span></h3>
-          </li>
-          <li class="popular-item">
-            <img
-              class="popular-img"
-              src="./images/home-page/popular-images/cappuccino.jpg"
-              alt="The cup of cappuccino "
-              width="282"
-              height="282"
-            />
-            <h3 class="popular-subtitle">
-              Cappuccino <span class="popular-price">&#36;5.25</span>
-            </h3>
-          </li>
-        </ul>
-        <a class="popular-link link" href="./menu.html">Explore Menu</a>
+        <div class="container">
+          <h2 class="popular-title">Loved by Locals</h2>
+          <p class="popular-text">Local go-to's everyone loves — handpicked and always fresh.</p>
+          <ul class="popular-list list">
+            <li class="popular-item">
+              <img
+                class="popular-img"
+                src="./images/home-page/popular-images/cold-brew.jpg"
+                alt="The cup of Cold Brew"
+                width="282"
+                height="282"
+              />
+              <h3 class="popular-subtitle">
+                Cold Brew <span class="popular-price">&#36;6.75</span>
+              </h3>
+            </li>
+            <li class="popular-item">
+              <img
+                class="popular-img"
+                src="./images/home-page/popular-images/iced-latte.jpg"
+                alt="The cup of iced-latte"
+                width="282"
+                height="282"
+              />
+              <h3 class="popular-subtitle">
+                Iced Latte <span class="popular-price">&#36;4.45</span>
+              </h3>
+            </li>
+            <li class="popular-item">
+              <img
+                class="popular-img"
+                src="./images/home-page/popular-images/macarons.jpg"
+                alt="The macaroons "
+                width="282"
+                height="282"
+              />
+              <h3 class="popular-subtitle">
+                Macarons <span class="popular-price">&#36;2.60</span>
+              </h3>
+            </li>
+            <li class="popular-item">
+              <img
+                class="popular-img"
+                src="./images/home-page/popular-images/cappuccino.jpg"
+                alt="The cup of cappuccino "
+                width="282"
+                height="282"
+              />
+              <h3 class="popular-subtitle">
+                Cappuccino <span class="popular-price">&#36;5.25</span>
+              </h3>
+            </li>
+          </ul>
+          <a class="popular-link link" href="./menu.html">Explore Menu</a>
+        </div>
       </section>
+
       <!--About section -->
       <section class="about">
-        <h2 class="about-title">Good Vibes. Great Coffee.</h2>
-        <p class="about-text">
-          At Brewhaus, we serve great coffee and fresh pastries with care and passion, creating a
-          warm, cozy space that feels like home.
-        </p>
-        <ul class="about-list list">
-          <li class="about-item">
-            <img
-              class="about-img"
-              src="./images/home-page/about-images/sweat-waterdrop.svg"
-              alt=""
-            />
-            <h3 class="about-subtitle">Great Coffee, Tasty Sips</h3>
-          </li>
-          <li class="about-item">
-            <img class="about-img" src="./images/home-page/about-images/heart.svg" alt="" />
-            <h3 class="about-subtitle">Warm, Cozy Atmosphere</h3>
-          </li>
-          <li class="about-item">
-            <img class="about-img" src="./images/home-page/about-images/smile.svg" alt="" />
-            <h3 class="about-subtitle">Speedy Service with a Smile</h3>
-          </li>
-          <li class="about-item">
-            <img class="about-img" src="./images/home-page/about-images/home.svg" alt="" />
-            <h3 class="about-subtitle">Local & Sustainable</h3>
-          </li>
-        </ul>
-        <ul class="about-images list">
-          <li class="about-image-item">
-            <img
-              class="about-poster"
-              src="./images/home-page/about-images/barista.jpg"
-              alt="Barista"
-            />
-          </li>
-          <li class="about-image-item">
-            <img class="about-poster" src="./images/home-page/about-images/holl.jpg" alt="Holl" />
-          </li>
-          <li class="about-image-item">
-            <img class="about-poster" src="./images/home-page/about-images/cup.jpg" alt="Cup" />
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="about-title">Good Vibes. Great Coffee.</h2>
+          <p class="about-text">
+            At Brewhaus, we serve great coffee and fresh pastries with care and passion, creating a
+            warm, cozy space that feels like home.
+          </p>
+          <ul class="about-list list">
+            <li class="about-item">
+              <img
+                class="about-img"
+                src="./images/home-page/about-images/sweat-waterdrop.svg"
+                alt=""
+              />
+              <h3 class="about-subtitle">Great Coffee, Tasty Sips</h3>
+            </li>
+            <li class="about-item">
+              <img class="about-img" src="./images/home-page/about-images/heart.svg" alt="" />
+              <h3 class="about-subtitle">Warm, Cozy Atmosphere</h3>
+            </li>
+            <li class="about-item">
+              <img class="about-img" src="./images/home-page/about-images/smile.svg" alt="" />
+              <h3 class="about-subtitle">Speedy Service with a Smile</h3>
+            </li>
+            <li class="about-item">
+              <img class="about-img" src="./images/home-page/about-images/home.svg" alt="" />
+              <h3 class="about-subtitle">Local & Sustainable</h3>
+            </li>
+          </ul>
+          <ul class="about-images list">
+            <li class="about-image-item">
+              <img
+                class="about-poster"
+                src="./images/home-page/about-images/barista.jpg"
+                alt="Barista"
+              />
+            </li>
+            <li class="about-image-item">
+              <img class="about-poster" src="./images/home-page/about-images/holl.jpg" alt="Holl" />
+            </li>
+            <li class="about-image-item">
+              <img class="about-poster" src="./images/home-page/about-images/cup.jpg" alt="Cup" />
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Testimonials section -->
       <section class="testimonials">
-        <h2 class="testimonials-title">What People Love About Us</h2>
-        <ul class="testimonials-list list">
-          <li class="testimonials-item">
-            <img
-              class="testimonials-img"
-              src="./images/home-page/testimonials-images/vector.svg"
-              alt=""
-            />
-            <blockquote class="testimonials-subtitle">
-              Brewhaus has spoiled other coffee shops for me - in the best way. Great espresso,
-              fresh pastries, and a team that makes you feel like a regular from day one.
-            </blockquote>
-            <p class="testimonials-text">Patrick M. - Espresso lover</p>
-          </li>
-          <li class="testimonials-item">
-            <img
-              class="testimonials-img"
-              src="./images/home-page/testimonials-images/espresso.jpg"
-              alt="The cup of espresso"
-              width="384"
-              height="386"
-            />
-          </li>
-          <li class="testimonials-item">
-            <img
-              class="testimonials-img"
-              src="./images/home-page/testimonials-images/vector.svg"
-              alt=""
-            />
-            <blockquote class="testimonials-subtitle">
-              Always a warm, welcoming vibe — perfect for a quick coffee or a quiet read. The banana
-              bread? Totally addictive.
-            </blockquote>
-            <p class="testimonials-text">Jordan T. - Iced latte addict</p>
-          </li>
-          <li class="testimonials-item">
-            <img
-              class="testimonials-img"
-              src="./images/home-page/testimonials-images/iced-latte.jpg"
-              alt="The glass of iced latte"
-              width="384"
-              height="386"
-            />
-          </li>
-          <li class="testimonials-item">
-            <img
-              class="testimonials-img"
-              src="./images/home-page/testimonials-images/vector.svg"
-              alt=""
-            />
-            <blockquote class="testimonials-subtitle">
-              I stop by every morning before work, and it's the best part of my day. The iced latte
-              is my go-to, but I've honestly never had a bad drink here. Everything tastes
-              handcrafted and full of care.
-            </blockquote>
-            <p class="testimonials-text">Sofia R. - Coffee fan</p>
-          </li>
-          <li class="testimonials-item">
-            <img
-              class="testimonials-img"
-              src="./images/home-page/testimonials-images/coffee.jpg"
-              alt="The glass of coffee"
-              width="384"
-              height="386"
-            />
-          </li>
-        </ul>
-        <a class="testimonials-link link" href="#locations">Our Locations</a>
+        <div class="container">
+          <h2 class="testimonials-title">What People Love About Us</h2>
+          <ul class="testimonials-list list">
+            <li class="testimonials-item">
+              <img
+                class="testimonials-img"
+                src="./images/home-page/testimonials-images/vector.svg"
+                alt=""
+              />
+              <blockquote class="testimonials-subtitle">
+                Brewhaus has spoiled other coffee shops for me - in the best way. Great espresso,
+                fresh pastries, and a team that makes you feel like a regular from day one.
+              </blockquote>
+              <p class="testimonials-text">Patrick M. - Espresso lover</p>
+            </li>
+            <li class="testimonials-item">
+              <img
+                class="testimonials-img"
+                src="./images/home-page/testimonials-images/espresso.jpg"
+                alt="The cup of espresso"
+                width="384"
+                height="386"
+              />
+            </li>
+            <li class="testimonials-item">
+              <img
+                class="testimonials-img"
+                src="./images/home-page/testimonials-images/vector.svg"
+                alt=""
+              />
+              <blockquote class="testimonials-subtitle">
+                Always a warm, welcoming vibe — perfect for a quick coffee or a quiet read. The
+                banana bread? Totally addictive.
+              </blockquote>
+              <p class="testimonials-text">Jordan T. - Iced latte addict</p>
+            </li>
+            <li class="testimonials-item">
+              <img
+                class="testimonials-img"
+                src="./images/home-page/testimonials-images/iced-latte.jpg"
+                alt="The glass of iced latte"
+                width="384"
+                height="386"
+              />
+            </li>
+            <li class="testimonials-item">
+              <img
+                class="testimonials-img"
+                src="./images/home-page/testimonials-images/vector.svg"
+                alt=""
+              />
+              <blockquote class="testimonials-subtitle">
+                I stop by every morning before work, and it's the best part of my day. The iced
+                latte is my go-to, but I've honestly never had a bad drink here. Everything tastes
+                handcrafted and full of care.
+              </blockquote>
+              <p class="testimonials-text">Sofia R. - Coffee fan</p>
+            </li>
+            <li class="testimonials-item">
+              <img
+                class="testimonials-img"
+                src="./images/home-page/testimonials-images/coffee.jpg"
+                alt="The glass of coffee"
+                width="384"
+                height="386"
+              />
+            </li>
+          </ul>
+          <a class="testimonials-link link" href="#locations">Our Locations</a>
+        </div>
       </section>
+
       <!--Location section -->
 
       <section class="location">
-        <h2 class="location-title">Nearby Cafés</h2>
-        <p class="location-text">Find a Brewhaus nearby and stop in for your favorite drink.</p>
-        <img
-          class="location-img"
-          src="./images/home-page/location-images/map.jpg"
-          alt="Our location on the map"
-          width="588"
-          height="444"
-        />
-        <ul class="location-list list" id="locations">
-          <li class="location-item">
-            <p class="location-text">Brooklyn</p>
-            <address class="location-address">
-              123 Bedford Ave,<br />
-              Brooklyn, NY 11211
-            </address>
-            <p class="location-text">Open daily: 7AM - 7PM</p>
-            <a class="location-link link" href="#">Get Directions</a>
-          </li>
-          <li class="location-item">
-            <p class="location-text">Manhattan</p>
-            <address class="location-address">
-              456 Spring St,<br />
-              New York, NY 10012
-            </address>
-            <p class="location-text">Open daily: 7AM - 8PM</p>
-            <a class="location-link link" href="#">Get Directions</a>
-          </li>
-          <li class="location-item">
-            <p class="location-text">Queens</p>
-            <address class="location-address">789 Broadway, <br />Queens, NY 11106</address>
-            <p class="location-text">Open daily: 7AM - 6PM</p>
-            <a class="location-link link" href="#">Get Directions</a>
-          </li>
-          <li class="location-item">
-            <p class="location-text">Queens</p>
-            <address class="location-address">
-              134-16 36th Road,<br />
-              Flushing, NY 11354
-            </address>
-            <p class="location-text">Open daily: 8AM - 6PM</p>
-            <a class="location-link link" href="#">Get Directions</a>
-          </li>
-        </ul>
-        <h3 class="location-subtitle">Need Help?</h3>
-        <ul class="help-list list">
-          <li class="help-item">
-            <p class="help-text">General Inquiries</p>
-            <a class="help-link link" href="tel:+12125550198">+1 (212) 555-0198</a>
-          </li>
-          <li class="help-item">
-            <p class="help-text">Customer Support</p>
-            <a class="help-link link" href="tel:+17185550243">+1 (718) 555-0243</a>
-          </li>
-          <li class="help-item">
-            <p class="help-text">General Email</p>
-            <a class="help-link link" href="mailto:hello@bhaus.com">hello@bhaus.com</a>
-          </li>
-          <li class="help-item">
-            <p class="help-text">Support Email</p>
-            <a class="help-link link" href="mailto:support@bhaus.com">support@bhaus.com</a>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="location-title">Nearby Cafés</h2>
+          <p class="location-text">Find a Brewhaus nearby and stop in for your favorite drink.</p>
+          <img
+            class="location-img"
+            src="./images/home-page/location-images/map.jpg"
+            alt="Our location on the map"
+            width="588"
+            height="444"
+          />
+          <ul class="location-list list" id="locations">
+            <li class="location-item">
+              <p class="location-text">Brooklyn</p>
+              <address class="location-address">
+                123 Bedford Ave,<br />
+                Brooklyn, NY 11211
+              </address>
+              <p class="location-text">Open daily: 7AM - 7PM</p>
+              <a class="location-link link" href="#">Get Directions</a>
+            </li>
+            <li class="location-item">
+              <p class="location-text">Manhattan</p>
+              <address class="location-address">
+                456 Spring St,<br />
+                New York, NY 10012
+              </address>
+              <p class="location-text">Open daily: 7AM - 8PM</p>
+              <a class="location-link link" href="#">Get Directions</a>
+            </li>
+            <li class="location-item">
+              <p class="location-text">Queens</p>
+              <address class="location-address">789 Broadway, <br />Queens, NY 11106</address>
+              <p class="location-text">Open daily: 7AM - 6PM</p>
+              <a class="location-link link" href="#">Get Directions</a>
+            </li>
+            <li class="location-item">
+              <p class="location-text">Queens</p>
+              <address class="location-address">
+                134-16 36th Road,<br />
+                Flushing, NY 11354
+              </address>
+              <p class="location-text">Open daily: 8AM - 6PM</p>
+              <a class="location-link link" href="#">Get Directions</a>
+            </li>
+          </ul>
+          <h3 class="location-subtitle">Need Help?</h3>
+          <ul class="help-list list">
+            <li class="help-item">
+              <p class="help-text">General Inquiries</p>
+              <a class="help-link link" href="tel:+12125550198">+1 (212) 555-0198</a>
+            </li>
+            <li class="help-item">
+              <p class="help-text">Customer Support</p>
+              <a class="help-link link" href="tel:+17185550243">+1 (718) 555-0243</a>
+            </li>
+            <li class="help-item">
+              <p class="help-text">General Email</p>
+              <a class="help-link link" href="mailto:hello@bhaus.com">hello@bhaus.com</a>
+            </li>
+            <li class="help-item">
+              <p class="help-text">Support Email</p>
+              <a class="help-link link" href="mailto:support@bhaus.com">support@bhaus.com</a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--News section -->
       <section class="news">
-        <h2 class="news-title">What's New at Our Coffee Shop</h2>
-        <a class="news-link link" href="">View All</a>
-        <ul class="news-list list">
-          <li class="news-item">
-            <img
-              class="news-img"
-              src="./images/home-page/blog-images/three-women.jpg"
-              alt="Three women are drinking coffe"
-              width="384"
-              height="280"
-            />
-            <p class="news-text">Apr 10, 2025</p>
-            <h3 class="news-subtitle">
-              Celebrate the Season with Our New Spring Drink Specials Today
-            </h3>
-          </li>
-          <li class="news-item">
-            <img
-              class="news-img"
-              src="./images/home-page/blog-images/barista.jpg"
-              alt="A barista preparing coffee"
-              width="384"
-              height="280"
-            />
-            <p class="news-text">Apr 2, 2025</p>
-            <h3 class="news-subtitle">Our New Brewhaus Flushing Location Is Now Officially Open</h3>
-          </li>
-          <li class="news-item">
-            <img
-              class="news-img"
-              src="./images/home-page/blog-images/gaiser.jpg"
-              alt="A coffee gaiser"
-              width="384"
-              height="280"
-            />
-            <p class="news-text">Mar 23, 2025</p>
-            <h3 class="news-subtitle">
-              Introducing Our Exciting New Loyalty Program for Coffee Lovers
-            </h3>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="news-title">What's New at Our Coffee Shop</h2>
+          <a class="news-link link" href="">View All</a>
+          <ul class="news-list list">
+            <li class="news-item">
+              <img
+                class="news-img"
+                src="./images/home-page/blog-images/three-women.jpg"
+                alt="Three women are drinking coffe"
+                width="384"
+                height="280"
+              />
+              <p class="news-text">Apr 10, 2025</p>
+              <h3 class="news-subtitle">
+                Celebrate the Season with Our New Spring Drink Specials Today
+              </h3>
+            </li>
+            <li class="news-item">
+              <img
+                class="news-img"
+                src="./images/home-page/blog-images/barista.jpg"
+                alt="A barista preparing coffee"
+                width="384"
+                height="280"
+              />
+              <p class="news-text">Apr 2, 2025</p>
+              <h3 class="news-subtitle">
+                Our New Brewhaus Flushing Location Is Now Officially Open
+              </h3>
+            </li>
+            <li class="news-item">
+              <img
+                class="news-img"
+                src="./images/home-page/blog-images/gaiser.jpg"
+                alt="A coffee gaiser"
+                width="384"
+                height="280"
+              />
+              <p class="news-text">Mar 23, 2025</p>
+              <h3 class="news-subtitle">
+                Introducing Our Exciting New Loyalty Program for Coffee Lovers
+              </h3>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Banner section -->
       <section class="banner">
-        <h2 class="visually-hidden">Online Ordering</h2>
-        <img class="banner-img" src="./images/home-page/banner-images/hands.svg" alt="hands" />
-        <h3 class="banner-subtitle">Order Online</h3>
-        <p class="banner-text">Get your favorites delivered fast.</p>
-        <ul class="banner-list list">
-          <li class="banner-item">
-            <a class="banner-link link" href="#" title="Order with Uber Eats">
-              <img src="./images/home-page/banner-images/uber.svg" alt="Uber Eats" />
-              <img src="./images/home-page/banner-images/eats.svg" alt="Eats" />
-            </a>
-          </li>
-          <li class="banner-item">
-            <a class="banner-link link" href="" title="Home">
-              <img src="./images/home-page/banner-images/home.svg" alt="Home" />
-            </a>
-          </li>
-          <li class="banner-item">
-            <a class="banner-link link" href="" title="More options">
-              <img src="./images/home-page/banner-images/vector.svg" alt="" />
-            </a>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="visually-hidden">Online Ordering</h2>
+          <img class="banner-img" src="./images/home-page/banner-images/hands.svg" alt="hands" />
+          <h3 class="banner-subtitle">Order Online</h3>
+          <p class="banner-text">Get your favorites delivered fast.</p>
+          <ul class="banner-list list">
+            <li class="banner-item">
+              <a class="banner-link link" href="#" title="Order with Uber Eats">
+                <img src="./images/home-page/banner-images/uber.svg" alt="Uber Eats" />
+                <img src="./images/home-page/banner-images/eats.svg" alt="Eats" />
+              </a>
+            </li>
+            <li class="banner-item">
+              <a class="banner-link link" href="" title="Home">
+                <img src="./images/home-page/banner-images/home.svg" alt="Home" />
+              </a>
+            </li>
+            <li class="banner-item">
+              <a class="banner-link link" href="" title="More options">
+                <img src="./images/home-page/banner-images/vector.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Ticker section -->
       <section class="ticker">
-        <h2 class="visually-hidden">Our advantages</h2>
-        <ul class="ticker-list list">
-          <li class="ticker-item">
-            <p class="ticker-text">Great Coffee</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/smiley.svg"
-              alt="Great Coffee"
-            />
-          </li>
-          <li class="ticker-item">
-            <p class="ticker-text">Fast Service</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/bolt.svg"
-              alt="Fast Service"
-            />
-          </li>
-          <li class="ticker-item">
-            <p class="ticker-text">Cozy Space</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/instagram.svg"
-              alt="Cozy Space"
-            />
-          </li>
-          <li class="ticker-item">
-            <p class="ticker-text">Handcrafted Drinks</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/sweat-waterdrop.svg"
-              alt="Handcrafted Drinks"
-            />
-          </li>
-          <li class="ticker-item">
-            <p class="ticker-text">Local Roasts</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/smiley-love.svg"
-              alt="Local Roasts"
-            />
-          </li>
-          <li class="ticker-item">
-            <p class="ticker-text">Global Flavor</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/element.svg"
-              alt="Global Flavor"
-            />
-          </li>
-          <li class="ticker-item">
-            <p class="ticker-text">Friendly Baristas</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/crown.svg"
-              alt="Friendly Baristas"
-            />
-          </li>
-          <li class="ticker-item">
-            <p class="ticker-text">Great Coffee</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/smiley.svg"
-              alt="Great Coffee"
-            />
-          </li>
-          <li class="ticker-item">
-            <p class="ticker-text">Fast Service</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/bolt.svg"
-              alt="Fast Service"
-            />
-          </li>
-          <li class="ticker-item">
-            <p class="ticker-text">Cozy Space</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/instagram.svg"
-              alt="Cozy Space"
-            />
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="visually-hidden">Our advantages</h2>
+          <ul class="ticker-list list">
+            <li class="ticker-item">
+              <p class="ticker-text">Great Coffee</p>
+              <img
+                class="ticker-icon"
+                src="./images/home-page/ticker-images/smiley.svg"
+                alt="Great Coffee"
+              />
+            </li>
+            <li class="ticker-item">
+              <p class="ticker-text">Fast Service</p>
+              <img
+                class="ticker-icon"
+                src="./images/home-page/ticker-images/bolt.svg"
+                alt="Fast Service"
+              />
+            </li>
+            <li class="ticker-item">
+              <p class="ticker-text">Cozy Space</p>
+              <img
+                class="ticker-icon"
+                src="./images/home-page/ticker-images/instagram.svg"
+                alt="Cozy Space"
+              />
+            </li>
+            <li class="ticker-item">
+              <p class="ticker-text">Handcrafted Drinks</p>
+              <img
+                class="ticker-icon"
+                src="./images/home-page/ticker-images/sweat-waterdrop.svg"
+                alt="Handcrafted Drinks"
+              />
+            </li>
+            <li class="ticker-item">
+              <p class="ticker-text">Local Roasts</p>
+              <img
+                class="ticker-icon"
+                src="./images/home-page/ticker-images/smiley-love.svg"
+                alt="Local Roasts"
+              />
+            </li>
+            <li class="ticker-item">
+              <p class="ticker-text">Global Flavor</p>
+              <img
+                class="ticker-icon"
+                src="./images/home-page/ticker-images/element.svg"
+                alt="Global Flavor"
+              />
+            </li>
+            <li class="ticker-item">
+              <p class="ticker-text">Friendly Baristas</p>
+              <img
+                class="ticker-icon"
+                src="./images/home-page/ticker-images/crown.svg"
+                alt="Friendly Baristas"
+              />
+            </li>
+            <li class="ticker-item">
+              <p class="ticker-text">Great Coffee</p>
+              <img
+                class="ticker-icon"
+                src="./images/home-page/ticker-images/smiley.svg"
+                alt="Great Coffee"
+              />
+            </li>
+            <li class="ticker-item">
+              <p class="ticker-text">Fast Service</p>
+              <img
+                class="ticker-icon"
+                src="./images/home-page/ticker-images/bolt.svg"
+                alt="Fast Service"
+              />
+            </li>
+            <li class="ticker-item">
+              <p class="ticker-text">Cozy Space</p>
+              <img
+                class="ticker-icon"
+                src="./images/home-page/ticker-images/instagram.svg"
+                alt="Cozy Space"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <img
-        class="footer-logo"
-        src="./images/home-page/footer-images/logo.svg"
-        alt="Coffee Shop Logo"
-      />
-      <h2 class="footer-title">
-        Life Begins <br />
-        After Coffee
-      </h2>
-      <address class="footer-contact">
-        <a class="footer-link link" href="tel:+12125550198">
-          <img src="./images/home-page/footer-images/phone.svg" alt="" />+1 (212) 555-0198</a
-        >
-        <a class="footer-link link" href="mailto:hello@bhaus.com">
-          <img src="./images/home-page/footer-images/mail.svg" alt="" />hello@bhaus.com</a
-        >
-      </address>
-      <p class="footer-text">Main</p>
-      <ul class="footer-list list">
-        <li class="footer-item"><a class="footer-link link" href="./menu.html">Menu</a></li>
-        <li class="footer-item">
-          <a class="footer-link link" href="./locations.html">Locations</a>
-        </li>
-        <li class="footer-item"><a class="footer-link link" href="./about.html">About us</a></li>
-        <li class="footer-item"><a class="footer-link link" href="./news.html">News</a></li>
-      </ul>
-      <p class="footer-text">Categories</p>
-      <ul class="footer-list">
-        <li class="footer-item">
-          <a class="footer-link link" href="./menu.html#coffee">Coffee</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link link" href="./menu.html#cold-drinks">Cold Drinks</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link link" href="./menu.html#bakery">Bakery</a>
-        </li>
-      </ul>
-      <p class="footer-text">Follow Us</p>
-      <ul class="footer-list list">
-        <li class="footer-item">
-          <a class="footer-social link" href="" aria-label="Instagram"
-            ><img
-              class="footer-icon"
-              src="./images/home-page/footer-images/instagram.svg"
-              alt="Instagram"
-          /></a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-social link" href="" aria-label="Facebook"
-            ><img
-              class="footer-icon"
-              src="./images/home-page/footer-images/facebook.svg"
-              alt="Facebook"
-          /></a>
-        </li>
+      <div class="container">
+        <img
+          class="footer-logo"
+          src="./images/home-page/footer-images/logo.svg"
+          alt="Coffee Shop Logo"
+        />
+        <h2 class="footer-title">
+          Life Begins <br />
+          After Coffee
+        </h2>
+        <address class="footer-contact">
+          <a class="footer-link link" href="tel:+12125550198">
+            <img src="./images/home-page/footer-images/phone.svg" alt="" />+1 (212) 555-0198</a
+          >
+          <a class="footer-link link" href="mailto:hello@bhaus.com">
+            <img src="./images/home-page/footer-images/mail.svg" alt="" />hello@bhaus.com</a
+          >
+        </address>
+        <p class="footer-text">Main</p>
+        <ul class="footer-list list">
+          <li class="footer-item"><a class="footer-link link" href="./menu.html">Menu</a></li>
+          <li class="footer-item">
+            <a class="footer-link link" href="./locations.html">Locations</a>
+          </li>
+          <li class="footer-item"><a class="footer-link link" href="./about.html">About us</a></li>
+          <li class="footer-item"><a class="footer-link link" href="./news.html">News</a></li>
+        </ul>
+        <p class="footer-text">Categories</p>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a class="footer-link link" href="./menu.html#coffee">Coffee</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link link" href="./menu.html#cold-drinks">Cold Drinks</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link link" href="./menu.html#bakery">Bakery</a>
+          </li>
+        </ul>
+        <p class="footer-text">Follow Us</p>
+        <ul class="footer-list list">
+          <li class="footer-item">
+            <a class="footer-social link" href="" aria-label="Instagram"
+              ><img
+                class="footer-icon"
+                src="./images/home-page/footer-images/instagram.svg"
+                alt="Instagram"
+            /></a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-social link" href="" aria-label="Facebook"
+              ><img
+                class="footer-icon"
+                src="./images/home-page/footer-images/facebook.svg"
+                alt="Facebook"
+            /></a>
+          </li>
 
-        <li class="footer-item">
-          <a class="footer-social link" href="" aria-label="Twitter"
-            ><img
-              class="footer-icon"
-              src="./images/home-page/footer-images/twitter(X).svg"
-              alt="Twitter"
-          /></a>
-        </li>
-      </ul>
-      <img
-        class="footer-img"
-        src="./images/home-page/footer-images/brewhaus.svg"
-        alt="Brewhouse"
-        width="1200"
-        height="213"
-      />
-      <p class="footer-text">2025 &copy; Brewhaus</p>
-      <a class="footer-text link" href="./licenses.html">Licenses</a>
+          <li class="footer-item">
+            <a class="footer-social link" href="" aria-label="Twitter"
+              ><img
+                class="footer-icon"
+                src="./images/home-page/footer-images/twitter(X).svg"
+                alt="Twitter"
+            /></a>
+          </li>
+        </ul>
+        <img
+          class="footer-img"
+          src="./images/home-page/footer-images/brewhaus.svg"
+          alt="Brewhouse"
+          width="1200"
+          height="213"
+        />
+        <p class="footer-text">2025 &copy; Brewhaus</p>
+        <a class="footer-text link" href="./licenses.html">Licenses</a>
+      </div>
     </footer>
   </body>
 </html>
