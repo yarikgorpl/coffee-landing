@@ -221,26 +221,59 @@ body {
 
 /*--------------Popular products styles--------------*/
 .popular {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  text-align: center;
   background-color: rgba(29, 78, 26, 0.03);
 }
 .popular-title {
   font-family: 'Calistoga', sans-serif;
+  margin-bottom: 12px;
 
   font-size: 64px;
   line-height: 1.16;
 }
 .popular-text {
+  margin-bottom: 64px;
   font-size: 18px;
   line-height: 1.28;
   letter-spacing: 0.02em;
 }
 .popular-list {
+  display: flex;
+  gap: 24px;
 }
-.list {
+.new {
+  position: relative;
+}
+.popular-wraper {
+  padding: 0 8px;
+  display: flex;
+  justify-content: space-between;
 }
 .popular-item {
+  margin-bottom: 64px;
 }
+.popular-suptext {
+  padding: 2px 8px 4px 8px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+  width: 40px;
+  height: 24px;
+  border: 1px solid rgba(29, 78, 26, 0.12);
+  border-radius: 12px;
+  background-color: var(--secondary-bg-color);
+}
+
 .popular-img {
+  margin-bottom: 12px;
+  border-radius: 24px;
+  background-color: var(--primary-bg-color);
 }
 .popular-link {
   display: inline-block;
@@ -256,19 +289,17 @@ body {
 }
 .popular-link:hover,
 .popular-link:focus {
-  color: black;
-  background-color: red;
+  color: var(--primary-bg-color);
+  background-color: var(--secondary-link-color);
 }
 .popular-subtitle {
   font-family: 'Calistoga', sans-serif;
-
   font-size: 20px;
   line-height: 1.24;
   letter-spacing: 0.01em;
 }
 .popular-price {
   font-family: 'Calistoga', sans-serif;
-
   font-size: 20px;
   line-height: 1.24;
   letter-spacing: 0.01em;
@@ -276,16 +307,27 @@ body {
 }
 /*--------------About us styles--------------*/
 .about {
+  padding-top: 160px;
+  padding-bottom: 160px;
   background-color: #fcf3d9;
+}
+.about-wrap {
+  display: flex;
+  gap: 24px;
+}
+.text-wrap {
+  max-width: 588px;
 }
 
 .about-title {
+  margin-bottom: 12px;
   font-family: 'Calistoga', sans-serif;
-
   font-size: 64px;
   line-height: 1.16;
 }
 .about-text {
+  margin-bottom: 80px;
+  max-width: 440px;
   font-size: 18px;
   line-height: 1.28;
   letter-spacing: 0.02em;
@@ -298,46 +340,89 @@ body {
   letter-spacing: 0.01em;
 }
 .about-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about-item {
+  width: 242.5px;
+  padding: 24px 41.25px;
 }
+
 .about-img {
+  margin-bottom: 16px;
+  border-radius: 32px;
   background-color: var(--primary-bg-color);
 }
-.about-poster {
+
+.about-images {
+  display: flex;
+  gap: 24px;
+}
+
+.about-images-item {
   border-radius: 32px;
 }
-.about-image-item {
+
+.column-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
+.about-images-poster {
+  border-radius: 32px;
+}
+
 /*---------------Testimonials styles---------------*/
 .testimonials {
+  padding-top: 160px;
+  padding-bottom: 160px;
   background-color: #fcf3d9;
 }
 .testimonials-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 64px;
   font-family: 'Calistoga', sans-serif;
-
+  max-width: 480px;
   font-size: 64px;
   line-height: 1.16;
 }
 .testimonials-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 64px;
 }
-
 .testimonials-item {
-}
-.testimonials-item:nth-child(odd) {
   width: 384px;
-  height: 230px;
+}
+.subwrap {
+  position: relative;
+  padding: 76px 24px 32px 24px;
   border: 1px solid rgba(29, 78, 26, 0.12);
   background-color: rgba(29, 78, 26, 0.03);
   border-radius: 24px;
 }
+.subwrap:not(:nth-child(2)) {
+  margin-bottom: 24px;
+}
+.subwrap:nth-child(2) {
+  margin-top: 24px;
+}
+
 .testimonials-img {
   border-radius: 24px;
 }
+.testimonials-svg {
+  position: absolute;
+  top: 32px;
+  left: 24px;
+}
 .testimonials-subtitle {
   font-family: 'Calistoga', sans-serif;
-
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.32;
   letter-spacing: 0.02em;
@@ -349,8 +434,9 @@ body {
   color: rgba(29, 78, 26, 0.7);
 }
 .testimonials-link {
-  display: inline-block;
+  display: block;
   padding: 16px 10px 16px 12px;
+  margin: auto;
   text-align: center;
   width: 141px;
   height: 51px;
@@ -363,45 +449,76 @@ body {
 
 .testimonials-link:hover,
 .testimonials-link:focus {
-  color: black;
-  background-color: red;
+  color: var(--primary-bg-color);
+  background-color: var(--secondary-link-color);
 }
 /*-------------Location styles-------------*/
 .location {
+  padding-top: 160px;
+  padding-bottom: 160px;
   background-color: var(--primary-bg-color);
 }
 
 .location-title {
+  margin-bottom: 12px;
+  text-align: center;
   font-family: 'Calistoga', sans-serif;
   color: var(--secondary-text-color);
   font-size: 64px;
   line-height: 1.16;
 }
+
 .location-text {
+  margin-bottom: 64px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.location-city {
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+  color: rgba(29, 78, 26, 0.7);
+}
+.location-time {
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.03em;
   color: rgba(29, 78, 26, 0.7);
 }
 .location-subtitle {
+  margin-bottom: 40px;
+  text-align: center;
   font-family: 'Calistoga', sans-serif;
   color: var(--secondary-text-color);
   font-size: 32px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
+.location-wrap {
+  margin-bottom: 104px;
+  display: flex;
+  gap: 24px;
+}
 .location-img {
 }
 .location-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .location-item {
-  width: 282px;
-  height: 210px;
+  padding: 24px;
   background-color: var(--white-bg-color);
   border-radius: 24px;
 }
 .location-address {
+  margin-bottom: 6px;
   font-family: 'Calistoga', sans-serif;
 
   font-size: 16px;
@@ -410,10 +527,10 @@ body {
 }
 .location-link {
   display: inline-block;
-  padding: 16px 10px 16px 12px;
+  padding: 10px 72px 12px 72px;
   text-align: center;
-  width: 234px;
-  height: 42px;
+  /* width: 234px;
+  height: 42px; */
   border-radius: 26px;
 
   color: var(--primary-link-color);
@@ -422,11 +539,12 @@ body {
 }
 .location-link:hover,
 .location-link:focus {
-  color: black;
-  background-color: red;
+  color: var(--primary-bg-color);
+  background-color: var(--secondary-link-color);
 }
 .help-list {
   display: flex;
+  gap: 24px;
 }
 .help-item {
   border-radius: 20px;
@@ -447,6 +565,7 @@ body {
 }
 
 .help-text {
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.03em;
