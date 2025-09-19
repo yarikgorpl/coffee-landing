@@ -380,6 +380,7 @@ body {
   background-color: #fcf3d9;
 }
 .testimonials-title {
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 64px;
@@ -502,10 +503,9 @@ body {
 .location-wrap {
   margin-bottom: 104px;
   display: flex;
-  gap: 24px;
+  gap: 23px;
 }
-.location-img {
-}
+
 .location-list {
   display: flex;
   flex-wrap: wrap;
@@ -529,8 +529,6 @@ body {
   display: inline-block;
   padding: 10px 72px 12px 72px;
   text-align: center;
-  /* width: 234px;
-  height: 42px; */
   border-radius: 26px;
 
   color: var(--primary-link-color);
@@ -581,21 +579,30 @@ body {
 
 /*-------------News styles-------------*/
 .news {
+  padding-top: 160px;
+  padding-bottom: 160px;
   background-color: var(--secondary-bg-color);
 }
-.news-title {
-  font-family: 'Calistoga', sans-serif;
+.news-wrap {
+  display: flex;
+  margin-bottom: 64px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
 
+.news-title {
+  flex-basis: 480px;
+
+  font-family: 'Calistoga', sans-serif;
   font-size: 64px;
   line-height: 1.16;
 }
 
 .news-link {
   display: inline-block;
-  padding: 16px 10px 16px 12px;
+  padding: 10px 16px 12px 16px;
   text-align: center;
-  width: 117px;
-  height: 42px;
+  min-width: 117px;
   border-radius: 26px;
 
   color: var(--primary-link-color);
@@ -604,11 +611,12 @@ body {
 }
 .news-link:hover,
 .news-link:focus {
-  color: black;
-  background-color: red;
+  color: var(--primary-bg-color);
+  background-color: var(--secondary-link-color);
 }
 .news-list {
   display: flex;
+  gap: 24px;
 }
 .news-item {
   width: 384px;
@@ -616,8 +624,10 @@ body {
 }
 .news-img {
   border-radius: 24px;
+  margin-bottom: 16px;
 }
 .news-text {
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.03em;
@@ -632,50 +642,81 @@ body {
 }
 /*------------Banner styles------------*/
 .banner {
+  padding-top: 160px;
+  padding-bottom: 160px;
+
   background-color: rgba(29, 78, 26, 0.03);
 }
-.banner-img {
+.banner-svg {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 .banner-subtitle {
+  margin-bottom: 8px;
+  text-align: center;
   font-family: 'Calistoga', sans-serif;
-
   font-size: 32px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
 .banner-text {
+  margin-bottom: 40px;
+  text-align: center;
   font-size: 18px;
   line-height: 1.28;
   letter-spacing: 0.02em;
 }
 .banner-list {
   display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
-.banner-item {
+.banner-link-wrap {
+  display: flex;
+  gap: 5px;
+}
+.banner-img {
+  display: inline-block;
+}
+
+.banner-link {
+  display: inline-block;
+  text-align: center;
+  height: 72px;
   background-color: var(--primary-bg-color);
+  padding: 20px;
   border-radius: 12px;
 }
-.banner-item:first-child {
-  width: 137px;
-  height: 72px;
-}
-.banner-item:nth-child(n + 2) {
-  width: 72px;
-  height: 72px;
-}
-.banner-link {
+.banner-link.uber {
+  padding: 28px 24px;
 }
 .banner-link:hover,
 .banner-link:focus {
-  color: black;
-  background-color: red;
+  color: var(--primary-bg-color);
+  background-color: rgba(29, 78, 26, 0.7);
 }
 /*-------------------Footer styles-------------------*/
 .footer {
+  padding-top: 80px;
   background-color: var(--primary-bg-color);
 }
-.footer-logo {
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-adress {
+}
+.footer-nav {
+  display: flex;
+  gap: 24px;
+}
+.footer-nav-main {
+}
+.footer-nav-categories {
+}
+.footer-nav-social {
 }
 .footer-title {
   font-family: 'Calistoga', sans-serif;
@@ -695,17 +736,26 @@ body {
   line-height: 1.32;
   letter-spacing: 0.02em;
 }
+.footer-link:hover,
+footer-link:focus {
+  color: rgb(255, 236, 184, 0.7);
+}
 
 .footer-text {
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.footer-list {
+.footer-list.social {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .footer-item {
+  margin-bottom: 6px;
 }
 .footer-social {
 }

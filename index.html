@@ -491,8 +491,10 @@
       <!--News section -->
       <section class="news">
         <div class="container">
-          <h2 class="news-title">What's New at Our Coffee Shop</h2>
-          <a class="news-link link" href="">View All</a>
+          <div class="news-wrap">
+            <h2 class="news-title">What's New at Our Coffee Shop</h2>
+            <a class="news-link link" href="">View All</a>
+          </div>
           <ul class="news-list list">
             <li class="news-item">
               <img
@@ -540,24 +542,46 @@
       <section class="banner">
         <div class="container">
           <h2 class="visually-hidden">Online Ordering</h2>
-          <img class="banner-img" src="./images/home-page/banner-images/hands.svg" alt="hands" />
+          <img class="banner-svg" src="./images/home-page/banner-images/hands.svg" alt="hands" />
           <h3 class="banner-subtitle">Order Online</h3>
           <p class="banner-text">Get your favorites delivered fast.</p>
           <ul class="banner-list list">
             <li class="banner-item">
-              <a class="banner-link link" href="#" title="Order with Uber Eats">
-                <img src="./images/home-page/banner-images/uber.svg" alt="Uber Eats" />
-                <img src="./images/home-page/banner-images/eats.svg" alt="Eats" />
+              <a class="banner-link link uber" href="#" title="Order with Uber Eats">
+                <!-- <div class="banner-link-wrap"> -->
+                <img
+                  class="banner-img"
+                  src="./images/home-page/banner-images/uber.svg"
+                  alt="Uber "
+                />
+                <img
+                  class="banner-img"
+                  src="./images/home-page/banner-images/eats.svg"
+                  alt="Eats"
+                />
+                <!-- </div> -->
               </a>
             </li>
             <li class="banner-item">
               <a class="banner-link link" href="" title="Home">
-                <img src="./images/home-page/banner-images/home.svg" alt="Home" />
+                <img
+                  class="banner-img"
+                  src="./images/home-page/banner-images/home.svg"
+                  alt="Home"
+                  width="32"
+                  height="32"
+                />
               </a>
             </li>
             <li class="banner-item">
               <a class="banner-link link" href="" title="More options">
-                <img src="./images/home-page/banner-images/vector.svg" alt="" />
+                <img
+                  class="banner-img"
+                  src="./images/home-page/banner-images/vector.svg"
+                  alt=""
+                  width="32"
+                  height="32"
+                />
               </a>
             </li>
           </ul>
@@ -654,72 +678,86 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <img
-          class="footer-logo"
-          src="./images/home-page/footer-images/logo.svg"
-          alt="Coffee Shop Logo"
-        />
-        <h2 class="footer-title">
-          Life Begins <br />
-          After Coffee
-        </h2>
-        <address class="footer-contact">
-          <a class="footer-link link" href="tel:+12125550198">
-            <img src="./images/home-page/footer-images/phone.svg" alt="" />+1 (212) 555-0198</a
-          >
-          <a class="footer-link link" href="mailto:hello@bhaus.com">
-            <img src="./images/home-page/footer-images/mail.svg" alt="" />hello@bhaus.com</a
-          >
-        </address>
-        <p class="footer-text">Main</p>
-        <ul class="footer-list list">
-          <li class="footer-item"><a class="footer-link link" href="./menu.html">Menu</a></li>
-          <li class="footer-item">
-            <a class="footer-link link" href="./locations.html">Locations</a>
-          </li>
-          <li class="footer-item"><a class="footer-link link" href="./about.html">About us</a></li>
-          <li class="footer-item"><a class="footer-link link" href="./news.html">News</a></li>
-        </ul>
-        <p class="footer-text">Categories</p>
-        <ul class="footer-list">
-          <li class="footer-item">
-            <a class="footer-link link" href="./menu.html#coffee">Coffee</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link link" href="./menu.html#cold-drinks">Cold Drinks</a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-link link" href="./menu.html#bakery">Bakery</a>
-          </li>
-        </ul>
-        <p class="footer-text">Follow Us</p>
-        <ul class="footer-list list">
-          <li class="footer-item">
-            <a class="footer-social link" href="" aria-label="Instagram"
-              ><img
-                class="footer-icon"
-                src="./images/home-page/footer-images/instagram.svg"
-                alt="Instagram"
-            /></a>
-          </li>
-          <li class="footer-item">
-            <a class="footer-social link" href="" aria-label="Facebook"
-              ><img
-                class="footer-icon"
-                src="./images/home-page/footer-images/facebook.svg"
-                alt="Facebook"
-            /></a>
-          </li>
+        <div class="footer-wrap">
+          <div class="footer-adress">
+            <img
+              class="footer-logo"
+              src="./images/home-page/footer-images/logo.svg"
+              alt="Coffee Shop Logo"
+            />
+            <h2 class="footer-title">
+              Life Begins <br />
+              After Coffee
+            </h2>
+            <address class="footer-contact">
+              <a class="footer-link link" href="tel:+12125550198">
+                <img src="./images/home-page/footer-images/phone.svg" alt="" />+1 (212) 555-0198</a
+              >
+              <a class="footer-link link" href="mailto:hello@bhaus.com">
+                <img src="./images/home-page/footer-images/mail.svg" alt="" />hello@bhaus.com</a
+              >
+            </address>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav-main">
+              <p class="footer-text">Main</p>
+              <ul class="footer-list list">
+                <li class="footer-item"><a class="footer-link link" href="./menu.html">Menu</a></li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./locations.html">Locations</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./about.html">About us</a>
+                </li>
+                <li class="footer-item"><a class="footer-link link" href="./news.html">News</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-categories">
+              <p class="footer-text">Categories</p>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a class="footer-link link" href="./menu.html#coffee">Coffee</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./menu.html#cold-drinks">Cold Drinks</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./menu.html#bakery">Bakery</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav-social">
+              <p class="footer-text">Follow Us</p>
+              <ul class="footer-list list social">
+                <li class="footer-item">
+                  <a class="footer-social link" href="" aria-label="Instagram"
+                    ><img
+                      class="footer-icon"
+                      src="./images/home-page/footer-images/instagram.svg"
+                      alt="Instagram"
+                  /></a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-social link" href="" aria-label="Facebook"
+                    ><img
+                      class="footer-icon"
+                      src="./images/home-page/footer-images/facebook.svg"
+                      alt="Facebook"
+                  /></a>
+                </li>
 
-          <li class="footer-item">
-            <a class="footer-social link" href="" aria-label="Twitter"
-              ><img
-                class="footer-icon"
-                src="./images/home-page/footer-images/twitter(X).svg"
-                alt="Twitter"
-            /></a>
-          </li>
-        </ul>
+                <li class="footer-item">
+                  <a class="footer-social link" href="" aria-label="Twitter"
+                    ><img
+                      class="footer-icon"
+                      src="./images/home-page/footer-images/twitter(X).svg"
+                      alt="Twitter"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <img
           class="footer-img"
           src="./images/home-page/footer-images/brewhaus.svg"
