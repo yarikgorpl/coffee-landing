@@ -21,9 +21,13 @@ ul,
 ol {
   padding-left: 0;
   margin: 0;
+  list-style: none;
 }
 img {
   display: block;
+}
+address {
+  font-style: normal;
 }
 body {
   font-family: 'Cabin Condensed', sans-serif;
@@ -33,13 +37,8 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 120px;
-
-  outline: 2px dashed #f44336;
 }
 
-.list {
-  list-style: none;
-}
 .link {
   font-family: 'Cabin Condensed', sans-serif;
   font-size: 16px;
@@ -66,7 +65,13 @@ body {
   background-color: var(--primary-bg-color);
   padding-bottom: 122px;
 }
+.header-slogan-wrap {
+  position: relative;
+  padding: 6px 320px;
+  text-align: center;
 
+  background-color: var(--secondary-bg-color);
+}
 .header-nav {
   width: 470px;
   height: 62px;
@@ -83,12 +88,19 @@ body {
   background-color: var(--primary-bg-color);
 }
 .header-text {
-  background-color: var(--secondary-bg-color);
   line-height: 1.28;
   letter-spacing: 0.03em;
 }
 .header-btn {
+  position: absolute;
+
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
+
 .header-list {
   display: flex;
   align-items: center;
@@ -112,7 +124,7 @@ body {
 
 .header-link:hover,
 .header-link:focus {
-  color: tomato;
+  color: rgb(255, 236, 184, 0.7);
 }
 
 .header-logo {
@@ -122,13 +134,6 @@ body {
   background-color: #1d4e1a;
   text-align: center;
 }
-.hero-text {
-  color: var(--secondary-text-color);
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: 0.02em;
-  margin-bottom: 12px;
-}
 .hero-title {
   font-family: 'Calistoga', sans-serif;
   color: var(--secondary-text-color);
@@ -136,6 +141,14 @@ body {
   line-height: 1.12;
   margin-bottom: 32px;
 }
+.hero-text {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.02em;
+  margin-bottom: 12px;
+}
+
 .hero-img {
   background-color: transparent;
 }
@@ -224,7 +237,7 @@ body {
   padding-top: 160px;
   padding-bottom: 160px;
   text-align: center;
-  background-color: rgba(29, 78, 26, 0.03);
+  background-color: rgba(29, 78, 26, 0.12);
 }
 .popular-title {
   font-family: 'Calistoga', sans-serif;
@@ -619,9 +632,9 @@ body {
   gap: 24px;
 }
 .news-item {
-  width: 384px;
-  height: 372px;
+  flex-basis: 384px;
 }
+
 .news-img {
   border-radius: 24px;
   margin-bottom: 16px;
@@ -635,17 +648,17 @@ body {
 }
 .news-subtitle {
   font-family: 'Calistoga', sans-serif;
-
   font-size: 20px;
   line-height: 1.24;
   letter-spacing: 0.01em;
+  color: var(--primary-text-color);
 }
 /*------------Banner styles------------*/
 .banner {
   padding-top: 160px;
   padding-bottom: 160px;
 
-  background-color: rgba(29, 78, 26, 0.03);
+  background-color: rgba(29, 78, 26, 0.12);
 }
 .banner-svg {
   margin-left: auto;
@@ -705,36 +718,44 @@ body {
 .footer-wrap {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 120px;
 }
-.footer-adress {
+.footer-logo {
+  margin-bottom: 20px;
 }
+
 .footer-nav {
   display: flex;
   gap: 24px;
 }
-.footer-nav-main {
-}
-.footer-nav-categories {
-}
+.footer-nav-main,
+.footer-nav-categories,
 .footer-nav-social {
+  width: 214px;
 }
+
 .footer-title {
+  margin-bottom: 28px;
   font-family: 'Calistoga', sans-serif;
   color: var(--secondary-text-color);
   font-size: 20px;
   line-height: 1.24;
   letter-spacing: 0.01em;
 }
-.footer-contact {
-  display: flex;
-  font-style: normal;
+.footer-contact img {
+  display: inline-block;
+  margin-right: 8px;
 }
 .footer-link {
+  padding: 4px 0;
   font-family: 'Calistoga', sans-serif;
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.32;
   letter-spacing: 0.02em;
+}
+.footer-link:first-child {
+  margin-bottom: 2px;
 }
 .footer-link:hover,
 footer-link:focus {
@@ -757,11 +778,33 @@ footer-link:focus {
 .footer-item {
   margin-bottom: 6px;
 }
-.footer-social {
-}
+
 .footer-icon {
   background-color: var(--secondary-bg-color);
   border-radius: 50%;
 }
 .footer-img {
+  margin-bottom: 32px;
+}
+.footer-lisenses {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 120px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footer-lisenses ::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(252, 243, 217, 0.07);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+.footer-lisenses-text {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
