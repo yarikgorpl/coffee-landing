@@ -1,9 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 :root {
   --primary-text-color: #1d4e1a;
   --secondary-text-color: #ffecb8;
@@ -13,14 +7,38 @@
   --secondary-bg-color: #ffecb8;
   --white-bg-color: #fcf3d9;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+img {
+  display: block;
+}
+address {
+  font-style: normal;
+}
 body {
   font-family: 'Cabin Condensed', sans-serif;
   color: var(--primary-text-color);
 }
-.list {
-  list-style: none;
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 120px;
 }
+
 .link {
   font-family: 'Cabin Condensed', sans-serif;
   font-size: 16px;
@@ -42,6 +60,75 @@ body {
   overflow: hidden;
 }
 
+/*-------------------Header styles-------------------*/
+.header {
+  background-color: var(--primary-bg-color);
+  padding-bottom: 122px;
+}
+.header-slogan-wrap {
+  position: relative;
+  padding: 6px 320px;
+  text-align: center;
+
+  background-color: var(--secondary-bg-color);
+}
+.header-nav {
+  width: 470px;
+  height: 62px;
+  padding: 18px;
+  border-radius: 32px;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: fixed;
+  top: 62px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: var(--primary-bg-color);
+}
+.header-text {
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+}
+.header-btn {
+  position: absolute;
+
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-item {
+  align-items: center;
+  padding: 2px 8px 4px;
+}
+.header-item:nth-child(3) {
+  background-color: var(--secondary-bg-color);
+  border-radius: 50%;
+}
+.header-link {
+  color: var(--primary-link-color);
+  font-size: 16px;
+  line-height: 1.24;
+  letter-spacing: 0.02em;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: rgb(255, 236, 184, 0.7);
+}
+
+.header-logo {
+}
 /*-------------------Header styles-------------------*/
 .header {
   background-color: var(--primary-bg-color);
@@ -71,41 +158,72 @@ body {
 
 .header-logo {
 }
+/*-------------Location styles-------------*/
 .location {
+  padding-top: 160px;
+  padding-bottom: 160px;
   background-color: var(--primary-bg-color);
 }
 
 .location-title {
+  margin-bottom: 12px;
+  text-align: center;
   font-family: 'Calistoga', sans-serif;
   color: var(--secondary-text-color);
   font-size: 64px;
   line-height: 1.16;
 }
+
 .location-text {
+  margin-bottom: 64px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.location-city {
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+  color: rgba(29, 78, 26, 0.7);
+}
+.location-time {
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.03em;
   color: rgba(29, 78, 26, 0.7);
 }
 .location-subtitle {
+  margin-bottom: 40px;
+  text-align: center;
   font-family: 'Calistoga', sans-serif;
   color: var(--secondary-text-color);
   font-size: 32px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
-.location-img {
+.location-wrap {
+  margin-bottom: 104px;
+  display: flex;
+  gap: 23px;
 }
+
 .location-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .location-item {
-  width: 282px;
-  height: 210px;
+  padding: 24px;
   background-color: var(--white-bg-color);
   border-radius: 24px;
 }
 .location-address {
+  margin-bottom: 6px;
   font-family: 'Calistoga', sans-serif;
 
   font-size: 16px;
@@ -114,10 +232,8 @@ body {
 }
 .location-link {
   display: inline-block;
-  padding: 16px 10px 16px 12px;
+  padding: 10px 72px 12px 72px;
   text-align: center;
-  width: 234px;
-  height: 42px;
   border-radius: 26px;
 
   color: var(--primary-link-color);
@@ -126,11 +242,12 @@ body {
 }
 .location-link:hover,
 .location-link:focus {
-  color: black;
-  background-color: red;
+  color: var(--primary-bg-color);
+  background-color: var(--secondary-link-color);
 }
 .help-list {
   display: flex;
+  gap: 24px;
 }
 .help-item {
   border-radius: 20px;
@@ -151,6 +268,7 @@ body {
 }
 
 .help-text {
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.03em;
@@ -170,11 +288,16 @@ body {
 }
 
 .ticker-list {
+  width: 1440px;
   display: flex;
+  justify-content: space-around;
+  gap: 12px;
+  margin: auto;
 }
 
 .ticker-item {
   display: flex;
+  gap: 12px;
 }
 .ticker-text {
   font-size: 18px;
@@ -183,45 +306,99 @@ body {
 }
 /*-------------------Footer styles-------------------*/
 .footer {
+  padding-top: 80px;
   background-color: var(--primary-bg-color);
 }
-.footer-logo {
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
 }
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 24px;
+}
+.footer-nav-main,
+.footer-nav-categories,
+.footer-nav-social {
+  width: 214px;
+}
+
 .footer-title {
+  margin-bottom: 28px;
   font-family: 'Calistoga', sans-serif;
   color: var(--secondary-text-color);
   font-size: 20px;
   line-height: 1.24;
   letter-spacing: 0.01em;
 }
-.footer-contact {
-  display: flex;
-  font-style: normal;
+.footer-contact img {
+  display: inline-block;
+  margin-right: 8px;
 }
 .footer-link {
+  padding: 4px 0;
   font-family: 'Calistoga', sans-serif;
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.32;
   letter-spacing: 0.02em;
 }
+.footer-link:first-child {
+  margin-bottom: 2px;
+}
+.footer-link:hover,
+footer-link:focus {
+  color: rgb(255, 236, 184, 0.7);
+}
 
 .footer-text {
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.footer-list {
+.footer-list.social {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .footer-item {
+  margin-bottom: 6px;
 }
-.footer-social {
-}
+
 .footer-icon {
   background-color: var(--secondary-bg-color);
   border-radius: 50%;
 }
 .footer-img {
+  margin-bottom: 32px;
+}
+.footer-lisenses {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 120px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footer-lisenses ::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(252, 243, 217, 0.07);
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+.footer-lisenses-text {
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }

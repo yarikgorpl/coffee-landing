@@ -195,9 +195,9 @@ body {
   line-height: 1.28;
   letter-spacing: 0.02em;
 }
-
 /*-------------------Menu styles-------------------*/
 .menu {
+  padding: 120px 0;
   background-color: var(--white-bg-color);
 }
 .wrapper {
@@ -205,15 +205,22 @@ body {
   gap: 24px;
 }
 .menu-filter-wrap {
-  width: 282px;
+  min-width: 282px;
+  flex-basis: 282px;
 }
-.menu-filter {
+
+.menu-filter-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .menu-item {
 }
 .menu-title-wrap {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  margin-bottom: 40px;
 }
 .new {
   position: relative;
@@ -236,8 +243,10 @@ body {
 .menu-filter .menu-link {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 20px;
+  font-family: 'Calistoga', sans-serif;
 }
+
 .menu-link {
   font-size: 20px;
   line-height: 1.24;
@@ -245,17 +254,18 @@ body {
   color: var(--primary-bg-color);
 }
 
-.menu-img-filter {
+.menu-filter-img {
   background-color: var(--primary-bg-color);
   border-radius: 50%;
 }
+
 .menu-img {
   background-color: var(--primary-bg-color);
   border-radius: 24px;
+  margin-bottom: 12px;
 }
 .menu-title {
   font-family: 'Calistoga', sans-serif;
-
   font-size: 32px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -272,6 +282,9 @@ body {
 }
 
 .menu-subtitle {
+  padding: 0px 8px;
+  display: flex;
+  justify-content: space-between;
   font-family: 'Calistoga', sans-serif;
 
   font-size: 20px;
