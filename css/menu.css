@@ -83,6 +83,7 @@ body {
   top: 62px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 9999;
 
   background-color: var(--primary-bg-color);
 }

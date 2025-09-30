@@ -11,143 +11,172 @@
       href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Calistoga&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/news-article.css" />
   </head>
   <body>
     <header class="header">
-      <button
-        class="header-btn"
-        type="button"
-        title="Close notification"
-        aria-label="Close notification"
-      >
-        <img src="./images/home-page/hero-images/close-btn.svg" alt="" />
-      </button>
-      <nav>
-        <ul class="header-list list">
-          <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
-          <li class="header-item">
-            <a class="header-link link" href="./locations.html">Locations</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="./about.html">About Us</a>
-          </li>
-          <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
-        </ul>
-        <a class="header-logo link" href="./index.html"
-          ><img src="./images/home-page/hero-images/logo.svg" alt="Company logo"
-        /></a>
-      </nav>
+      <div class="header-slogan-wrap">
+        <p class="header-text">Buy one coffee, get one free — this week only (April 14-20)</p>
+        <button
+          class="header-btn"
+          type="button"
+          title="Close notification"
+          aria-label="Close notification"
+        >
+          <img src="./images/home-page/hero-images/close-btn.svg" alt="" width="12" height="12" />
+        </button>
+      </div>
+      <div class="container">
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
+
+            <li class="header-item">
+              <a class="header-link link" href="./locations.html">Locations</a>
+            </li>
+
+            <li class="header-item">
+              <a class="header-logo link" href="./index.html"
+                ><img
+                  class="header-logo"
+                  src="./images/home-page/hero-images/logo.svg"
+                  alt="Company logo"
+                  width="24"
+                  height="26"
+              /></a>
+            </li>
+
+            <li class="header-item">
+              <a class="header-link link" href="./about.html">About Us</a>
+            </li>
+
+            <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <!-- Article section -->
       <section class="content">
-        <img class="content-img" src="./images/news-article-page/Vector.svg" alt="arrow" />
-        <a class="content-btn link" href="./news.html"> Back to News</a>
+        <div class="container">
+          <img class="content-img" src="./images/news-article-page/Vector.svg" alt="arrow" />
+          <a class="content-btn link" href="./news.html"> Back to News</a>
 
-        <article class="content-news">
-          <p class="content-date">Apr 10, 2025</p>
-          <h1 class="content-title">
-            Your Favorite Syrups Are Now Available Sugar-Free in All Drinks
-          </h1>
-          <p class="content-text">
-            Your favorite flavors, now with zero sugar. All syrups are available sugar-free, letting
-            you enjoy any drink just the way you like it — guilt-free and full of taste.
-          </p>
-          <img
-            class="content-img"
-            src="./images/news-article-page/img-1.jpg"
-            alt="Coffee cup"
-            width="672"
-            height="440"
-          />
-          <h2 class="content-suptitle">All the flavor you love, without the sugar</h2>
-          <p class="content-description">
-            We know how much our customers enjoy flavored drinks — whether it's a cozy vanilla
-            latte, a refreshing iced caramel macchiato, or a bold hazelnut cold brew. That's why
-            we're excited to offer sugar-free versions of all your favorite syrups. Now you can
-            enjoy the same rich, indulgent flavor with no added sugar — perfect for those cutting
-            back, watching calories, or simply looking for a lighter option. Our new sugar-free
-            syrups are available in all your go-to flavors: vanilla, caramel, hazelnut, and more.
-            Whether you prefer your drink hot or iced, you can customize it your way without
-            sacrificing taste. We've worked hard to make sure every sip still delivers the flavor
-            you love — smooth, satisfying, and now guilt-free.
-          </p>
-          <h3 class="content-subtitle">Just Ask for Sugar-Free at the Counter</h3>
-          <p class="content-description">
-            Making the switch is easy. Just let your barista know you'd like your drink made with
-            sugar-free syrup — no extra steps, no extra charge. It's the same handcrafted quality,
-            made to fit your lifestyle. At Brewhaus, we believe coffee should be as flexible as you
-            are. That's why we're proud to offer more options that fit your taste and wellness goals
-            — because great coffee should never mean compromise.
-          </p>
-          <ul class="content-list list">
-            <li class="content-item">
-              <p class="content-hash">&num;sugarfree</p>
-            </li>
-            <li class="content-item">
-              <p class="content-hash">&num;coffeeyourway</p>
-            </li>
-            <li class="content-item">
-              <p class="content-hash">&num;customcoffee</p>
-            </li>
-            <li class="content-item">
-              <p class="content-hash">&num;guiltfreesips</p>
-            </li>
-            <li class="content-item">
-              <p class="content-hash">&num;brewhaus</p>
-            </li>
-          </ul>
-        </article>
+          <article class="content-news">
+            <p class="content-date">Apr 10, 2025</p>
+            <h1 class="content-title">
+              Your Favorite Syrups Are Now Available Sugar-Free in All Drinks
+            </h1>
+            <p class="content-text">
+              Your favorite flavors, now with zero sugar. All syrups are available sugar-free,
+              letting you enjoy any drink just the way you like it — guilt-free and full of taste.
+            </p>
+            <img
+              class="content-img"
+              src="./images/news-article-page/img-1.jpg"
+              alt="Coffee cup"
+              width="672"
+              height="440"
+            />
+            <h2 class="content-suptitle">All the flavor you love, without the sugar</h2>
+            <p class="content-description">
+              We know how much our customers enjoy flavored drinks — whether it's a cozy vanilla
+              latte, a refreshing iced caramel macchiato, or a bold hazelnut cold brew. That's why
+              we're excited to offer sugar-free versions of all your favorite syrups. Now you can
+              enjoy the same rich, indulgent flavor with no added sugar — perfect for those cutting
+              back, watching calories, or simply looking for a lighter option. Our new sugar-free
+              syrups are available in all your go-to flavors: vanilla, caramel, hazelnut, and more.
+              Whether you prefer your drink hot or iced, you can customize it your way without
+              sacrificing taste. We've worked hard to make sure every sip still delivers the flavor
+              you love — smooth, satisfying, and now guilt-free.
+            </p>
+            <h3 class="content-subtitle">Just Ask for Sugar-Free at the Counter</h3>
+            <p class="content-description">
+              Making the switch is easy. Just let your barista know you'd like your drink made with
+              sugar-free syrup — no extra steps, no extra charge. It's the same handcrafted quality,
+              made to fit your lifestyle. At Brewhaus, we believe coffee should be as flexible as
+              you are. That's why we're proud to offer more options that fit your taste and wellness
+              goals — because great coffee should never mean compromise.
+            </p>
+            <ul class="content-list list">
+              <li class="content-item">
+                <p class="content-hash">&num;sugarfree</p>
+              </li>
+              <li class="content-item">
+                <p class="content-hash">&num;coffeeyourway</p>
+              </li>
+              <li class="content-item">
+                <p class="content-hash">&num;customcoffee</p>
+              </li>
+              <li class="content-item">
+                <p class="content-hash">&num;guiltfreesips</p>
+              </li>
+              <li class="content-item">
+                <p class="content-hash">&num;brewhaus</p>
+              </li>
+            </ul>
+          </article>
+        </div>
       </section>
       <!--More news section-->
       <section class="news">
-        <h2 class="news-title">More to Explore</h2>
-        <a class="news-link link" href="./news.html">View All</a>
-        <ul class="news-list list">
-          <li class="news-item">
-            <img
-              class="news-img"
-              src="./images/news-article-page/img-2.jpg"
-              alt="Three women are drinking coffee"
-              width="384"
-              height="280"
-            />
-            <p class="news-text">Apr 10, 2025</p>
-            <h3 class="news-subtitle">
-              Celebrate the Season with Our New Spring Drink Specials Today
-            </h3>
-          </li>
-          <li class="news-item">
-            <img
-              class="news-img"
-              src="./images/news-article-page/img-3.jpg"
-              alt="Barista smilles"
-              width="384"
-              height="280"
-            />
-            <p class="news-text">Apr 2, 2025</p>
-            <h3 class="news-subtitle">Our New Brewhaus Flushing Location Is Now Officially Open</h3>
-          </li>
-          <li class="news-item">
-            <img
-              class="news-img"
-              src="./images/news-article-page/img-4.jpg"
-              alt="Coffee equipment"
-              width="384"
-              height="280"
-            />
-            <p class="news-text">Mar 23, 2025</p>
-            <h3 class="news-subtitle">
-              Introducing Our Exciting New Loyalty Program for Coffee Lovers
-            </h3>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="news-title">More to Explore</h2>
+          <a class="news-link link" href="./news.html">View All</a>
+          <ul class="news-list list">
+            <li class="news-item">
+              <img
+                class="news-img"
+                src="./images/news-article-page/img-2.jpg"
+                alt="Three women are drinking coffee"
+                width="384"
+                height="280"
+              />
+              <p class="news-text">Apr 10, 2025</p>
+              <h3 class="news-subtitle">
+                Celebrate the Season with Our New Spring Drink Specials Today
+              </h3>
+            </li>
+            <li class="news-item">
+              <img
+                class="news-img"
+                src="./images/news-article-page/img-3.jpg"
+                alt="Barista smilles"
+                width="384"
+                height="280"
+              />
+              <p class="news-text">Apr 2, 2025</p>
+              <h3 class="news-subtitle">
+                Our New Brewhaus Flushing Location Is Now Officially Open
+              </h3>
+            </li>
+            <li class="news-item">
+              <img
+                class="news-img"
+                src="./images/news-article-page/img-4.jpg"
+                alt="Coffee equipment"
+                width="384"
+                height="280"
+              />
+              <p class="news-text">Mar 23, 2025</p>
+              <h3 class="news-subtitle">
+                Introducing Our Exciting New Loyalty Program for Coffee Lovers
+              </h3>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Ticker section -->
       <section class="ticker">
         <h2 class="visually-hidden">Our advantages</h2>
-        <ul class="ticker-list list">
+        <ul class="ticker-list">
           <li class="ticker-item">
             <p class="ticker-text">Great Coffee</p>
             <img
@@ -232,81 +261,112 @@
       </section>
     </main>
     <footer class="footer">
-      <img
-        class="footer-logo"
-        src="./images/home-page/footer-images/logo.svg"
-        alt="Coffee Shop Logo"
-      />
-      <h2 class="footer-title">
-        Life Begins <br />
-        After Coffee
-      </h2>
-      <address class="footer-contact">
-        <a class="footer-link link" href="tel:+12125550198">
-          <img src="./images/home-page/footer-images/phone.svg" alt="" />+1 (212) 555-0198</a
-        >
-        <a class="footer-link link" href="mailto:hello@bhaus.com">
-          <img src="./images/home-page/footer-images/mail.svg" alt="" />hello@bhaus.com</a
-        >
-      </address>
-      <p class="footer-text">Main</p>
-      <ul class="footer-list list">
-        <li class="footer-item"><a class="footer-link link" href="./menu.html">Menu</a></li>
-        <li class="footer-item">
-          <a class="footer-link link" href="./locations.html">Locations</a>
-        </li>
-        <li class="footer-item"><a class="footer-link link" href="./about.html">About us</a></li>
-        <li class="footer-item"><a class="footer-link link" href="./news.html">News</a></li>
-      </ul>
-      <p class="footer-text">Categories</p>
-      <ul class="footer-list">
-        <li class="footer-item">
-          <a class="footer-link link" href="./menu.html#coffee">Coffee</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link link" href="./menu.html#cold-drinks">Cold Drinks</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link link" href="./menu.html#bakery">Bakery</a>
-        </li>
-      </ul>
-      <p class="footer-text">Follow Us</p>
-      <ul class="footer-list list">
-        <li class="footer-item">
-          <a class="footer-social link" href="" aria-label="Instagram"
-            ><img
-              class="footer-icon"
-              src="./images/home-page/footer-images/instagram.svg"
-              alt="Instagram"
-          /></a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-social link" href="" aria-label="Facebook"
-            ><img
-              class="footer-icon"
-              src="./images/home-page/footer-images/facebook.svg"
-              alt="Facebook"
-          /></a>
-        </li>
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-adress">
+            <img
+              class="footer-logo"
+              src="./images/home-page/footer-images/logo.svg"
+              alt="Coffee Shop Logo"
+            />
+            <h2 class="footer-title">
+              Life Begins <br />
+              After Coffee
+            </h2>
+            <address class="footer-contact">
+              <ul>
+                <li>
+                  <a class="footer-link link" href="tel:+12125550198">
+                    <img src="./images/home-page/footer-images/phone.svg" alt="" />+1 (212)
+                    555-0198</a
+                  >
+                </li>
+                <li>
+                  <a class="footer-link link" href="mailto:hello@bhaus.com">
+                    <img src="./images/home-page/footer-images/mail.svg" alt="" />hello@bhaus.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav-main">
+              <p class="footer-text">Main</p>
+              <ul class="footer-list">
+                <li class="footer-item"><a class="footer-link link" href="./menu.html">Menu</a></li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./locations.html">Locations</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./about.html">About us</a>
+                </li>
+                <li class="footer-item"><a class="footer-link link" href="./news.html">News</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-categories">
+              <p class="footer-text">Categories</p>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a class="footer-link link" href="./menu.html#coffee">Coffee</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./menu.html#cold-drinks">Cold Drinks</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./menu.html#bakery">Bakery</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav-social">
+              <p class="footer-text">Follow Us</p>
+              <ul class="footer-list social">
+                <li class="footer-item">
+                  <a class="footer-social link" href="" aria-label="Instagram"
+                    ><img
+                      class="footer-icon"
+                      src="./images/home-page/footer-images/instagram.svg"
+                      alt="Instagram"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-social link" href="" aria-label="Facebook"
+                    ><img
+                      class="footer-icon"
+                      src="./images/home-page/footer-images/facebook.svg"
+                      alt="Facebook"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
 
-        <li class="footer-item">
-          <a class="footer-social link" href="" aria-label="Twitter"
-            ><img
-              class="footer-icon"
-              src="./images/home-page/footer-images/twitter(X).svg"
-              alt="Twitter"
-          /></a>
-        </li>
-      </ul>
-      <img
-        class="footer-img"
-        src="./images/home-page/footer-images/brewhaus.svg"
-        alt="Brewhouse"
-        width="1200"
-        height="213"
-      />
-      <p class="footer-text">2025 &copy; Brewhaus</p>
-      <a class="footer-text link" href="./licenses.html">Licenses</a>
+                <li class="footer-item">
+                  <a class="footer-social link" href="" aria-label="Twitter"
+                    ><img
+                      class="footer-icon"
+                      src="./images/home-page/footer-images/twitter(X).svg"
+                      alt="Twitter"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <img
+          class="footer-img"
+          src="./images/home-page/footer-images/brewhaus.svg"
+          alt="Brewhouse"
+          width="1200"
+          height="213"
+        />
+      </div>
+      <div class="footer-lisenses">
+        <p class="footer-lisenses-text">2025 &copy; Brewhaus</p>
+        <a class="footer-lisenses-text link" href="./licenses.html">Licenses</a>
+      </div>
     </footer>
   </body>
 </html>
