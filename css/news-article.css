@@ -30,6 +30,7 @@ address {
   font-style: normal;
 }
 body {
+  position: relative;
   font-family: 'Cabin Condensed', sans-serif;
   color: var(--primary-text-color);
 }
@@ -63,15 +64,9 @@ body {
 /*-------------------Header styles-------------------*/
 .header {
   background-color: var(--primary-bg-color);
-  padding-bottom: 122px;
+  padding-bottom: 360px;
 }
-.header-slogan-wrap {
-  position: relative;
-  padding: 6px 320px;
-  text-align: center;
 
-  background-color: var(--secondary-bg-color);
-}
 .header-nav {
   width: 470px;
   height: 62px;
@@ -91,15 +86,6 @@ body {
 .header-text {
   line-height: 1.28;
   letter-spacing: 0.03em;
-}
-.header-btn {
-  position: absolute;
-
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
 }
 
 .header-list {
@@ -132,18 +118,47 @@ body {
 }
 /*-------------Article styles-----------*/
 .content {
+  position: relative;
+  height: 1392px;
   background-color: var(--white-bg-color);
 }
+.content-wrap {
+  position: absolute;
+  top: -180px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.content-back {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 18px 24px;
+  background-color: rgba(29, 78, 26, 0.12);
+}
+.content-img-wrapper {
+  padding: 24px 24px;
+  background-color: rgba(29, 78, 26, 0.12);
+}
 .content-img {
+  border-radius: 16px;
 }
 .content-btn {
   color: var(--primary-text-color);
 }
 .content-news {
-  max-width: 720px;
-  padding: 18px 24px 24px 24px;
+  background-color: rgba(29, 78, 26, 0.03);
+}
+.content-header {
+  padding: 32px 24px;
 }
 .content-date {
+  margin-bottom: 16px;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.03em;
@@ -151,6 +166,7 @@ body {
 }
 
 .content-title {
+  margin-bottom: 12px;
   font-family: 'Calistoga', sans-serif;
   font-size: 32px;
   line-height: 1.24;
@@ -161,29 +177,42 @@ body {
   line-height: 1.24;
   letter-spacing: 0.02em;
 }
+.content-description-wrap {
+  padding: 40px 24px;
+}
 .content-suptitle {
+  margin-bottom: 20px;
   font-family: 'Calistoga', sans-serif;
   font-size: 24px;
   line-height: 1.167;
   letter-spacing: 0.01em;
 }
 .content-description {
+  margin-bottom: 40px;
   font-size: 18px;
   line-height: 1.28;
   letter-spacing: 0.02em;
 }
 .content-subtitle {
+  margin-bottom: 20px;
   font-family: 'Calistoga', sans-serif;
   font-size: 20px;
   line-height: 1.24;
   letter-spacing: 0.01em;
 }
 .content-list {
+  padding: 24px 24px;
   display: flex;
+
   gap: 6px;
+  border-radius: 6px;
+  background-color: rgba(29, 78, 26, 0.03);
 }
 
 .content-item {
+  padding: 4px 8px;
+  background-color: rgba(29, 78, 26, 0.12);
+  border-radius: 6px;
 }
 .content-hash {
   font-size: 14px;
@@ -192,7 +221,14 @@ body {
 }
 /*-------------News styles-------------*/
 .news {
+  padding: 160px 0;
   background-color: var(--white-bg-color);
+}
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
 }
 .news-title {
   font-family: 'Calistoga', sans-serif;
@@ -202,10 +238,9 @@ body {
 
 .news-link {
   display: inline-block;
-  padding: 16px 10px 16px 12px;
+  padding: 10px 12px 16px 12px;
   text-align: center;
   width: 117px;
-  height: 42px;
   border-radius: 26px;
   color: var(--primary-link-color);
   border: 1px solid var(--primary-bg-color);
@@ -213,8 +248,8 @@ body {
 }
 .news-link:hover,
 .news-link:focus {
-  color: black;
-  background-color: red;
+  color: var(--primary-bg-color);
+  background-color: var(--secondary-link-color);
 }
 .news-list {
   display: flex;
@@ -225,6 +260,7 @@ body {
   height: 372px;
 }
 .news-img {
+  margin-bottom: 16px;
   border-radius: 24px;
 }
 .news-text {
