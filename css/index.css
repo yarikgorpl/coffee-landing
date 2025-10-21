@@ -2,7 +2,7 @@
   --primary-text-color: #1d4e1a;
   --secondary-text-color: #ffecb8;
   --primary-link-color: #ffecb8;
-  --secondary-link-color: #ffecb8;
+  --secondary-link-color: #1d4e1a;
   --primary-bg-color: #1d4e1a;
   --secondary-bg-color: #ffecb8;
   --white-bg-color: #fcf3d9;
@@ -63,7 +63,7 @@ body {
 /*-------------------Header styles-------------------*/
 .header {
   background-color: var(--primary-bg-color);
-  padding-bottom: 122px;
+  padding-bottom: 182px;
 }
 .header-slogan-wrap {
   position: relative;
@@ -151,7 +151,6 @@ body {
 }
 
 .hero-img {
-  background-color: transparent;
 }
 .hero-list {
   display: flex;
@@ -166,7 +165,7 @@ body {
   padding: 16px 10px 16px 12px;
   text-align: center;
   width: 141px;
-  height: 51px;
+
   border-radius: 26px;
   border: 1px solid var(--secondary-link-color);
   color: var(--secondary-link-color);
@@ -238,7 +237,7 @@ body {
   padding-top: 160px;
   padding-bottom: 160px;
   text-align: center;
-  background-color: rgba(29, 78, 26, 0.12);
+  background-color: rgba(29, 78, 26, 0.03);
 }
 .popular-title {
   font-family: 'Calistoga', sans-serif;
@@ -291,10 +290,9 @@ body {
 }
 .popular-link {
   display: inline-block;
-  padding: 16px 10px 16px 12px;
+  padding: 10px 16px 12px 16px;
   text-align: center;
-  width: 141px;
-  height: 51px;
+
   border-radius: 26px;
 
   color: var(--primary-link-color);
@@ -450,11 +448,11 @@ body {
 }
 .testimonials-link {
   display: block;
-  padding: 16px 10px 16px 12px;
+  padding: 10px 16px 12px 16px;
   margin: auto;
   text-align: center;
-  width: 141px;
-  height: 51px;
+  max-width: 141px;
+
   border-radius: 26px;
 
   color: var(--primary-link-color);
@@ -464,8 +462,8 @@ body {
 
 .testimonials-link:hover,
 .testimonials-link:focus {
-  color: var(--primary-bg-color);
-  background-color: var(--secondary-link-color);
+  color: var(--secondary-link-color);
+  background-color: transparent;
 }
 /*-------------Location styles-------------*/
 .location {
@@ -595,7 +593,7 @@ body {
 .news {
   padding-top: 160px;
   padding-bottom: 160px;
-  background-color: var(--secondary-bg-color);
+  background-color: var(--white-bg-color);
 }
 .news-wrap {
   display: flex;
@@ -658,8 +656,7 @@ body {
 .banner {
   padding-top: 160px;
   padding-bottom: 160px;
-
-  background-color: rgba(29, 78, 26, 0.12);
+  background-color: rgba(29, 78, 26, 0.03);
 }
 .banner-svg {
   margin-left: auto;

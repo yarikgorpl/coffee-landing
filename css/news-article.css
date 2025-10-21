@@ -30,7 +30,6 @@ address {
   font-style: normal;
 }
 body {
-  position: relative;
   font-family: 'Cabin Condensed', sans-serif;
   color: var(--primary-text-color);
 }
@@ -111,7 +110,7 @@ body {
 
 .header-link:hover,
 .header-link:focus {
-  color: rgb(255, 236, 184, 0.7);
+  color: rgba(255, 236, 184, 0.7);
 }
 
 .header-logo {
@@ -132,6 +131,7 @@ body {
   margin-right: auto;
   max-width: 720px;
   border-radius: 24px;
+  background-color: var(--white-bg-color);
   overflow: hidden;
 }
 .content-back {
@@ -139,7 +139,8 @@ body {
   align-items: center;
   gap: 6px;
   padding: 18px 24px;
-  background-color: rgba(29, 78, 26, 0.12);
+  border-bottom: 1px solid rgba(29, 78, 26, 0.12);
+  background-color: rgba(29, 78, 26, 0.03);
 }
 .content-img-wrapper {
   padding: 24px 24px;

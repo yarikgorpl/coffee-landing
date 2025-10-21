@@ -11,54 +11,78 @@
       href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Calistoga&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/not-found.css" />
   </head>
   <body>
     <header class="header">
-      <p class="header-text">Buy one coffee, get one free — this week only (April 14-20)</p>
-      <button
-        class="header-btn"
-        type="button"
-        title="Close notification"
-        aria-label="Close notification"
-      >
-        <img src="./images/home-page/hero-images/close-btn.svg" alt="" />
-      </button>
-      <nav>
-        <ul class="header-list list">
-          <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
-          <li class="header-item">
-            <a class="header-link link" href="./locations.html">Locations</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="./about.html">About Us</a>
-          </li>
-          <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
-        </ul>
-        <a class="header-logo link" href="./index.html"
-          ><img src="./images/home-page/hero-images/logo.svg" alt="Company logo"
-        /></a>
-      </nav>
+      <div class="header-slogan-wrap">
+        <p class="header-text">Buy one coffee, get one free — this week only (April 14-20)</p>
+        <button
+          class="header-btn"
+          type="button"
+          title="Close notification"
+          aria-label="Close notification"
+        >
+          <img src="./images/home-page/hero-images/close-btn.svg" alt="" width="12" height="12" />
+        </button>
+      </div>
+      <div class="container">
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
+
+            <li class="header-item">
+              <a class="header-link link" href="./locations.html">Locations</a>
+            </li>
+
+            <li class="header-item">
+              <a class="header-logo link" href="./index.html"
+                ><img
+                  class="header-logo"
+                  src="./images/home-page/hero-images/logo.svg"
+                  alt="Company logo"
+                  width="24"
+                  height="26"
+              /></a>
+            </li>
+
+            <li class="header-item">
+              <a class="header-link link" href="./about.html">About Us</a>
+            </li>
+
+            <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <!-- Hero section -->
       <section class="hero">
-        <h1 class="hero-title">Not Found</h1>
-        <p class="hero-text">The page you're looking for doesn't exist or has moved.</p>
-        <a class="hero-link link" href="./index.html">Go Home</a>
-        <img
-          class="hero-img"
-          src="./images/not-found-page/hero.png"
-          alt="Cups of coffee"
-          width="1440"
-          height="520"
-        />
+        <div class="container">
+          <h1 class="hero-title">Not Found</h1>
+          <p class="hero-text">The page you're looking for doesn't exist or has moved.</p>
+          <a class="hero-link link" href="./index.html">Go Home</a>
+          <img
+            class="hero-img"
+            src="./images/not-found-page/hero.png"
+            alt="Cups of coffee"
+            width="1260"
+            height="520"
+          />
+        </div>
       </section>
 
       <!-- Ticker section -->
       <section class="ticker">
         <h2 class="visually-hidden">Our advantages</h2>
-        <ul class="ticker-list list">
+        <ul class="ticker-list">
           <li class="ticker-item">
             <p class="ticker-text">Great Coffee</p>
             <img
@@ -143,81 +167,112 @@
       </section>
     </main>
     <footer class="footer">
-      <img
-        class="footer-logo"
-        src="./images/home-page/footer-images/logo.svg"
-        alt="Coffee Shop Logo"
-      />
-      <h2 class="footer-title">
-        Life Begins <br />
-        After Coffee
-      </h2>
-      <address class="footer-contact">
-        <a class="footer-link link" href="tel:+12125550198">
-          <img src="./images/home-page/footer-images/phone.svg" alt="" />+1 (212) 555-0198</a
-        >
-        <a class="footer-link link" href="mailto:hello@bhaus.com">
-          <img src="./images/home-page/footer-images/mail.svg" alt="" />hello@bhaus.com</a
-        >
-      </address>
-      <p class="footer-text">Main</p>
-      <ul class="footer-list list">
-        <li class="footer-item"><a class="footer-link link" href="./menu.html">Menu</a></li>
-        <li class="footer-item">
-          <a class="footer-link link" href="./locations.html">Locations</a>
-        </li>
-        <li class="footer-item"><a class="footer-link link" href="./about.html">About us</a></li>
-        <li class="footer-item"><a class="footer-link link" href="./news.html">News</a></li>
-      </ul>
-      <p class="footer-text">Categories</p>
-      <ul class="footer-list">
-        <li class="footer-item">
-          <a class="footer-link link" href="./menu.html#coffee">Coffee</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link link" href="./menu.html#cold-drinks">Cold Drinks</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link link" href="./menu.html#bakery">Bakery</a>
-        </li>
-      </ul>
-      <p class="footer-text">Follow Us</p>
-      <ul class="footer-list list">
-        <li class="footer-item">
-          <a class="footer-social link" href="" aria-label="Instagram"
-            ><img
-              class="footer-icon"
-              src="./images/home-page/footer-images/instagram.svg"
-              alt="Instagram"
-          /></a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-social link" href="" aria-label="Facebook"
-            ><img
-              class="footer-icon"
-              src="./images/home-page/footer-images/facebook.svg"
-              alt="Facebook"
-          /></a>
-        </li>
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-adress">
+            <img
+              class="footer-logo"
+              src="./images/home-page/footer-images/logo.svg"
+              alt="Coffee Shop Logo"
+            />
+            <h2 class="footer-title">
+              Life Begins <br />
+              After Coffee
+            </h2>
+            <address class="footer-contact">
+              <ul>
+                <li>
+                  <a class="footer-link link" href="tel:+12125550198">
+                    <img src="./images/home-page/footer-images/phone.svg" alt="" />+1 (212)
+                    555-0198</a
+                  >
+                </li>
+                <li>
+                  <a class="footer-link link" href="mailto:hello@bhaus.com">
+                    <img src="./images/home-page/footer-images/mail.svg" alt="" />hello@bhaus.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav-main">
+              <p class="footer-text">Main</p>
+              <ul class="footer-list">
+                <li class="footer-item"><a class="footer-link link" href="./menu.html">Menu</a></li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./locations.html">Locations</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./about.html">About us</a>
+                </li>
+                <li class="footer-item"><a class="footer-link link" href="./news.html">News</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-categories">
+              <p class="footer-text">Categories</p>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a class="footer-link link" href="./menu.html#coffee">Coffee</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./menu.html#cold-drinks">Cold Drinks</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./menu.html#bakery">Bakery</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav-social">
+              <p class="footer-text">Follow Us</p>
+              <ul class="footer-list social">
+                <li class="footer-item">
+                  <a class="footer-social link" href="" aria-label="Instagram"
+                    ><img
+                      class="footer-icon"
+                      src="./images/home-page/footer-images/instagram.svg"
+                      alt="Instagram"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-social link" href="" aria-label="Facebook"
+                    ><img
+                      class="footer-icon"
+                      src="./images/home-page/footer-images/facebook.svg"
+                      alt="Facebook"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
 
-        <li class="footer-item">
-          <a class="footer-social link" href="" aria-label="Twitter"
-            ><img
-              class="footer-icon"
-              src="./images/home-page/footer-images/twitter(X).svg"
-              alt="Twitter"
-          /></a>
-        </li>
-      </ul>
-      <img
-        class="footer-img"
-        src="./images/home-page/footer-images/brewhaus.svg"
-        alt="Brewhouse"
-        width="1200"
-        height="213"
-      />
-      <p class="footer-text">2025 &copy; Brewhaus</p>
-      <a class="footer-text link" href="./licenses.html">Licenses</a>
+                <li class="footer-item">
+                  <a class="footer-social link" href="" aria-label="Twitter"
+                    ><img
+                      class="footer-icon"
+                      src="./images/home-page/footer-images/twitter(X).svg"
+                      alt="Twitter"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <img
+          class="footer-img"
+          src="./images/home-page/footer-images/brewhaus.svg"
+          alt="Brewhouse"
+          width="1200"
+          height="213"
+        />
+      </div>
+      <div class="footer-lisenses">
+        <a class="footer-lisenses-text link" href="./changelog.html">2025 &copy; Brewhaus</a>
+        <a class="footer-lisenses-text link" href="./licenses.html">Licenses</a>
+      </div>
     </footer>
   </body>
 </html>

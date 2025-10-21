@@ -11,108 +11,129 @@
       href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Calistoga&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/lisenses.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/licenses.css" />
   </head>
   <body>
     <header class="header">
-      <button
-        class="header-btn"
-        type="button"
-        title="Close notification"
-        aria-label="Close notification"
-      >
-        <img src="./images/home-page/hero-images/close-btn.svg" alt="" />
-      </button>
-      <nav>
-        <ul class="header-list list">
-          <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
-          <li class="header-item">
-            <a class="header-link link" href="./locations.html">Locations</a>
-          </li>
-          <li class="header-item">
-            <a class="header-link link" href="./about.html">About Us</a>
-          </li>
-          <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
-        </ul>
-        <a class="header-logo link" href="./index.html"
-          ><img src="./images/home-page/hero-images/logo.svg" alt="Company logo"
-        /></a>
-      </nav>
+      <div class="container">
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
+
+            <li class="header-item">
+              <a class="header-link link" href="./locations.html">Locations</a>
+            </li>
+
+            <li class="header-item">
+              <a class="header-logo link" href="./index.html"
+                ><img
+                  class="header-logo"
+                  src="./images/home-page/hero-images/logo.svg"
+                  alt="Company logo"
+                  width="24"
+                  height="26"
+              /></a>
+            </li>
+
+            <li class="header-item">
+              <a class="header-link link" href="./about.html">About Us</a>
+            </li>
+
+            <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <!--Hero section -->
       <section class="hero">
-        <h1 class="hero-title">Licenses</h1>
-        <p class="hero-text">
-          All graphical assets in this template are licensed for personal and commercial use. If
-          you'd like to use a specific asset, please check the licenses below.
-        </p>
-        <ul class="hero-list list">
-          <li class="hero-item"><a class="hero-link link primary" href="">Our Templates</a></li>
-          <li class="hero-item">
-            <a class="hero-link link secondary" href="./index.html">Our Website</a>
-          </li>
-        </ul>
+        <div class="container">
+          <h1 class="hero-title">Licenses</h1>
+          <p class="hero-text">
+            All graphical assets in this template are licensed for personal and commercial use. If
+            you'd like to use a specific asset, please check the licenses below.
+          </p>
+          <ul class="hero-list">
+            <li class="hero-item"><a class="hero-link link" href="">Our Templates</a></li>
+            <li class="hero-item">
+              <a class="hero-link link" href="./index.html">Our Website</a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Info section -->
       <section class="info">
-        <h2 class="visually-hidden">Info</h2>
-        <ul class="info-list list">
-          <li class="info-item">
-            <img src="./images/lisenses-page/images.svg" alt="Image" />
-            <h3 class="info-subtitle">Images</h3>
-            <p class="info-text">
-              All images have been carefully sourced from Freepik and are completely free to use for
-              both personal and commercial purposes.
-            </p>
-          </li>
-          <li class="info-item">
-            <img src="./images/lisenses-page/mockups.svg" alt="Mockups" />
-            <h3 class="info-subtitle">Mockups</h3>
-            <p class="info-text">
-              All mockups have been carefully sourced from Mockups-Design and are completely free to
-              use for personal and commercial purposes.
-            </p>
-          </li>
-          <li class="info-item">
-            <img src="./images/lisenses-page/icons.svg" alt="Icons" />
-            <h3 class="info-subtitle">Icons</h3>
-            <p class="info-text">
-              All icons are carefully sourced from Phosphor Icons and are completely free to use for
-              both personal and commercial design projects.
-            </p>
-          </li>
-          <li class="info-item">
-            <img src="./images/lisenses-page/illustrations.svg" alt="Illustrations" />
-            <h3 class="info-subtitle">Illustrations</h3>
-            <p class="info-text">
-              All illustrations are sourced from Free Vector Elements by Streamline and are free to
-              use for personal and commercial design projects.
-            </p>
-          </li>
-          <li class="info-item">
-            <img src="./images/lisenses-page/fonts.svg" alt="Fonts" />
-            <h3 class="info-subtitle">Fonts</h3>
-            <p class="info-text">
-              We chose Calistoga and Cabin Condensed typefaces that are completely free to use for
-              both personal and commercial projects.
-            </p>
-          </li>
-          <li class="info-item">
-            <img src="./images/lisenses-page/content.svg" alt="Content" />
-            <h3 class="info-subtitle">Content</h3>
-            <p class="info-text">
-              The text on this website was created with ChatGPT, an advanced AI language model
-              developed by OpenAI itself for content generation.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="visually-hidden">Info</h2>
+          <ul class="info-list">
+            <li class="info-item">
+              <img class="info-image" src="./images/lisenses-page/images.svg" alt="Image" />
+              <h3 class="info-subtitle">Images</h3>
+              <p class="info-text">
+                All images have been carefully sourced from Freepik and are completely free to use
+                for both personal and commercial purposes.
+              </p>
+            </li>
+            <li class="info-item">
+              <img class="info-image" src="./images/lisenses-page/mockups.svg" alt="Mockups" />
+              <h3 class="info-subtitle">Mockups</h3>
+              <p class="info-text">
+                All mockups have been carefully sourced from Mockups-Design and are completely free
+                to use for personal and commercial purposes.
+              </p>
+            </li>
+            <li class="info-item">
+              <img class="info-image" src="./images/lisenses-page/icons.svg" alt="Icons" />
+              <h3 class="info-subtitle">Icons</h3>
+              <p class="info-text">
+                All icons are carefully sourced from Phosphor Icons and are completely free to use
+                for both personal and commercial design projects.
+              </p>
+            </li>
+            <li class="info-item">
+              <img
+                class="info-image"
+                src="./images/lisenses-page/illustrations.svg"
+                alt="Illustrations"
+              />
+              <h3 class="info-subtitle">Illustrations</h3>
+              <p class="info-text">
+                All illustrations are sourced from Free Vector Elements by Streamline and are free
+                to use for personal and commercial design projects.
+              </p>
+            </li>
+            <li class="info-item">
+              <img class="info-image" src="./images/lisenses-page/fonts.svg" alt="Fonts" />
+              <h3 class="info-subtitle">Fonts</h3>
+              <p class="info-text">
+                We chose Calistoga and Cabin Condensed typefaces that are completely free to use for
+                both personal and commercial projects.
+              </p>
+            </li>
+            <li class="info-item">
+              <img class="info-image" src="./images/lisenses-page/content.svg" alt="Content" />
+              <h3 class="info-subtitle">Content</h3>
+              <p class="info-text">
+                The text on this website was created with ChatGPT, an advanced AI language model
+                developed by OpenAI itself for content generation.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Ticker section -->
       <section class="ticker">
         <h2 class="visually-hidden">Our advantages</h2>
-        <ul class="ticker-list list">
+        <ul class="ticker-list">
           <li class="ticker-item">
             <p class="ticker-text">Great Coffee</p>
             <img
@@ -197,81 +218,112 @@
       </section>
     </main>
     <footer class="footer">
-      <img
-        class="footer-logo"
-        src="./images/home-page/footer-images/logo.svg"
-        alt="Coffee Shop Logo"
-      />
-      <h2 class="footer-title">
-        Life Begins <br />
-        After Coffee
-      </h2>
-      <address class="footer-contact">
-        <a class="footer-link link" href="tel:+12125550198">
-          <img src="./images/home-page/footer-images/phone.svg" alt="" />+1 (212) 555-0198</a
-        >
-        <a class="footer-link link" href="mailto:hello@bhaus.com">
-          <img src="./images/home-page/footer-images/mail.svg" alt="" />hello@bhaus.com</a
-        >
-      </address>
-      <p class="footer-text">Main</p>
-      <ul class="footer-list list">
-        <li class="footer-item"><a class="footer-link link" href="./menu.html">Menu</a></li>
-        <li class="footer-item">
-          <a class="footer-link link" href="./locations.html">Locations</a>
-        </li>
-        <li class="footer-item"><a class="footer-link link" href="./about.html">About us</a></li>
-        <li class="footer-item"><a class="footer-link link" href="./news.html">News</a></li>
-      </ul>
-      <p class="footer-text">Categories</p>
-      <ul class="footer-list">
-        <li class="footer-item">
-          <a class="footer-link link" href="./menu.html#coffee">Coffee</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link link" href="./menu.html#cold-drinks">Cold Drinks</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-link link" href="./menu.html#bakery">Bakery</a>
-        </li>
-      </ul>
-      <p class="footer-text">Follow Us</p>
-      <ul class="footer-list list">
-        <li class="footer-item">
-          <a class="footer-social link" href="" aria-label="Instagram"
-            ><img
-              class="footer-icon"
-              src="./images/home-page/footer-images/instagram.svg"
-              alt="Instagram"
-          /></a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-social link" href="" aria-label="Facebook"
-            ><img
-              class="footer-icon"
-              src="./images/home-page/footer-images/facebook.svg"
-              alt="Facebook"
-          /></a>
-        </li>
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-adress">
+            <img
+              class="footer-logo"
+              src="./images/home-page/footer-images/logo.svg"
+              alt="Coffee Shop Logo"
+            />
+            <h2 class="footer-title">
+              Life Begins <br />
+              After Coffee
+            </h2>
+            <address class="footer-contact">
+              <ul>
+                <li>
+                  <a class="footer-link link" href="tel:+12125550198">
+                    <img src="./images/home-page/footer-images/phone.svg" alt="" />+1 (212)
+                    555-0198</a
+                  >
+                </li>
+                <li>
+                  <a class="footer-link link" href="mailto:hello@bhaus.com">
+                    <img src="./images/home-page/footer-images/mail.svg" alt="" />hello@bhaus.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav-main">
+              <p class="footer-text">Main</p>
+              <ul class="footer-list">
+                <li class="footer-item"><a class="footer-link link" href="./menu.html">Menu</a></li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./locations.html">Locations</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./about.html">About us</a>
+                </li>
+                <li class="footer-item"><a class="footer-link link" href="./news.html">News</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-categories">
+              <p class="footer-text">Categories</p>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a class="footer-link link" href="./menu.html#coffee">Coffee</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./menu.html#cold-drinks">Cold Drinks</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./menu.html#bakery">Bakery</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav-social">
+              <p class="footer-text">Follow Us</p>
+              <ul class="footer-list social">
+                <li class="footer-item">
+                  <a class="footer-social link" href="" aria-label="Instagram"
+                    ><img
+                      class="footer-icon"
+                      src="./images/home-page/footer-images/instagram.svg"
+                      alt="Instagram"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-social link" href="" aria-label="Facebook"
+                    ><img
+                      class="footer-icon"
+                      src="./images/home-page/footer-images/facebook.svg"
+                      alt="Facebook"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
 
-        <li class="footer-item">
-          <a class="footer-social link" href="" aria-label="Twitter"
-            ><img
-              class="footer-icon"
-              src="./images/home-page/footer-images/twitter(X).svg"
-              alt="Twitter"
-          /></a>
-        </li>
-      </ul>
-      <img
-        class="footer-img"
-        src="./images/home-page/footer-images/brewhaus.svg"
-        alt="Brewhouse"
-        width="1200"
-        height="213"
-      />
-      <p class="footer-text">2025 &copy; Brewhaus</p>
-      <a class="footer-text link" href="./licenses.html">Licenses</a>
+                <li class="footer-item">
+                  <a class="footer-social link" href="" aria-label="Twitter"
+                    ><img
+                      class="footer-icon"
+                      src="./images/home-page/footer-images/twitter(X).svg"
+                      alt="Twitter"
+                      width="40"
+                      height="40"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <img
+          class="footer-img"
+          src="./images/home-page/footer-images/brewhaus.svg"
+          alt="Brewhouse"
+          width="1200"
+          height="213"
+        />
+      </div>
+      <div class="footer-lisenses">
+        <a class="footer-lisenses-text link" href="./changelog.html">2025 &copy; Brewhaus</a>
+        <a class="footer-lisenses-text link" href="./licenses.html">Licenses</a>
+      </div>
     </footer>
   </body>
 </html>
