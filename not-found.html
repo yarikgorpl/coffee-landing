@@ -30,7 +30,9 @@
           title="Close notification"
           aria-label="Close notification"
         >
-          <img src="./images/home-page/hero-images/close-btn.svg" alt="" width="12" height="12" />
+          <svg class="header-close">
+            <use href="./images/sprite.svg#icon-hero-close-btn"></use>
+          </svg>
         </button>
       </div>
       <div class="container">
@@ -43,14 +45,11 @@
             </li>
 
             <li class="header-item">
-              <a class="header-logo link" href="./index.html"
-                ><img
-                  class="header-logo"
-                  src="./images/home-page/hero-images/logo.svg"
-                  alt="Company logo"
-                  width="24"
-                  height="26"
-              /></a>
+              <a class="header-logo link" href="./index.html" title="Company logo">
+                <svg class="header-logo">
+                  <use href="./images/sprite.svg#icon-hero-logo"></use>
+                </svg>
+              </a>
             </li>
 
             <li class="header-item">
@@ -73,7 +72,7 @@
             class="hero-img"
             src="./images/not-found-page/hero.png"
             alt="Cups of coffee"
-            width="1260"
+            width="1250"
             height="520"
           />
         </div>
@@ -85,83 +84,63 @@
         <ul class="ticker-list">
           <li class="ticker-item">
             <p class="ticker-text">Great Coffee</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/smiley.svg"
-              alt="Great Coffee"
-            />
+            <svg class="ticker-icon">
+              <use href="./images/sprite.svg#icon-ticker-smiley"></use>
+            </svg>
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Fast Service</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/bolt.svg"
-              alt="Fast Service"
-            />
+            <svg class="ticker-icon">
+              <use href="./images/sprite.svg#icon-ticker-bolt"></use>
+            </svg>
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Cozy Space</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/instagram.svg"
-              alt="Cozy Space"
-            />
+            <svg class="ticker-icon">
+              <use href="./images/sprite.svg#icon-ticker-instagram"></use>
+            </svg>
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Handcrafted Drinks</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/sweat-waterdrop.svg"
-              alt="Handcrafted Drinks"
-            />
+            <svg class="ticker-icon">
+              <use href="./images/sprite.svg#icon-ticker-sweat-waterdrop"></use>
+            </svg>
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Local Roasts</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/smiley-love.svg"
-              alt="Local Roasts"
-            />
+            <svg class="ticker-icon">
+              <use href="./images/sprite.svg#icon-ticker-smiley-love"></use>
+            </svg>
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Global Flavor</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/element.svg"
-              alt="Global Flavor"
-            />
+            <svg class="ticker-icon">
+              <use href="./images/sprite.svg#icon-ticker-element"></use>
+            </svg>
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Friendly Baristas</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/crown.svg"
-              alt="Friendly Baristas"
-            />
+            <svg class="ticker-icon">
+              <use href="./images/sprite.svg#icon-ticker-crown"></use>
+            </svg>
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Great Coffee</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/smiley.svg"
-              alt="Great Coffee"
-            />
+            <svg class="ticker-icon">
+              <use href="./images/sprite.svg#icon-ticker-smiley"></use>
+            </svg>
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Fast Service</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/bolt.svg"
-              alt="Fast Service"
-            />
+            <svg class="ticker-icon">
+              <use href="./images/sprite.svg#icon-ticker-bolt"></use>
+            </svg>
           </li>
           <li class="ticker-item">
             <p class="ticker-text">Cozy Space</p>
-            <img
-              class="ticker-icon"
-              src="./images/home-page/ticker-images/instagram.svg"
-              alt="Cozy Space"
-            />
+            <svg class="ticker-icon">
+              <use href="./images/sprite.svg#icon-ticker-instagram"></use>
+            </svg>
           </li>
         </ul>
       </section>
@@ -170,26 +149,34 @@
       <div class="container">
         <div class="footer-wrap">
           <div class="footer-adress">
-            <img
-              class="footer-logo"
-              src="./images/home-page/footer-images/logo.svg"
-              alt="Coffee Shop Logo"
-            />
+            <div class="footer-logo-thumb">
+              <a class="header-logo link" href="./index.html" title="Company logo">
+                <svg class="footer-logo">
+                  <use href="./images/sprite.svg#icon-hero-logo"></use>
+                </svg>
+              </a>
+            </div>
+
             <h2 class="footer-title">
               Life Begins <br />
               After Coffee
             </h2>
             <address class="footer-contact">
               <ul>
-                <li>
+                <li class="footer-contact-item">
                   <a class="footer-link link" href="tel:+12125550198">
-                    <img src="./images/home-page/footer-images/phone.svg" alt="" />+1 (212)
-                    555-0198</a
+                    <svg class="footer-contact-icon">
+                      <use href="./images/sprite.svg#icon-footer-phone"></use>
+                    </svg>
+                    +1 (212) 555-0198</a
                   >
                 </li>
-                <li>
+                <li class="footer-contact-item">
                   <a class="footer-link link" href="mailto:hello@bhaus.com">
-                    <img src="./images/home-page/footer-images/mail.svg" alt="" />hello@bhaus.com</a
+                    <svg class="footer-contact-icon">
+                      <use href="./images/sprite.svg#icon-footer-mail"></use>
+                    </svg>
+                    hello@bhaus.com</a
                   >
                 </li>
               </ul>
@@ -226,49 +213,42 @@
             <div class="footer-nav-social">
               <p class="footer-text">Follow Us</p>
               <ul class="footer-list social">
-                <li class="footer-item">
-                  <a class="footer-social link" href="" aria-label="Instagram"
-                    ><img
-                      class="footer-icon"
-                      src="./images/home-page/footer-images/instagram.svg"
-                      alt="Instagram"
-                      width="40"
-                      height="40"
-                  /></a>
+                <li class="footer-item follow">
+                  <a class="footer-social link" href="" aria-label="Instagram">
+                    <svg class="footer-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-footer-instagram"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer-item">
-                  <a class="footer-social link" href="" aria-label="Facebook"
-                    ><img
-                      class="footer-icon"
-                      src="./images/home-page/footer-images/facebook.svg"
-                      alt="Facebook"
-                      width="40"
-                      height="40"
-                  /></a>
+                <li class="footer-item follow">
+                  <a class="footer-social link" href="" aria-label="Facebook">
+                    <svg class="footer-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-footer-facebook"></use>
+                    </svg>
+                  </a>
                 </li>
 
-                <li class="footer-item">
-                  <a class="footer-social link" href="" aria-label="Twitter"
-                    ><img
-                      class="footer-icon"
-                      src="./images/home-page/footer-images/twitter(X).svg"
-                      alt="Twitter"
-                      width="40"
-                      height="40"
-                  /></a>
+                <li class="footer-item follow">
+                  <a class="footer-social link" href="" aria-label="Twitter">
+                    <svg class="footer-icon" width="20" height="20">
+                      <use href="./images/sprite.svg#icon-footer-twitterX"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+
         <img
           class="footer-img"
-          src="./images/home-page/footer-images/brewhaus.svg"
-          alt="Brewhouse"
+          src="./images/home-page/footer-images/footer-brewhouse.svg"
+          alt="Brewhaus Logo"
           width="1200"
-          height="213"
+          height="224"
         />
       </div>
+
       <div class="footer-lisenses">
         <a class="footer-lisenses-text link" href="./changelog.html">2025 &copy; Brewhaus</a>
         <a class="footer-lisenses-text link" href="./licenses.html">Licenses</a>

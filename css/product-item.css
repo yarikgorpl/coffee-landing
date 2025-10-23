@@ -2,10 +2,12 @@
   --primary-text-color: #1d4e1a;
   --secondary-text-color: #ffecb8;
   --primary-link-color: #ffecb8;
-  --secondary-link-color: #ffecb8;
+  --secondary-link-color: #1d4e1a;
   --primary-bg-color: #1d4e1a;
   --secondary-bg-color: #ffecb8;
   --white-bg-color: #fcf3d9;
+  --main-svg-fill: #1d4e1a;
+  --secondary-svg-fill: #ffecb8;
 }
 h1,
 h2,
@@ -41,7 +43,6 @@ body {
 .second {
   padding: 0 240px;
 }
-
 .link {
   font-family: 'Cabin Condensed', sans-serif;
   font-size: 16px;
@@ -62,7 +63,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 /*-------------------Header styles-------------------*/
 .header {
   background-color: var(--white-bg-color);
@@ -87,7 +87,7 @@ body {
 
 .header-list {
   display: flex;
-  align-items: center;
+
   justify-content: space-between;
 }
 
@@ -96,6 +96,12 @@ body {
   padding: 2px 8px 4px;
 }
 .header-item:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 40px;
+  height: 40px;
+  padding: 0;
   background-color: var(--secondary-bg-color);
   border-radius: 50%;
 }
@@ -112,6 +118,9 @@ body {
 }
 
 .header-logo {
+  width: 26px;
+  height: 26px;
+  fill: var(--main-svg-fill);
 }
 /*-------------------------Product styles--------------*/
 
@@ -201,6 +210,7 @@ body {
   background-color: var(--white-bg-color);
 }
 .popular-wrap {
+  max-width: 960px;
   margin-bottom: 48px;
   display: flex;
   justify-content: space-between;
@@ -225,6 +235,7 @@ body {
 }
 
 .popular-list {
+  max-width: 960px;
   display: flex;
   gap: 24px;
 }
@@ -296,17 +307,35 @@ body {
   line-height: 1.28;
   letter-spacing: 0.02em;
 }
+.ticker-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--main-svg-fill);
+}
 /*------------Banner styles------------*/
 .banner {
   padding-top: 160px;
   padding-bottom: 160px;
-
-  background-color: rgba(29, 78, 26, 0.12);
+  background-color: rgba(29, 78, 26, 0.03);
 }
-.banner-svg {
-  margin-left: auto;
-  margin-right: auto;
+.banner-thumb {
+  text-align: center;
   margin-bottom: 20px;
+}
+.banner-icon {
+  width: 48px;
+  height: 48px;
+  fill: var(--main-svg-fill);
+}
+.banner-uber {
+  width: 42px;
+  height: 42px;
+  fill: var(--secondary-svg-fill);
+}
+.banner-delivery {
+  width: 32px;
+  height: 32px;
+  fill: var(--secondary-svg-fill);
 }
 .banner-subtitle {
   margin-bottom: 8px;
@@ -329,10 +358,6 @@ body {
   gap: 10px;
 }
 
-.banner-link-wrap {
-  display: flex;
-  gap: 5px;
-}
 .banner-img {
   display: inline-block;
 }
@@ -346,6 +371,9 @@ body {
   border-radius: 12px;
 }
 .banner-link.uber {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   padding: 28px 24px;
 }
 .banner-link:hover,
@@ -363,10 +391,35 @@ body {
   justify-content: space-between;
   margin-bottom: 120px;
 }
-.footer-logo {
+.footer-logo-thumb {
   margin-bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--secondary-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
-
+.footer-logo {
+  width: 26px;
+  height: 26px;
+  fill: var(--main-svg-fill);
+}
+.footer-contact-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0;
+}
+.footer-contact-item:first-child {
+  margin-bottom: 2px;
+}
+.footer-contact-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--secondary-svg-fill);
+}
 .footer-nav {
   display: flex;
   gap: 24px;
@@ -385,19 +438,18 @@ body {
   line-height: 1.24;
   letter-spacing: 0.01em;
 }
-.footer-contact img {
-  display: inline-block;
-  margin-right: 8px;
-}
+
 .footer-link {
-  padding: 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-family: 'Calistoga', sans-serif;
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.32;
   letter-spacing: 0.02em;
 }
-.footer-link:first-child {
+.footer-contact-item:first-child {
   margin-bottom: 2px;
 }
 .footer-link:hover,
@@ -421,11 +473,24 @@ footer-link:focus {
 .footer-item {
   margin-bottom: 6px;
 }
-
-.footer-icon {
+.follow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
   background-color: var(--secondary-bg-color);
   border-radius: 50%;
 }
+.footer-social {
+  display: flex;
+}
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-svg-fill);
+}
+
 .footer-img {
   margin-bottom: 32px;
 }
