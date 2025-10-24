@@ -34,6 +34,7 @@ address {
 body {
   font-family: 'Cabin Condensed', sans-serif;
   color: var(--primary-text-color);
+  background-color: var(--white-bg-color);
 }
 .container {
   max-width: 1440px;
@@ -204,14 +205,24 @@ body {
   text-align: center;
   background-color: #fcf3d9;
 }
-.values-logo {
-  display: inline-block;
+.values-icon-thumb {
+  display: flex;
+  justify-content: center;
   margin-bottom: 32px;
 }
-.values-img {
+.values-logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 56px;
+  height: 56px;
   background-color: var(--primary-bg-color);
   border-radius: 50%;
 }
+.values-img {
+  fill: var(--white-bg-color);
+}
+
 .values-title {
   margin: 0 auto;
   margin-bottom: 32px;
@@ -228,19 +239,15 @@ body {
   gap: 10px;
 }
 
-.values-btn {
-}
 .values-link {
-  display: inline-block;
-  padding: 16px 10px 16px 12px;
-  text-align: center;
+  display: flex;
+  padding: 10px 16px 12px 16px;
+  justify-content: center;
+  align-items: center;
   width: 141px;
   height: 51px;
   border-radius: 26px;
   border: 1px solid var(--primary-bg-color);
-}
-
-.values-link {
   background-color: var(--primary-bg-color);
   color: var(--primary-link-color);
 }
@@ -248,7 +255,7 @@ body {
 .values-link:hover,
 .values-link:focus {
   color: var(--primary-bg-color);
-  background-color: var(--secondary-link-color);
+  background-color: transparent;
 }
 
 .values-list {
@@ -273,15 +280,17 @@ body {
   justify-content: center;
 }
 
-.values-img-right {
+.values-icon-right {
   position: absolute;
   top: 24px;
   right: 24px;
+  fill: var(--secondary-svg-fill);
 }
-.values-img-left {
+.values-icon-left {
   position: absolute;
   bottom: 24px;
   left: 24px;
+  fill: var(--secondary-svg-fill);
 }
 .values-subtitle {
   margin-bottom: 2px;
@@ -321,9 +330,9 @@ body {
   border-radius: 24px;
   background-color: rgba(29, 78, 26, 0.03);
 }
-.philosophy-img {
-  display: inline-block;
+.philosophy-icon {
   margin-bottom: 20px;
+  fill: var(--main-svg-fill);
 }
 .philosophy-subtitle {
   margin-bottom: 8px;
@@ -485,7 +494,6 @@ body {
 }
 .banner-link:hover,
 .banner-link:focus {
-  color: var(--primary-bg-color);
   background-color: rgba(29, 78, 26, 0.7);
 }
 /*-------------------Footer styles-------------------*/

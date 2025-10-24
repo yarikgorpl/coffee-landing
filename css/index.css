@@ -34,6 +34,7 @@ address {
 body {
   font-family: 'Cabin Condensed', sans-serif;
   color: var(--primary-text-color);
+  background-color: var(--white-bg-color);
 }
 .container {
   max-width: 1440px;
@@ -581,7 +582,7 @@ body {
 .location-link:hover,
 .location-link:focus {
   color: var(--primary-bg-color);
-  background-color: var(--secondary-link-color);
+  background-color: transparent;
 }
 .help-list {
   display: flex;
@@ -655,7 +656,7 @@ body {
 .news-link:hover,
 .news-link:focus {
   color: var(--primary-bg-color);
-  background-color: var(--secondary-link-color);
+  background-color: transparent;
 }
 .news-list {
   display: flex;

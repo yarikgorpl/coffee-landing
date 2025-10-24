@@ -34,6 +34,7 @@ address {
 body {
   font-family: 'Cabin Condensed', sans-serif;
   color: var(--primary-text-color);
+  background-color: var(--white-bg-color);
 }
 .container {
   max-width: 1440px;
