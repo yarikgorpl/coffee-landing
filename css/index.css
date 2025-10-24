@@ -323,7 +323,7 @@ body {
 .popular-link:hover,
 .popular-link:focus {
   color: var(--primary-bg-color);
-  background-color: var(--secondary-link-color);
+  background-color: transparent;
 }
 .popular-subtitle {
   font-family: 'Calistoga', sans-serif;
@@ -459,10 +459,11 @@ body {
 .testimonials-img {
   border-radius: 24px;
 }
-.testimonials-svg {
+.testimonials-icon {
   position: absolute;
   top: 32px;
   left: 24px;
+  fill: var(--main-svg-fill);
 }
 .testimonials-subtitle {
   font-family: 'Calistoga', sans-serif;
@@ -845,22 +846,28 @@ footer-link:focus {
 .footer-item {
   margin-bottom: 6px;
 }
-.follow {
+
+.footer-social {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: var(--secondary-bg-color);
   border-radius: 50%;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
 }
-.footer-social {
-  display: flex;
+.footer-social:hover,
+.footer-social:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--primary-bg-color);
+  border: 1px solid var(--secondary-bg-color);
 }
+
 .footer-icon {
   width: 20px;
   height: 20px;
-  fill: var(--main-svg-fill);
+  fill: currentColor;
 }
 
 .footer-img {

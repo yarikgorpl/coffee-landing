@@ -34,7 +34,7 @@ address {
 body {
   font-family: 'Cabin Condensed', sans-serif;
   color: var(--primary-text-color);
-    background-color: var(--white-bg-color);
+  background-color: var(--white-bg-color);
 }
 .container {
   max-width: 1440px;
@@ -358,22 +358,28 @@ footer-link:focus {
 .footer-item {
   margin-bottom: 6px;
 }
-.follow {
+
+.footer-social {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: var(--secondary-bg-color);
   border-radius: 50%;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
 }
-.footer-social {
-  display: flex;
+.footer-social:hover,
+.footer-social:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--primary-bg-color);
+  border: 1px solid var(--secondary-bg-color);
 }
+
 .footer-icon {
   width: 20px;
   height: 20px;
-  fill: var(--main-svg-fill);
+  fill: currentColor;
 }
 
 .footer-img {
