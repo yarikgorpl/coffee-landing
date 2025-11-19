@@ -161,7 +161,6 @@ body {
 }
 /*-------------------Hero styles-------------------*/
 .hero {
-  padding-top: 60px;
   padding-bottom: 104px;
   text-align: center;
   background-color: #1d4e1a;
@@ -503,10 +502,11 @@ body {
   color: var(--secondary-svg-fill);
   padding: 20px;
   border-radius: 12px;
-  transition:
-    color 250ms linear,
-    background-color 250ms linear 250ms,
-    box-shadow 250ms linear;
+  border:none;
+  transform:scale(1);
+  transition:transform 250ms linear;
+  cursor: pointer;
+
 }
 .banner-link.uber {
   display: flex;
@@ -516,11 +516,9 @@ body {
 }
 .banner-link:hover,
 .banner-link:focus {
-  color: var(--primary-bg-color);
-  background-color: rgba(29, 78, 26, 0.12);
-  box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
-}
-/*-------------------Footer styles-------------------*/
+  transform:scale(1.1);
+
+}/*-------------------Footer styles-------------------*/
 .footer {
   padding-top: 80px;
   background-color: var(--primary-bg-color);
@@ -688,4 +686,30 @@ footer-link:focus {
 .footer-licenses-text:hover,
 .footer-licenses-text:focus {
   color: rgb(255, 236, 184, 0.7);
+}
+
+/*-------------------Modal styles-------------------*/
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 78, 26, 0.5);
+  z-index: 99999;
+}
+.backdrop.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+.modal{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  min-width: 280px;
+  min-height: 380px;
+  background-color: var(--white-bg-color);
+  padding: 15px;
+
 }

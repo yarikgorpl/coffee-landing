@@ -161,7 +161,6 @@ body {
 }
 /*-------------Location styles-------------*/
 .location {
-  padding-top: 160px;
   padding-bottom: 160px;
   background-color: var(--primary-bg-color);
 }

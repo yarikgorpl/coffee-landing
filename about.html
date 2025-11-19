@@ -322,7 +322,7 @@
       <!--Banner section -->
       <section class="banner">
         <div class="container">
-          <h2 class="visually-hidden">Online Ordering</h2>
+          <h2 class="visually-hidden">Order online</h2>
           <div class="banner-thumb">
             <svg class="banner-icon">
               <use href="./images/sprite.svg#icon-banner-hands"></use>
@@ -332,28 +332,28 @@
           <p class="banner-text">Get your favorites delivered fast.</p>
           <ul class="banner-list">
             <li class="banner-item">
-              <a class="banner-link link uber" href="#" title="Order with Uber Eats">
+              <button type="button" class="banner-link link uber" data-modal-open title="Order with Uber Eats" >
                 <svg class="banner-uber">
                   <use href="./images/sprite.svg#icon-banner-uber"></use>
                 </svg>
                 <svg class="banner-uber">
                   <use href="./images/sprite.svg#icon-banner-eats"></use>
                 </svg>
-              </a>
+              </button>
             </li>
             <li class="banner-item">
-              <a class="banner-link link" href="" title="Home">
+              <button type="button" class="banner-link link" data-modal-open title="Home">
                 <svg class="banner-delivery">
                   <use href="./images/sprite.svg#icon-banner-home"></use>
                 </svg>
-              </a>
+              </button>
             </li>
             <li class="banner-item">
-              <a class="banner-link link" href="" title="More options">
+              <button type="button" class="banner-link link" data-modal-open title="More options">
                 <svg class="banner-delivery">
                   <use href="./images/sprite.svg#icon-banner-vector"></use>
                 </svg>
-              </a>
+              </button>
             </li>
           </ul>
         </div>
@@ -534,5 +534,26 @@
         <a class="footer-licenses-text link" href="./licenses.html">Licenses</a>
       </div>
     </footer>
+ <div class="backdrop is-hidden" data-backdrop>
+  <div class="modal" data-modal>
+    <button
+        class="modal-close-btn"
+        type="button"
+        title="Close notification"
+        aria-label="Close notification"
+        data-modal-close
+      >
+        <svg class="modal-close-icon" width="12" height="12">
+          <use href="./images/sprite.svg#icon-hero-close-btn"></use>
+        </svg>
+      </button>
+    <form >
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo tempore vel libero aut nesciunt doloribus consectetur eos nihil exercitationem! Ipsum velit aut similique ipsam. Quas at, laudantium iure, sed culpa facere nesciunt dolor asperiores laboriosam nisi tempore similique sapiente iste praesentium magnam cupiditate! Quam officiis enim eos sint repudiandae laudantium?</p>
+      
+     
+    </form>
+  </div>
+ </div>
+   <script src="./js/modal.js"></script>
   </body>
 </html>
