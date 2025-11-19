@@ -139,6 +139,7 @@ body {
   font-size: 16px;
   line-height: 1.24;
   letter-spacing: 0.02em;
+  transition: color 250ms linear;
 }
 
 .header-link:hover,
@@ -146,11 +147,6 @@ body {
   color: rgb(255, 236, 184, 0.7);
 }
 
-.header-logo {
-  width: 26px;
-  height: 26px;
-  fill: var(--main-svg-fill);
-}
 /*-------------------Hero styles-------------------*/
 .hero {
   background-color: #1d4e1a;
@@ -185,12 +181,17 @@ body {
   border-radius: 26px;
   border: 1px solid var(--secondary-bg-color);
   color: var(--primary-link-color);
+  transition:
+    color 250ms linear,
+    background-color 250ms linear,
+    border-color 250ms linear;
 }
 
 .hero-link:hover,
 .hero-link:focus {
   color: var(--primary-text-color);
   background-color: var(--primary-link-color);
+  border-color: transparent;
 }
 
 /*-------------------Ticker styles-------------------*/
@@ -319,6 +320,9 @@ body {
   color: var(--primary-link-color);
   border: 1px solid var(--primary-bg-color);
   background-color: var(--primary-bg-color);
+  transition:
+    color 250ms linear,
+    background-color 250ms linear;
 }
 .popular-link:hover,
 .popular-link:focus {
@@ -491,6 +495,9 @@ body {
   color: var(--primary-link-color);
   border: 1px solid var(--primary-bg-color);
   background-color: var(--primary-bg-color);
+  transition:
+    color 250ms linear,
+    background-color 250ms linear;
 }
 
 .testimonials-link:hover,
@@ -579,6 +586,9 @@ body {
   color: var(--primary-link-color);
   border: 1px solid var(--primary-bg-color);
   background-color: var(--primary-bg-color);
+  transition:
+    color 250ms linear,
+    background-color 250ms linear;
 }
 .location-link:hover,
 .location-link:focus {
@@ -620,6 +630,11 @@ body {
   line-height: 1.24;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
+  transition: color 250ms linear;
+}
+.help-link:hover,
+.help-link:focus {
+  color: rgba(255, 236, 184, 0.7);
 }
 
 /*-------------News styles-------------*/
@@ -653,6 +668,9 @@ body {
   color: var(--primary-link-color);
   border: 1px solid var(--primary-bg-color);
   background-color: var(--primary-bg-color);
+  transition:
+    color 250ms linear,
+    background-color 250ms linear;
 }
 .news-link:hover,
 .news-link:focus {
@@ -703,12 +721,12 @@ body {
 .banner-uber {
   width: 42px;
   height: 42px;
-  fill: var(--secondary-svg-fill);
+  fill: currentColor;
 }
 .banner-delivery {
   width: 32px;
   height: 32px;
-  fill: var(--secondary-svg-fill);
+  fill: currentColor;
 }
 .banner-subtitle {
   margin-bottom: 8px;
@@ -740,8 +758,13 @@ body {
   text-align: center;
   height: 72px;
   background-color: var(--primary-bg-color);
+  color: var(--secondary-svg-fill);
   padding: 20px;
   border-radius: 12px;
+  transition:
+    color 250ms linear,
+    background-color 250ms linear 250ms,
+    box-shadow 250ms linear;
 }
 .banner-link.uber {
   display: flex;
@@ -752,7 +775,8 @@ body {
 .banner-link:hover,
 .banner-link:focus {
   color: var(--primary-bg-color);
-  background-color: rgba(29, 78, 26, 0.7);
+  background-color: rgba(29, 78, 26, 0.12);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
 }
 /*-------------------Footer styles-------------------*/
 .footer {
@@ -778,6 +802,12 @@ body {
   width: 26px;
   height: 26px;
   fill: var(--main-svg-fill);
+  transform: scale(1) translateY(0);
+  transition: transform 250ms linear;
+}
+.footer-logo:hover,
+.footer-logo:focus {
+  transform: scale(1.15) translateY(-2px);
 }
 .footer-contact-item {
   display: flex;
@@ -821,6 +851,7 @@ body {
   font-size: 16px;
   line-height: 1.32;
   letter-spacing: 0.02em;
+  transition: color 250ms linear;
 }
 .footer-contact-item:first-child {
   margin-bottom: 2px;
@@ -854,26 +885,43 @@ footer-link:focus {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  border: 1px solid var(--primary-bg-color);
   background-color: var(--secondary-bg-color);
   color: var(--primary-text-color);
+  transform: scale(1);
+  transition:
+    color 250ms linear,
+    background-color 250ms linear,
+    border 250ms linear,
+    transform 250ms linear;
 }
 .footer-social:hover,
 .footer-social:focus {
   color: var(--secondary-text-color);
   background-color: var(--primary-bg-color);
   border: 1px solid var(--secondary-bg-color);
+  transform: scale(1.15);
 }
 
 .footer-icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
+  transform: scale(1);
+  transition:
+    fill 250ms linear,
+    transform 250ms linear;
 }
 
+.footer-social:focus .footer-icon,
+.footer-social:hover .footer-icon {
+  fill: currentColor;
+  transform: scale(1.15);
+}
 .footer-img {
   margin-bottom: 32px;
 }
-.footer-lisenses {
+.footer-licenses {
   display: flex;
   justify-content: space-between;
   padding: 12px 120px;
@@ -881,7 +929,7 @@ footer-link:focus {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.footer-lisenses ::before {
+.footer-licenses ::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -889,9 +937,13 @@ footer-link:focus {
   mix-blend-mode: multiply;
   pointer-events: none;
 }
-.footer-lisenses-text {
+.footer-licenses-text {
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+.footer-licenses-text:hover,
+.footer-licenses-text:focus {
+  color: rgb(255, 236, 184, 0.7);
 }
