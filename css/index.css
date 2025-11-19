@@ -146,7 +146,17 @@ body {
 .header-link:focus {
   color: rgb(255, 236, 184, 0.7);
 }
-
+.header-logo {
+  width: 26px;
+  height: 26px;
+  fill: var(--main-svg-fill);
+  transform: scale(1) translateY(0);
+  transition: transform 250ms linear;
+}
+.header-item:nth-child(3):hover .header-logo,
+.header-item:nth-child(3):focus .header-logo {
+  transform: scale(1.15) translateY(-2px);
+}
 /*-------------------Hero styles-------------------*/
 .hero {
   background-color: #1d4e1a;

@@ -111,6 +111,7 @@ body {
   font-size: 16px;
   line-height: 1.24;
   letter-spacing: 0.02em;
+  transition: color 250ms linear;
 }
 
 .header-link:hover,
@@ -122,6 +123,12 @@ body {
   width: 26px;
   height: 26px;
   fill: var(--main-svg-fill);
+  transform: scale(1) translateY(0);
+  transition: transform 250ms linear;
+}
+.header-item:nth-child(3):hover .header-logo,
+.header-item:nth-child(3):focus .header-logo {
+  transform: scale(1.15) translateY(-2px);
 }
 /*-------------------------Product styles--------------*/
 
@@ -229,6 +236,9 @@ body {
   min-width: 117px;
   height: 42px;
   border-radius: 26px;
+  transition:
+    color 250ms linear,
+    background-color 250ms linear;
 
   color: var(--primary-link-color);
   border: 1px solid var(--primary-bg-color);
@@ -335,12 +345,12 @@ body {
 .banner-uber {
   width: 42px;
   height: 42px;
-  fill: var(--secondary-svg-fill);
+  fill: currentColor;
 }
 .banner-delivery {
   width: 32px;
   height: 32px;
-  fill: var(--secondary-svg-fill);
+  fill: currentColor;
 }
 .banner-subtitle {
   margin-bottom: 8px;
@@ -372,8 +382,13 @@ body {
   text-align: center;
   height: 72px;
   background-color: var(--primary-bg-color);
+  color: var(--secondary-svg-fill);
   padding: 20px;
   border-radius: 12px;
+  transition:
+    color 250ms linear,
+    background-color 250ms linear 250ms,
+    box-shadow 250ms linear;
 }
 .banner-link.uber {
   display: flex;
@@ -384,7 +399,8 @@ body {
 .banner-link:hover,
 .banner-link:focus {
   color: var(--primary-bg-color);
-  background-color: rgba(29, 78, 26, 0.7);
+  background-color: rgba(29, 78, 26, 0.12);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
 }
 /*-------------------Footer styles-------------------*/
 .footer {
