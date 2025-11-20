@@ -22,15 +22,16 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-slogan-wrap">
+      <div class="header-slogan-wrap" data-slogan>
         <p class="header-text">Buy one coffee, get one free — this week only (April 14-20)</p>
         <button
+          data-slogan-close
           class="header-btn"
           type="button"
           title="Close notification"
           aria-label="Close notification"
         >
-          <svg class="header-close">
+          <svg class="header-close" width="12" height="12">
             <use href="./images/sprite.svg#icon-hero-close-btn"></use>
           </svg>
         </button>
@@ -504,7 +505,12 @@
           <p class="banner-text">Get your favorites delivered fast.</p>
           <ul class="banner-list">
             <li class="banner-item">
-              <button type="button" class="banner-link link uber" data-modal-open title="Order with Uber Eats" >
+              <button
+                type="button"
+                class="banner-link link uber"
+                data-modal-open
+                title="Order with Uber Eats"
+              >
                 <svg class="banner-uber">
                   <use href="./images/sprite.svg#icon-banner-uber"></use>
                 </svg>
@@ -706,27 +712,88 @@
         <a class="footer-licenses-text link" href="./licenses.html">Licenses</a>
       </div>
     </footer>
-     <div class="backdrop is-hidden" data-backdrop>
-  <div class="modal" data-modal>
-    <button
-        class="modal-close-btn"
-        type="button"
-        title="Close notification"
-        aria-label="Close notification"
-        data-modal-close
-      >
-        <svg class="modal-close-icon" width="12" height="12">
-          <use href="./images/sprite.svg#icon-hero-close-btn"></use>
-        </svg>
-      </button>
-    <form >
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo tempore vel libero aut nesciunt doloribus consectetur eos nihil exercitationem! Ipsum velit aut similique ipsam. Quas at, laudantium iure, sed culpa facere nesciunt dolor asperiores laboriosam nisi tempore similique sapiente iste praesentium magnam cupiditate! Quam officiis enim eos sint repudiandae laudantium?</p>
-      
-     
-    </form>
-  </div>
- </div>
-   <script src="./js/modal.js"></script>
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal" data-modal>
+        <button
+          class="modal-close-btn"
+          type="button"
+          title="Close notification"
+          aria-label="Close notification"
+          data-modal-close
+        >
+          <svg class="modal-close-icon" width="12" height="12">
+            <use href="./images/sprite.svg#icon-hero-close-btn"></use>
+          </svg>
+        </button>
+        <form>
+          <h2 class="modal-title">Order Your Favorite Coffee</h2>
+          <p class="modal-text">Get your favorite Brewhaus drinks delivered to your door.</p>
+          <label class="modal-label">
+            Your name
+            <input
+              class="modal-input"
+              type="text"
+              name="username"
+              placeholder="Jack Meadows"
+              required
+            />
+          </label>
+          <label class="modal-label">
+            Your address
+            <input
+              class="modal-input"
+              type="text"
+              name="address"
+              placeholder="123 Main St"
+              required
+            />
+          </label>
+
+          <label class="modal-label"
+            >Select Drink
+            <select class="modal-menu" name="menu" multiple size="6" required>
+              <optgroup label="Coffe">
+                <option value="cold-brew">Cold Brew</option>
+                <option value="macchiato">Macchiato</option>
+                <option value="espresso">Espresso</option>
+                <option value="black-coffee">Black Coffee</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="flat-white">Flat White</option>
+                <option value="latte">Latte</option>
+                <option value="mocha">Mocha</option>
+                <option value="americano">Americano</option>
+              </optgroup>
+              <optgroup label="Cold Drinks">
+                <option value="virjin-mochito">Virgin Mochito</option>
+                <option value="iced-latte">Iced Latte</option>
+                <option value="iced-americano">Iced Americano</option>
+                <option value="iced-mocha">Iced Mocha</option>
+                <option value="iced-tea">Iced Tea</option>
+                <option value="bubble-tea">Bubble Tea</option>
+              </optgroup>
+              <optgroup label="Bakery">
+                <option value="brownie">Brownie</option>
+                <option value="macarons">Macarons</option>
+                <option value="donut ">Donut</option>
+                <option value="muffin">Muffin</option>
+                <option value="biscotti">Biscotti</option>
+              </optgroup>
+            </select>
+          </label>
+          <label class="modal-label">
+            Options
+            <textarea
+              class="modal-textarea"
+              name="options"
+              placeholder="Enter the quantity of cups"
+            ></textarea>
+          </label>
+          <button class="modal-submit-btn" type="submit">Place Order</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
     <script src="./js/active-link.js"></script>
   </body>
 </html>

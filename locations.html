@@ -22,15 +22,16 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-slogan-wrap">
+      <div class="header-slogan-wrap" data-slogan>
         <p class="header-text">Buy one coffee, get one free — this week only (April 14-20)</p>
         <button
+          data-slogan-close
           class="header-btn"
           type="button"
           title="Close notification"
           aria-label="Close notification"
         >
-          <svg class="header-close">
+          <svg class="header-close" width="12" height="12">
             <use href="./images/sprite.svg#icon-hero-close-btn"></use>
           </svg>
         </button>
@@ -304,10 +305,11 @@
         />
       </div>
 
-         <div class="footer-licenses">
+      <div class="footer-licenses">
         <a class="footer-licenses-text link" href="./changelog.html">2025 &copy; Brewhaus</a>
         <a class="footer-licenses-text link" href="./licenses.html">Licenses</a>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

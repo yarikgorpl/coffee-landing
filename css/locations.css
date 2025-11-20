@@ -71,10 +71,37 @@ body {
 .header-slogan-wrap {
   display: flex;
   justify-content: center;
-  padding: 5px;
+  padding: 6px 320px;
   text-align: center;
 
   background-color: var(--secondary-bg-color);
+}
+.header-slogan-wrap.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.header-text {
+  flex-grow: 2;
+  margin-right: auto;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+}
+.header-btn {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.header-close {
+  fill: var(--main-svg-fill);
 }
 .header-nav {
   width: 470px;
@@ -92,28 +119,7 @@ body {
 
   background-color: var(--primary-bg-color);
 }
-.header-text {
-  flex-grow: 2;
-  margin-right: auto;
-  line-height: 1.28;
-  letter-spacing: 0.03em;
-}
-.header-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20px;
-  height: 20px;
-  padding: 4px;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-}
-.header-close {
-  width: 8px;
-  height: 8px;
-  fill: var(--main-svg-fill);
-}
+
 .header-list {
   display: flex;
 
@@ -146,7 +152,6 @@ body {
 .header-link:focus {
   color: rgb(255, 236, 184, 0.7);
 }
-
 .header-logo {
   width: 26px;
   height: 26px;
@@ -154,12 +159,10 @@ body {
   transform: scale(1) translateY(0);
   transition: transform 250ms linear;
 }
-
 .header-item:nth-child(3):hover .header-logo,
 .header-item:nth-child(3):focus .header-logo {
   transform: scale(1.15) translateY(-2px);
-}
-/*-------------Location styles-------------*/
+} /*-------------Location styles-------------*/
 .location {
   padding-bottom: 160px;
   background-color: var(--primary-bg-color);
