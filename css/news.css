@@ -65,7 +65,7 @@ body {
 
 /*-------------------Header styles-------------------*/
 .header {
-  background-color: var(--primary-bg-color);
+  background-color: var(--white-bg-color);
   padding-bottom: 182px;
 }
 .header-slogan-wrap {
@@ -126,10 +126,7 @@ body {
   justify-content: space-between;
 }
 
-.header-item {
-  align-items: center;
-  padding: 2px 8px 4px;
-}
+
 .header-item:nth-child(3) {
   display: flex;
   justify-content: center;
@@ -140,7 +137,8 @@ body {
   background-color: var(--secondary-bg-color);
   border-radius: 50%;
 }
-.header-link {
+.header-link {  
+   padding: 2px 8px 4px 8px;
   color: var(--primary-link-color);
   font-size: 16px;
   line-height: 1.24;
@@ -162,7 +160,13 @@ body {
 .header-item:nth-child(3):hover .header-logo,
 .header-item:nth-child(3):focus .header-logo {
   transform: scale(1.15) translateY(-2px);
-} 
+}
+.header-list .header-link.current {
+  border-radius: 26px;
+  border: 1px solid var(--secondary-bg-color);
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+}
 /*-------------------Hero styles-------------------*/
 .hero {
   text-align: center;
@@ -197,12 +201,15 @@ body {
   border-radius: 24px;
   overflow: hidden;
 }
-.news-link {
-}
 
 .news-img {
   margin-bottom: 16px;
   border-radius: 24px;
+  transform: scale(1);
+  transition: transform 250ms linear;
+}
+.news-img:hover{
+  transform: scale(1.05);
 }
 .news-text {
   margin-bottom: 8px;
@@ -221,16 +228,34 @@ body {
   color: var(--primary-text-color);
 }
 /*-------------------Ticker styles-------------------*/
-.ticker {
-  background-color: var(--secondary-bg-color);
+@keyframes ticker-move {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
-
+.ticker {
+  display: flex;
+  padding: 12px 24px;
+  gap: 24px;
+  background-color: var(--secondary-bg-color);
+  overflow: hidden;
+  user-select: none;
+}
+.ticker:hover .ticker-list {
+  animation-play-state: paused;
+}
 .ticker-list {
   width: 1440px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
   gap: 12px;
-  margin: auto;
+  min-width: 100%;
+  animation: ticker-move 25s linear infinite;
 }
 
 .ticker-item {

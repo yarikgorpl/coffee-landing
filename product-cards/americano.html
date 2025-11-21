@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoffeeShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Calistoga&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/product-item.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item"><a class="header-link link" href="../menu.html">Menu</a></li>
+
+            <li class="header-item">
+              <a class="header-link link" href="./locations.html">Locations</a>
+            </li>
+
+            <li class="header-item">
+              <a class="header-logo link" href="../index.html" title="Company logo">
+                <svg class="header-logo">
+                  <use href="../images/sprite.svg#icon-hero-logo"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="header-item">
+              <a class="header-link link" href="../about.html">About Us</a>
+            </li>
+
+            <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!--Product info section -->
+      <section class="product">
+        <div class="container second">
+          <div class="product-info-wrap">
+            <div class="img-wrap">
+              <img
+                class="product-img"
+                src="../images/product-page/head-image.jpg"
+                alt="The cup of coffee"
+                width="400"
+                height="400"
+              />
+            </div>
+            <div class="info-wrap">
+              <h1 class="product-title">Americano</h1>
+              <p class="product-price">&dollar;5.30</p>
+              <p class="product-description">
+                Our Americano is made by combining rich, full-bodied espresso with hot water,
+                creating a perfectly balanced and smooth cup that's lighter than espresso but
+                stronger than regular drip coffee.
+              </p>
+              <p class="product-variants">Available Sizes</p>
+              <ul class="product-list">
+                <li class="product-item">
+                  <p class="product-text">Small</p>
+                </li>
+                <li class="product-item">
+                  <p class="product-text">
+                    Medium <span class="price-variant">(+&dollar;1.10)</span>
+                  </p>
+                </li>
+                <li class="product-item">
+                  <p class="product-text">
+                    Large <span class="price-variant">(+&dollar;1.65)</span>
+                  </p>
+                </li>
+              </ul>
+              <strong class="product-attention">Allergen Risks*</strong>
+              <ul class="product-list attention">
+                <li class="product-item">
+                  <p class="product-text">Milk</p>
+                </li>
+                <li class="product-item">
+                  <p class="product-text">Flavored Syrups</p>
+                </li>
+                <li class="product-item">
+                  <p class="product-text">Sulphites</p>
+                </li>
+              </ul>
+              <p class="product-text">
+                * Let our team know if you have any allergies before ordering.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Popular section -->
+      <section class="popular">
+        <div class="container second">
+          <div class="popular-wrap">
+            <h2 class="popular-title">You'll Love These Too</h2>
+            <a class="popular-link link" href="../menu.html">Explore Menu</a>
+          </div>
+          <ul class="popular-list">
+            <li class="popular-item">
+              <a class="popular-card link" href="../product-cards/cappuccino.html">
+                <img
+                  class="popular-img"
+                  src="../images/product-page/cappuccino.jpg"
+                  alt="The cup of Cappuccino"
+                  width="304"
+                  height="304"
+                />
+                <h3 class="popular-subtitle">
+                  Cappuccino<span class="popular-price">&dollar;5.25</span>
+                </h3>
+              </a>
+            </li>
+            <li class="popular-item">
+              <a class="popular-card link" href="../product-cards/black-coffee.html">
+                <img
+                  class="popular-img"
+                  src="../images/product-page/black-coffee.jpg"
+                  alt="The cup of Black Coffee"
+                  width="304"
+                  height="304"
+                />
+                <h3 class="popular-subtitle">
+                  Black Coffee <span class="popular-price">&dollar;4.90</span>
+                </h3>
+              </a>
+            </li>
+            <li class="popular-item new">
+              <p class="popular-suptext">New</p>
+              <a class="popular-card link" href="../product-cards/macchiato.html">
+                <img
+                  class="popular-img"
+                  src="../images/product-page/macchiato.jpg"
+                  alt="The cup of Macchiato"
+                  width="304"
+                  height="304"
+                />
+                <h3 class="popular-subtitle">
+                  Macchiato<span class="popular-price">&dollar;6.10</span>
+                </h3>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Banner section -->
+      <section class="banner">
+        <div class="container">
+          <h2 class="visually-hidden">Online Ordering</h2>
+          <div class="banner-thumb">
+            <svg class="banner-icon">
+              <use href="../images/sprite.svg#icon-banner-hands"></use>
+            </svg>
+          </div>
+          <h3 class="banner-subtitle">Order Online</h3>
+          <p class="banner-text">Get your favorites delivered fast.</p>
+          <ul class="banner-list">
+            <li class="banner-item">
+              <a class="banner-link link uber" href="#" title="Order with Uber Eats">
+                <svg class="banner-uber">
+                  <use href="../images/sprite.svg#icon-banner-uber"></use>
+                </svg>
+                <svg class="banner-uber">
+                  <use href="../images/sprite.svg#icon-banner-eats"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="banner-item">
+              <a class="banner-link link" href="" title="Home">
+                <svg class="banner-delivery">
+                  <use href="../images/sprite.svg#icon-banner-home"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="banner-item">
+              <a class="banner-link link" href="" title="More options">
+                <svg class="banner-delivery">
+                  <use href="../images/sprite.svg#icon-banner-vector"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Ticker section -->
+      <section class="ticker">
+        <h2 class="visually-hidden">Our advantages</h2>
+        <ul class="ticker-list">
+          <li class="ticker-item">
+            <p class="ticker-text">Great Coffee</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-smiley"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Fast Service</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-bolt"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Cozy Space</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-instagram"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Handcrafted Drinks</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-sweat-waterdrop"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Local Roasts</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-smiley-love"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Global Flavor</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-element"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Friendly Baristas</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-crown"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Great Coffee</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-smiley"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Fast Service</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-bolt"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Cozy Space</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-instagram"></use>
+            </svg>
+          </li>
+        </ul>
+        <ul class="ticker-list" aria-hidden="true">
+          <li class="ticker-item">
+            <p class="ticker-text">Great Coffee</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-smiley"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Fast Service</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-bolt"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Cozy Space</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-instagram"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Handcrafted Drinks</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-sweat-waterdrop"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Local Roasts</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-smiley-love"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Global Flavor</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-element"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Friendly Baristas</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-crown"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Great Coffee</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-smiley"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Fast Service</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-bolt"></use>
+            </svg>
+          </li>
+          <li class="ticker-item">
+            <p class="ticker-text">Cozy Space</p>
+            <svg class="ticker-icon">
+              <use href="../images/sprite.svg#icon-ticker-instagram"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-adress">
+            <div class="footer-logo-thumb">
+              <a class="header-logo link" href="../index.html" title="Company logo">
+                <svg class="footer-logo">
+                  <use href="../images/sprite.svg#icon-hero-logo"></use>
+                </svg>
+              </a>
+            </div>
+
+            <h2 class="footer-title">
+              Life Begins <br />
+              After Coffee
+            </h2>
+            <address class="footer-contact">
+              <ul>
+                <li class="footer-contact-item">
+                  <a class="footer-link link" href="tel:+12125550198">
+                    <svg class="footer-contact-icon">
+                      <use href="../images/sprite.svg#icon-footer-phone"></use>
+                    </svg>
+                    +1 (212) 555-0198</a
+                  >
+                </li>
+                <li class="footer-contact-item">
+                  <a class="footer-link link" href="mailto:hello@bhaus.com">
+                    <svg class="footer-contact-icon">
+                      <use href="../images/sprite.svg#icon-footer-mail"></use>
+                    </svg>
+                    hello@bhaus.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav-main">
+              <p class="footer-text">Main</p>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a class="footer-link link" href="../menu.html">Menu</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="../locations.html">Locations</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="./about.html">About us</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="../news.html">News</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav-categories">
+              <p class="footer-text">Categories</p>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a class="footer-link link" href="../menu.html#coffee">Coffee</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="../menu.html#cold-drinks">Cold Drinks</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link link" href="../menu.html#bakery">Bakery</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav-social">
+              <p class="footer-text">Follow Us</p>
+              <ul class="footer-list social">
+                <li class="footer-item follow">
+                  <a class="footer-social link" href="" aria-label="Instagram">
+                    <svg class="footer-icon" width="20" height="20">
+                      <use href="../images/sprite.svg#icon-footer-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-item follow">
+                  <a class="footer-social link" href="" aria-label="Facebook">
+                    <svg class="footer-icon" width="20" height="20">
+                      <use href="../images/sprite.svg#icon-footer-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer-item follow">
+                  <a class="footer-social link" href="" aria-label="Twitter">
+                    <svg class="footer-icon" width="20" height="20">
+                      <use href="../images/sprite.svg#icon-footer-twitterX"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <img
+          class="footer-img"
+          src="../images/home-page/footer-images/footer-brewhouse.svg"
+          alt="Brewhaus Logo"
+          width="1200"
+          height="224"
+        />
+      </div>
+
+      <div class="footer-licenses">
+        <a class="footer-licenses-text link" href="../changelog.html">2025 &copy; Brewhaus</a>
+        <a class="footer-licenses-text link" href="../licenses.html">Licenses</a>
+      </div>
+    </footer>
+  </body>
+</html>

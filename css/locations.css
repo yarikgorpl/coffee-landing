@@ -128,7 +128,6 @@ body {
 
 .header-item {
   align-items: center;
-  padding: 2px 8px 4px;
 }
 .header-item:nth-child(3) {
   display: flex;
@@ -141,6 +140,7 @@ body {
   border-radius: 50%;
 }
 .header-link {
+  padding: 2px 8px 4px 8px;
   color: var(--primary-link-color);
   font-size: 16px;
   line-height: 1.24;
@@ -162,7 +162,14 @@ body {
 .header-item:nth-child(3):hover .header-logo,
 .header-item:nth-child(3):focus .header-logo {
   transform: scale(1.15) translateY(-2px);
-} /*-------------Location styles-------------*/
+}
+.header-list .header-link.current {
+  border-radius: 26px;
+  border: 1px solid var(--secondary-bg-color);
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+}
+/*-------------Location styles-------------*/
 .location {
   padding-bottom: 160px;
   background-color: var(--primary-bg-color);
@@ -264,6 +271,9 @@ body {
   position: relative;
   background-color: rgba(0, 0, 0, 0.2);
 }
+.help-item:hover {
+  background-color: rgba(252, 243, 217, 0.07);
+}
 .help-item::before {
   content: '';
   position: absolute;
@@ -295,16 +305,34 @@ body {
 }
 
 /*-------------------Ticker styles-------------------*/
-.ticker {
-  background-color: var(--secondary-bg-color);
+@keyframes ticker-move {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
-
+.ticker {
+  display: flex;
+  padding: 12px 24px;
+  gap: 24px;
+  background-color: var(--secondary-bg-color);
+  overflow: hidden;
+  user-select: none;
+}
+.ticker:hover .ticker-list {
+  animation-play-state: paused;
+}
 .ticker-list {
   width: 1440px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
   gap: 12px;
-  margin: auto;
+  min-width: 100%;
+  animation: ticker-move 25s linear infinite;
 }
 
 .ticker-item {
@@ -320,8 +348,7 @@ body {
   width: 24px;
   height: 24px;
   fill: var(--main-svg-fill);
-}
-/*-------------------Footer styles-------------------*/
+} /*-------------------Footer styles-------------------*/
 .footer {
   padding-top: 80px;
   background-color: var(--primary-bg-color);

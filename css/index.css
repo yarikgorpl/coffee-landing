@@ -122,7 +122,6 @@ body {
 
 .header-list {
   display: flex;
-
   justify-content: space-between;
 }
 
@@ -163,6 +162,7 @@ body {
 .header-item:nth-child(3):focus .header-logo {
   transform: scale(1.15) translateY(-2px);
 }
+
 /*-------------------Hero styles-------------------*/
 .hero {
   background-color: #1d4e1a;
@@ -211,16 +211,34 @@ body {
 }
 
 /*-------------------Ticker styles-------------------*/
-.ticker {
-  background-color: var(--secondary-bg-color);
+@keyframes ticker-move {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
-
+.ticker {
+  display: flex;
+  padding: 12px 24px;
+  gap: 24px;
+  background-color: var(--secondary-bg-color);
+  overflow: hidden;
+  user-select: none;
+}
+.ticker:hover .ticker-list {
+  animation-play-state: paused;
+}
 .ticker-list {
   width: 1440px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
   gap: 12px;
-  margin: auto;
+  min-width: 100%;
+  animation: ticker-move 25s linear infinite;
 }
 
 .ticker-item {
@@ -258,10 +276,15 @@ body {
 .category-item {
   gap: 24px;
 }
+.category-item:hover .category-img{
+  transform: scale(1.1);
+}
 .category-img {
   background-color: #1d4e1a;
   border-radius: 50%;
   margin-bottom: 32px;
+  transform: scale(1);
+  transition: transform 250ms linear;
 }
 .category-subtitle {
   font-family: 'Calistoga', sans-serif;
@@ -346,7 +369,9 @@ body {
   background-color: transparent;
 }
 .popular-subtitle {
+  color: var(--primary-text-color);
   font-family: 'Calistoga', sans-serif;
+  
   font-size: 20px;
   line-height: 1.24;
   letter-spacing: 0.01em;
