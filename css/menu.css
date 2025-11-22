@@ -300,23 +300,24 @@ body {
   border-radius: 12px;
   background-color: var(--secondary-bg-color);
 }
-.menu-filter .menu-link {
+.menu-filter .menu-filter-link {
   display: flex;
   align-items: center;
   gap: 20px;
   font-family: 'Calistoga', sans-serif;
 }
-.menu-link {
+
+.menu-filter-link {
   font-size: 20px;
   line-height: 1.24;
   letter-spacing: 0.01em;
   color: var(--primary-bg-color);
   outline: none;
 }
-.menu-link.active .menu-filter-img {
+.menu-filter-link.active .menu-filter-img {
   background-color: var(--primary-bg-color);
 }
-.menu-link.active .menu-filter-category {
+.menu-filter-link.active .menu-filter-category {
   color: var(--primary-text-color);
 }
 
@@ -326,10 +327,10 @@ body {
   transition: transform 250ms linear;
   transform: scale(1);
 }
-.menu-link:hover .menu-filter-img,
-.menu-link:focus .menu-filter-img,
-.menu-link:hover .menu-filter-category,
-.menu-link:focus .menu-filter-category {
+.menu-filter-link:hover .menu-filter-img,
+.menu-filter-link:focus .menu-filter-img,
+.menu-filter-link:hover .menu-filter-category,
+.menu-filter-link:focus .menu-filter-category {
   transform: scale(1.2);
 }
 
@@ -339,10 +340,28 @@ body {
   transform: scale(1);
   transition: transform 250ms linear;
 }
+.menu-link {
+  font-size: 20px;
+  line-height: 1.24;
+  letter-spacing: 0.01em;
+  color: var(--primary-bg-color);
+  outline: none;
+}
+.menu-link:hover .menu-img,
+.menu-link:focus .menu-img {
+  transform: scale(1.05);
+}
+.menu-link:hover .menu-subtitle,
+.menu-link:focus .menu-subtitle {
+  color: rgba(29, 78, 26, 0.7);
+}
+
 .menu-img {
   background-color: var(--primary-bg-color);
   border-radius: 24px;
   margin-bottom: 12px;
+  transform: scale(1);
+  transition: transform 250ms linear;
 }
 .menu-title {
   font-family: 'Calistoga', sans-serif;

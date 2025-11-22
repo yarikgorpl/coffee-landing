@@ -140,6 +140,38 @@ body {
   display: flex;
   gap: 48px;
 }
+.new {
+  position: relative;
+}
+.product-suptext {
+  padding: 2px 8px 4px 8px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+  width: 40px;
+  height: 24px;
+  border: 1px solid rgba(29, 78, 26, 0.12);
+  border-radius: 12px;
+  background-color: var(--secondary-bg-color);
+}
+.product-info-suptext {
+  padding: 2px 8px 4px 8px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: 0.03em;
+  width: 40px;
+  height: 24px;
+  border: 1px solid rgba(29, 78, 26, 0.12);
+  border-radius: 12px;
+  background-color: var(--secondary-bg-color);
+}
 .product-img {
   border-radius: 24px;
   background-color: var(--primary-bg-color);
@@ -277,11 +309,20 @@ body {
 .popular-card {
   color: var(--primary-text-color);
 }
+.popular-card:hover .popular-img,
+.popular-card:focus .popular-img {
+  transform: scale(1.05);
+}
+.popular-card:hover .popular-subtitle,
+.popular-card:focus .popular-subtitle {
+  color: rgba(29, 78, 26, 0.7);
+}
 .popular-img {
   margin-bottom: 12px;
   border-radius: 24px;
-
   background-color: var(--primary-bg-color);
+  transform: scale(1);
+  transition: transform 250ms linear;
 }
 .popular-subtitle {
   padding: 0px 8px;
