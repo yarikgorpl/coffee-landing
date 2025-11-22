@@ -286,11 +286,11 @@ body {
   position: relative;
 }
 .menu-suptext {
-  padding: 2px 8px 4px 8px;
   position: absolute;
   top: 16px;
   left: 16px;
-
+  z-index: 1;
+  padding: 2px 8px 4px 8px;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.03em;

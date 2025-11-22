@@ -144,10 +144,11 @@ body {
   position: relative;
 }
 .product-suptext {
-  padding: 2px 8px 4px 8px;
   position: absolute;
   top: 16px;
   left: 16px;
+  padding: 2px 8px 4px 8px;
+  z-index: 1;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.03em;
@@ -297,6 +298,7 @@ body {
   position: absolute;
   top: 16px;
   left: 16px;
+  z-index: 1;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: 0.03em;
@@ -309,6 +311,7 @@ body {
 .popular-card {
   color: var(--primary-text-color);
 }
+
 .popular-card:hover .popular-img,
 .popular-card:focus .popular-img {
   transform: scale(1.05);
