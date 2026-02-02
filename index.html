@@ -21,21 +21,21 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+    <div class="slogan-wrap" data-slogan>
+      <p class="slogan-text">Buy one coffee, get one free — this week only (April 14-20)</p>
+      <button
+        class="slogan-btn"
+        type="button"
+        title="Close notification"
+        aria-label="Close notification"
+        data-slogan-close
+      >
+        <svg class="slogan-close-icon" width="12" height="12">
+          <use href="./images/sprite.svg#icon-hero-close-btn"></use>
+        </svg>
+      </button>
+    </div>
     <header class="header">
-      <div class="header-slogan-wrap" data-slogan>
-        <p class="header-text">Buy one coffee, get one free — this week only (April 14-20)</p>
-        <button
-          data-slogan-close
-          class="header-btn"
-          type="button"
-          title="Close notification"
-          aria-label="Close notification"
-        >
-          <svg class="header-close" width="12" height="12">
-            <use href="./images/sprite.svg#icon-hero-close-btn"></use>
-          </svg>
-        </button>
-      </div>
       <div class="container">
         <nav class="header-nav">
           <ul class="header-list">
@@ -44,15 +44,15 @@
             <li class="header-item">
               <a class="header-link link" href="./locations.html">Locations</a>
             </li>
+          </ul>
 
-            <li class="header-item">
-              <a class="header-logo link" href="./index.html" title="Company logo">
-                <svg class="header-logo">
-                  <use href="./images/sprite.svg#icon-hero-logo"></use>
-                </svg>
-              </a>
-            </li>
+          <a class="header-link-logo link" href="./index.html" title="Company logo">
+            <svg class="header-logo" width="26" height="26">
+              <use href="./images/sprite.svg#icon-hero-logo"></use>
+            </svg>
+          </a>
 
+          <ul class="header-list">
             <li class="header-item">
               <a class="header-link link" href="./about.html">About Us</a>
             </li>
@@ -60,11 +60,52 @@
             <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
           </ul>
         </nav>
+        <button class="mobile-menu-btn" type="button" aria-label="Open mobile menu">
+          <svg class="mobile-menu-open-icon" width="20px" height="20px">
+            <use href="./images/sprite.svg#icon-mobile-menu-open"></use>
+          </svg>
+        </button>
+        <!-- <div class="mobile-menu">
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
+
+              <li class="header-item">
+                <a class="header-link link" href="./locations.html">Locations</a>
+              </li>
+            </ul>
+
+            <a class="header-link-logo link" href="./index.html" title="Company logo">
+              <svg class="header-logo" width="26" height="26">
+                <use href="./images/sprite.svg#icon-hero-logo"></use>
+              </svg>
+            </a>
+
+            <ul class="header-list">
+              <li class="header-item">
+                <a class="header-link link" href="./about.html">About Us</a>
+              </li>
+
+              <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
+            </ul>
+          </nav>
+          <button
+            type="button"
+            class="mobile-menu-btn"
+            type="button"
+            title="Close mobile menu"
+            aria-label="Close mobile menu"
+          >
+            <svg class="mobile-menu-close-icon" width="20px" height="20px">
+              <use href="./images/sprite.svg#icon-mobile-menu-close"></use>
+            </svg>
+          </button>
+        </div> -->
       </div>
     </header>
     <main>
       <!-- Hero section -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <p class="hero-text">Because great coffee is the start of something even greater.</p>
           <h1 class="hero-title">Life Begins <br />After Coffee</h1>
@@ -77,17 +118,43 @@
               <a class="hero-link link" href="./locations.html">Our Locations</a>
             </li>
           </ul>
-          <img
-            class="hero-img"
-            src="./images/home-page/hero-images/Images-png.png"
-            alt="A cup of coffee"
-            width="1250"
-            height="520"
-          />
+
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/home-page/hero-1x.avif 1x,
+                ./images/desktop/home-page/hero-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/home-page/hero-1x.avif 1x,
+                ./images/tablet/home-page/hero-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/home-page/hero-1x.avif 1x,
+                ./images/mobile/home-page/hero-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+            <img
+              class="hero-img"
+              src="./images/desktop/home-page/hero-1x.avif"
+              alt="A cup of coffee"
+              width="1440px"
+            />
+          </picture>
         </div>
-      </section>
+      </section> -->
       <!-- Ticker section -->
-      <section class="ticker">
+      <!-- <section class="ticker">
         <h2 class="visually-hidden">Our advantages</h2>
         <ul class="ticker-list">
           <li class="ticker-item">
@@ -213,21 +280,47 @@
             </svg>
           </li>
         </ul>
-      </section>
+      </section> -->
       <!-- Categories section -->
-      <section class="category">
+      <!-- <section class="category">
         <div class="container">
           <h2 class="category-title">Find and Get <br />What You Love</h2>
           <ul class="category-list">
             <li class="category-item">
               <a href="./menu.html#coffee">
-                <img
-                  class="category-img"
-                  src=".//images/home-page/category-images/coffee.png"
-                  alt="The cup of coffee"
-                  width="288 px"
-                  height="288 px"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/home-page/category1-1x.avif 1x,
+                      ./images/desktop/home-page/category1-2x.avif 2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/home-page/category1-1x.avif 1x,
+                      ./images/tablet/home-page/category1-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/home-page/category1-1x.avif 1x,
+                      ./images/mobile/home-page/category1-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                  <img
+                    class="category-img"
+                    src="./images/desktop/home-page/category1-1x.avif"
+                    alt="The cup of coffee"
+                    width="288px"
+                    height="288px"
+                  />
+                </picture>
               </a>
               <h3 class="category-subtitle">Coffee</h3>
             </li>
@@ -255,9 +348,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--Popular section   -->
-      <section class="popular">
+      <!-- <section class="popular">
         <div class="container">
           <h2 class="popular-title">Loved by Locals</h2>
           <p class="popular-text">Local go-to's everyone loves — handpicked and always fresh.</p>
@@ -326,9 +419,9 @@
           </ul>
           <a class="popular-link link" href="./menu.html">Explore Menu</a>
         </div>
-      </section>
+      </section> -->
       <!--About section -->
-      <section class="about">
+      <!-- <section class="about">
         <div class="container">
           <div class="about-wrap">
             <div class="text-wrap">
@@ -399,9 +492,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!--Testimonials section -->
-      <section class="testimonials">
+      <!-- <section class="testimonials">
         <div class="container">
           <h2 class="testimonials-title">What People Love About Us</h2>
           <ul class="testimonials-list">
@@ -474,9 +567,9 @@
           </ul>
           <a class="testimonials-link link" href="#locations">Our Locations</a>
         </div>
-      </section>
+      </section> -->
       <!--Location section -->
-      <section class="location">
+      <!-- <section class="location">
         <div class="container">
           <h2 class="location-title">Nearby Cafés</h2>
           <p class="location-text">Find a Brewhaus nearby and stop in for your favorite drink.</p>
@@ -544,9 +637,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--News section -->
-      <section class="news">
+      <!-- <section class="news">
         <div class="container">
           <div class="news-wrap">
             <h2 class="news-title">What's New at Our Coffee Shop</h2>
@@ -600,9 +693,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--Banner section -->
-      <section class="banner">
+      <!-- <section class="banner">
         <div class="container">
           <h2 class="visually-hidden">Order online</h2>
           <div class="banner-thumb">
@@ -644,9 +737,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Ticker section -->
-      <section class="ticker">
+      <!-- <section class="ticker">
         <h2 class="visually-hidden">Our advantages</h2>
         <ul class="ticker-list">
           <li class="ticker-item">
@@ -772,9 +865,9 @@
             </svg>
           </li>
         </ul>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-wrap">
           <div class="footer-adress">
@@ -882,8 +975,8 @@
         <a class="footer-licenses-text link" href="./changelog.html">2025 &copy; Brewhaus</a>
         <a class="footer-licenses-text link" href="./licenses.html">Licenses</a>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-backdrop>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-backdrop>
       <div class="modal" data-modal>
         <button
           class="modal-close-btn"
@@ -962,8 +1055,9 @@
           <button class="modal-submit-btn" type="submit">Place Order</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script>
+    <script src="./js/slogan.js"></script> -->
   </body>
 </html>
