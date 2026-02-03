@@ -22,7 +22,9 @@
   </head>
   <body>
     <div class="slogan-wrap" data-slogan>
-      <p class="slogan-text">Buy one coffee, get one free — this week only (April 14-20)</p>
+      <p class="slogan-text" data-text>
+        Buy one coffee, get one free — this week only (April 14-20)
+      </p>
       <button
         class="slogan-btn"
         type="button"
@@ -37,35 +39,7 @@
     </div>
     <header class="header">
       <div class="container">
-        <nav class="header-nav">
-          <ul class="header-list">
-            <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
-
-            <li class="header-item">
-              <a class="header-link link" href="./locations.html">Locations</a>
-            </li>
-          </ul>
-
-          <a class="header-link-logo link" href="./index.html" title="Company logo">
-            <svg class="header-logo" width="26" height="26">
-              <use href="./images/sprite.svg#icon-hero-logo"></use>
-            </svg>
-          </a>
-
-          <ul class="header-list">
-            <li class="header-item">
-              <a class="header-link link" href="./about.html">About Us</a>
-            </li>
-
-            <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
-          </ul>
-        </nav>
-        <button class="mobile-menu-btn" type="button" aria-label="Open mobile menu">
-          <svg class="mobile-menu-open-icon" width="20px" height="20px">
-            <use href="./images/sprite.svg#icon-mobile-menu-open"></use>
-          </svg>
-        </button>
-        <!-- <div class="mobile-menu">
+        <div class="nav-wrap">
           <nav class="header-nav">
             <ul class="header-list">
               <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
@@ -90,17 +64,40 @@
             </ul>
           </nav>
           <button
+            class="menu-button"
             type="button"
-            class="mobile-menu-btn"
-            type="button"
-            title="Close mobile menu"
-            aria-label="Close mobile menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
           >
-            <svg class="mobile-menu-close-icon" width="20px" height="20px">
-              <use href="./images/sprite.svg#icon-mobile-menu-close"></use>
+            <svg class="menu-icon" width="20px" height="20px" aria-label="Switch mobile menu">
+              <use class="icon-open-menu" href="./images/sprite.svg#icon-mobile-menu-open"></use>
+              <use class="icon-close-menu" href="./images/sprite.svg#icon-mobile-menu-close"></use>
             </svg>
           </button>
-        </div> -->
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+          <nav class="mobile-nav">
+            <ul class="mobile-list">
+              <li class="mobile-item">
+                <a class="mobile-link link" href="./menu.html">Menu</a>
+              </li>
+
+              <li class="mobile-item">
+                <a class="mobile-link link" href="./locations.html">Locations</a>
+              </li>
+
+              <li class="mobile-item">
+                <a class="mobile-link link" href="./about.html">About Us</a>
+              </li>
+
+              <li class="mobile-item">
+                <a class="mobile-link link" href="./news.html">News</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -1056,8 +1053,8 @@
         </form>
       </div>
     </div> -->
-
-    <!-- <script src="./js/modal.js"></script>
-    <script src="./js/slogan.js"></script> -->
+    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/slogan.js"></script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 (() => {
   const refs = {
     slogan: document.querySelector('[data-slogan]'),
+    text: document.querySelector('[data-text]'),
     closeSloganBtn: document.querySelector('[data-slogan-close]'),
   };
 
@@ -13,5 +14,6 @@
 
   function closeSlogan() {
     refs.slogan.classList.add('is-hidden');
+    refs.text.classList.add('is-hidden');
   }
 })();
