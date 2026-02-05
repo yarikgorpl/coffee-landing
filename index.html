@@ -102,10 +102,10 @@
     </header>
     <main>
       <!-- Hero section -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
-          <p class="hero-text">Because great coffee is the start of something even greater.</p>
           <h1 class="hero-title">Life Begins <br />After Coffee</h1>
+          <p class="hero-text">Because great coffee is the start of something even greater.</p>
 
           <ul class="hero-list">
             <li class="hero-item">
@@ -119,8 +119,8 @@
           <picture>
             <source
               srcset="
-                ./images/desktop/home-page/hero-1x.avif 1x,
-                ./images/desktop/home-page/hero-2x.avif 2x
+                ./images/desktop/home-page/full-hero-1x.avif 1x,
+                ./images/desktop/home-page/full-hero-2x.avif 2x
               "
               media="(min-width: 1440px)"
               type="image/avif"
@@ -149,9 +149,9 @@
             />
           </picture>
         </div>
-      </section> -->
+      </section>
       <!-- Ticker section -->
-      <!-- <section class="ticker">
+      <section class="ticker">
         <h2 class="visually-hidden">Our advantages</h2>
         <ul class="ticker-list">
           <li class="ticker-item">
@@ -277,9 +277,9 @@
             </svg>
           </li>
         </ul>
-      </section> -->
+      </section>
       <!-- Categories section -->
-      <!-- <section class="category">
+      <section class="category">
         <div class="container">
           <h2 class="category-title">Find and Get <br />What You Love</h2>
           <ul class="category-list">
@@ -323,31 +323,84 @@
             </li>
             <li class="category-item">
               <a href="./menu.html#cold-drink">
-                <img
-                  class="category-img"
-                  src=".//images/home-page/category-images/cold-drink.png"
-                  alt="Cold drinks"
-                  width="288 px"
-                  height="288 px"
-              /></a>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/home-page/category2-1x.avif 1x,
+                      ./images/desktop/home-page/category2-2x.avif 2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/home-page/category2-1x.avif 1x,
+                      ./images/tablet/home-page/category2-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/home-page/category2-1x.avif 1x,
+                      ./images/mobile/home-page/category2-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                  <img
+                    class="category-img"
+                    src="./images/desktop/home-page/category2-1x.avif"
+                    alt="The cup of coffee"
+                    width="288px"
+                    height="288px"
+                  />
+                </picture>
+              </a>
               <h3 class="category-subtitle">Cold Drinks</h3>
             </li>
             <li class="category-item">
               <a href="./menu.html#bakery">
-                <img
-                  class="category-img"
-                  src=".//images/home-page/category-images/bakery.png"
-                  alt="Bakery"
-                  width="288 px"
-                  height="288 px"
-              /></a>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/home-page/category3-1x.avif 1x,
+                      ./images/desktop/home-page/category3-2x.avif 2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/home-page/category3-1x.avif 1x,
+                      ./images/tablet/home-page/category3-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/home-page/category3-1x.avif 1x,
+                      ./images/mobile/home-page/category3-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                  <img
+                    class="category-img"
+                    src="./images/desktop/home-page/category3-1x.avif"
+                    alt="The cup of coffee"
+                    width="288px"
+                    height="288px"
+                  /> </picture
+              ></a>
               <h3 class="category-subtitle">Bakery</h3>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Popular section   -->
-      <!-- <section class="popular">
+      <section class="popular">
         <div class="container">
           <h2 class="popular-title">Loved by Locals</h2>
           <p class="popular-text">Local go-to's everyone loves — handpicked and always fresh.</p>
@@ -355,13 +408,40 @@
             <li class="popular-item new">
               <a href="./menu.html#cold-brew" class="link">
                 <p class="popular-suptext">New</p>
-                <img
-                  class="popular-img"
-                  src="./images/home-page/popular-images/cold-brew.jpg"
-                  alt="The cup of Cold Brew"
-                  width="282"
-                  height="282"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/home-page/cold-brew-1x.avif 1x,
+                      ./images/desktop/home-page/cold-brew-2x.avif 2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/home-page/cold-brew-1x.avif 1x,
+                      ./images/tablet/home-page/cold-brew-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/home-page/cold-brew-1x.avif 1x,
+                      ./images/mobile/home-page/cold-brew-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                  <img
+                    class="popular-img"
+                    src="./images/desktop/home-page/cold-brew-1x.avif"
+                    alt="The cup of coffee"
+                    width="282px"
+                    height="282px"
+                  />
+                </picture>
+
                 <div class="popular-wraper">
                   <h3 class="popular-subtitle">Cold Brew</h3>
                   <p class="popular-price">&#36;6.75</p>
@@ -370,13 +450,40 @@
             </li>
             <li class="popular-item">
               <a href="./menu.html#iced-latte" class="link">
-                <img
-                  class="popular-img"
-                  src="./images/home-page/popular-images/iced-latte.jpg"
-                  alt="The cup of iced-latte"
-                  width="282"
-                  height="282"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/home-page/iced-latte-1x.avif 1x,
+                      ./images/desktop/home-page/iced-latte-2x.avif 2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/home-page/iced-latte-1x.avif 1x,
+                      ./images/tablet/home-page/iced-latte-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/home-page/iced-latte-1x.avif 1x,
+                      ./images/mobile/home-page/iced-latte-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                  <img
+                    class="popular-img"
+                    src="./images/desktop/home-page/iced-latte-1x.avif"
+                    alt="The cup of coffee"
+                    width="282px"
+                    height="282px"
+                  />
+                </picture>
+
                 <div class="popular-wraper">
                   <h3 class="popular-subtitle">Iced Latte</h3>
                   <p class="popular-price">&#36;4.45</p>
@@ -385,13 +492,40 @@
             </li>
             <li class="popular-item">
               <a href="./menu.html#macaroon" class="link">
-                <img
-                  class="popular-img"
-                  src="./images/home-page/popular-images/macarons.jpg"
-                  alt="The macaroons "
-                  width="282"
-                  height="282"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/home-page/macaroons-1x.avif 1x,
+                      ./images/desktop/home-page/macaroons-2x.avif 2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/home-page/macaroons-1x.avif 1x,
+                      ./images/tablet/home-page/macaroons-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/home-page/macaroons-1x.avif 1x,
+                      ./images/mobile/home-page/macaroons-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                  <img
+                    class="popular-img"
+                    src="./images/desktop/home-page/macaroons-1x.avif"
+                    alt="The cup of coffee"
+                    width="282px"
+                    height="282px"
+                  />
+                </picture>
+
                 <div class="popular-wraper">
                   <h3 class="popular-subtitle">Macaroons</h3>
                   <p class="popular-price">&#36;2.60</p>
@@ -400,13 +534,40 @@
             </li>
             <li class="popular-item">
               <a href="./menu.html#cappuccino" class="link">
-                <img
-                  class="popular-img"
-                  src="./images/home-page/popular-images/cappuccino.jpg"
-                  alt="The cup of cappuccino "
-                  width="282"
-                  height="282"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/home-page/cappuccino-1x.avif 1x,
+                      ./images/desktop/home-page/cappuccino-2x.avif 2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/home-page/cappuccino-1x.avif 1x,
+                      ./images/tablet/home-page/cappuccino-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/home-page/cappuccino-1x.avif 1x,
+                      ./images/mobile/home-page/cappuccino-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                  <img
+                    class="popular-img"
+                    src="./images/desktop/home-page/cappuccino-1x.avif"
+                    alt="The cup of coffee"
+                    width="282px"
+                    height="282px"
+                  />
+                </picture>
+
                 <div class="popular-wraper">
                   <h3 class="popular-subtitle">Cappuccino</h3>
                   <p class="popular-price">&#36;5.25</p>
@@ -416,9 +577,9 @@
           </ul>
           <a class="popular-link link" href="./menu.html">Explore Menu</a>
         </div>
-      </section> -->
+      </section>
       <!--About section -->
-      <!-- <section class="about">
+      <section class="about">
         <div class="container">
           <div class="about-wrap">
             <div class="text-wrap">
@@ -463,33 +624,116 @@
               </ul>
             </div>
             <div class="img-wrap">
-              <ul class="about-images">
+              <ul class="about-images-list">
                 <li class="about-images-item">
-                  <img
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/home-page/barista-1x.avif 1x,
+                      ./images/desktop/home-page/barista-2x.avif 2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/home-page/barista-1x.avif 1x,
+                      ./images/tablet/home-page/barista-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/home-page/barista-1x.avif 1x,
+                      ./images/mobile/home-page/barista-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                 <img
                     class="about-images-poster"
-                    src="./images/home-page/about-images/barista.jpg"
+                    src="./images/desktop/home-page/barista-1x.avif"
                     alt="Barista"
                   />
+                </picture>
+
+                 
                 </li>
                 <li class="about-images-item column">
-                  <div class="column-wrap">
-                    <img
-                      class="about-images-poster"
-                      src="./images/home-page/about-images/holl.jpg"
-                      alt="Holl"
-                    />
-                    <img
-                      class="about-images-poster"
-                      src="./images/home-page/about-images/cup.jpg"
-                      alt="Cup"
-                    />
+                  <div class="column-images-wrap">
+                  <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/home-page/hall-1x.avif 1x,
+                      ./images/desktop/home-page/hall-2x.avif 2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/home-page/hall-1x.avif 1x,
+                      ./images/tablet/home-page/hall-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/home-page/hall-1x.avif 1x,
+                      ./images/mobile/home-page/hall-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                 <img
+                    class="about-images-poster"
+                    src="./images/desktop/home-page/hall-1x.avif"
+                    alt="Hall"
+                  />
+                </picture>
+
+                   <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/home-page/cup-1x.avif 1x,
+                      ./images/desktop/home-page/cup-2x.avif 2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/home-page/cup-1x.avif 1x,
+                      ./images/tablet/home-page/cup-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/home-page/cup-1x.avif 1x,
+                      ./images/mobile/home-page/cup-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                 <img
+                    class="about-images-poster"
+                    src="./images/desktop/home-page/cup-1x.avif"
+                    alt="Cup of coffee"
+                  />
+                </picture>
+
+                 
                   </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!--Testimonials section -->
       <!-- <section class="testimonials">
         <div class="container">
