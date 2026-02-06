@@ -729,7 +729,7 @@
         </div>
       </section>
       <!--Testimonials section -->
-      <!-- <section class="testimonials">
+      <section class="testimonials">
         <div class="container">
           <h2 class="testimonials-title">What People Love About Us</h2>
           <ul class="testimonials-list">
@@ -746,39 +746,42 @@
                   </blockquote>
                   <p class="testimonials-text">Patrick M. - Espresso lover</p>
                 </div>
-                <img
-                  class="testimonials-img"
-                  src="./images/home-page/testimonials-images/espresso.jpg"
-                  alt="The cup of espresso"
-                  width="384px"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/home-page/about1-1x.avif 1x,
+                      ./images/desktop/home-page/about1-2x.avif 2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/home-page/about1-1x.avif 1x,
+                      ./images/tablet/home-page/about1-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/home-page/about1-1x.avif 1x,
+                      ./images/mobile/home-page/about1-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                  <img
+                    class="testimonials-img"
+                    src="./images/desktop/home-page/about1-1x.avif"
+                    alt="The cup of espresso"
+                  />
+                </picture>
               </div>
             </li>
 
             <li class="testimonials-item">
-              <div class="wrap">
-                <img
-                  class="testimonials-img"
-                  src="./images/home-page/testimonials-images/coffee.jpg"
-                  alt="The glass of coffee"
-                  width="384"
-                />
-                <div class="subwrap">
-                  <svg class="testimonials-icon" width="24" height="24">
-                    <use href="./images/sprite.svg#icon-testimonials-vector"></use>
-                  </svg>
-
-                  <blockquote class="testimonials-subtitle">
-                    Always a warm, welcoming vibe — perfect for a quick coffee or a quiet read. The
-                    banana bread? Totally addictive.
-                  </blockquote>
-                  <p class="testimonials-text">Jordan T. - Iced latte addict</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="wrap">
+              <div class="wrap reverse">
                 <div class="subwrap">
                   <svg class="testimonials-icon" width="24" height="24">
                     <use href="./images/sprite.svg#icon-testimonials-vector"></use>
@@ -791,31 +794,95 @@
 
                   <p class="testimonials-text">Sofia R. - Coffee fan</p>
                 </div>
-                <img
-                  class="testimonials-img"
-                  src="./images/home-page/testimonials-images/iced-latte.jpg"
-                  alt="The glass of iced latte"
-                  width="384"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/home-page/about2-1x.avif 1x,
+                      ./images/desktop/home-page/about2-2x.avif 2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/home-page/about2-1x.avif 1x,
+                      ./images/tablet/home-page/about2-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/home-page/about2-1x.avif 1x,
+                      ./images/mobile/home-page/about2-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                  <img
+                    class="testimonials-img"
+                    src="./images/desktop/home-page/about2-1x.avif"
+                    alt="The glass of coffee"
+                  />
+                </picture>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="wrap">
+                <div class="subwrap">
+                  <svg class="testimonials-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-testimonials-vector"></use>
+                  </svg>
+                  <blockquote class="testimonials-subtitle">
+                    Always a warm, welcoming vibe — perfect for a quick coffee or a quiet read. The
+                    banana bread? Totally addictive.
+                  </blockquote>
+                  <p class="testimonials-text">Jordan T. - Iced latte addict</p>
+                </div>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/home-page/about3-1x.avif 1x,
+                      ./images/desktop/home-page/about3-2x.avif 2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/home-page/about3-1x.avif 1x,
+                      ./images/tablet/home-page/about3-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/home-page/about3-1x.avif 1x,
+                      ./images/mobile/home-page/about3-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                  <img
+                    class="testimonials-img"
+                    src="./images/desktop/home-page/about3-1x.avif"
+                    alt="The glass of iced latte"
+                  />
+                </picture>
               </div>
             </li>
           </ul>
           <a class="testimonials-link link" href="#locations">Our Locations</a>
         </div>
-      </section> -->
+      </section>
       <!--Location section -->
-      <!-- <section class="location">
+      <section class="location">
         <div class="container">
           <h2 class="location-title">Nearby Cafés</h2>
           <p class="location-text">Find a Brewhaus nearby and stop in for your favorite drink.</p>
           <div class="location-wrap">
-            <img
-              class="location-img"
-              src="./images/home-page/location-images/map.jpg"
-              alt="Our location on the map"
-              width="588"
-              height="444"
-            />
             <ul class="location-list list" id="locations">
               <li class="location-item">
                 <p class="location-city">Brooklyn</p>
@@ -851,6 +918,39 @@
                 <a class="location-link link" href="#">Get Directions</a>
               </li>
             </ul>
+            <picture>
+              <source
+                srcset="
+                  ./images/desktop/home-page/map-1x.avif 1x,
+                  ./images/desktop/home-page/map-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  ./images/tablet/home-page/map-1x.avif 1x,
+                  ./images/tablet/home-page/map-2x.avif 2x
+                "
+                media="(min-width: 768px)"
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  ./images/mobile/home-page/map-1x.avif 1x,
+                  ./images/mobile/home-page/map-2x.avif 2x
+                "
+                media="(max-width: 767px)"
+                type="image/avif"
+              />
+              <img
+                class="location-img"
+                src="./images/desktop/home-page/map-1x.avif"
+                alt="Our location on the map"
+                width="588px"
+                height="444px"
+              />
+            </picture>
           </div>
           <h3 class="location-subtitle">Need Help?</h3>
           <ul class="help-list list">
@@ -872,7 +972,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--News section -->
       <!-- <section class="news">
         <div class="container">
