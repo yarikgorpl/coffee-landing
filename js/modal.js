@@ -5,6 +5,7 @@
     backdrop: document.querySelector('[data-backdrop]'),
     slogan: document.querySelector('[data-slogan]'),
     closeSloganBtn: document.querySelector('[data-slogan-close]'),
+    body: document.body,
   };
 
   // Відкриття модального вікна
@@ -38,10 +39,12 @@
 
   function openModal() {
     refs.backdrop.classList.remove('is-hidden');
+    refs.body.classList.add('no-scroll');
   }
 
   function closeModal() {
     refs.backdrop.classList.add('is-hidden');
+    refs.body.classList.remove('no-scroll');
   }
 
   function closeSlogan() {
