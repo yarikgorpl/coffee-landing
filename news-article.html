@@ -23,29 +23,65 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="header-nav">
-          <ul class="header-list">
-            <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
+        <div class="nav-wrap">
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
 
-            <li class="header-item">
-              <a class="header-link link" href="./locations.html">Locations</a>
-            </li>
+              <li class="header-item">
+                <a class="header-link link" href="./locations.html">Locations</a>
+              </li>
+            </ul>
 
-            <li class="header-item">
-              <a class="header-logo link" href="./index.html" title="Company logo">
-                <svg class="header-logo">
-                  <use href="./images/sprite.svg#icon-hero-logo"></use>
-                </svg>
-              </a>
-            </li>
+            <a class="header-link-logo link" href="./index.html" title="Company logo">
+              <svg class="header-logo" width="26" height="26">
+                <use href="./images/sprite.svg#icon-hero-logo"></use>
+              </svg>
+            </a>
 
-            <li class="header-item">
-              <a class="header-link link" href="./about.html">About Us</a>
-            </li>
+            <ul class="header-list">
+              <li class="header-item">
+                <a class="header-link link" href="./about.html">About Us</a>
+              </li>
 
-            <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
-          </ul>
-        </nav>
+              <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
+            </ul>
+          </nav>
+          <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg class="menu-icon" width="20px" height="20px" aria-label="Switch mobile menu">
+              <use class="icon-open-menu" href="./images/sprite.svg#icon-mobile-menu-open"></use>
+              <use class="icon-close-menu" href="./images/sprite.svg#icon-mobile-menu-close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+          <nav class="mobile-nav">
+            <ul class="mobile-list">
+              <li class="mobile-item">
+                <a class="mobile-link link" href="./menu.html">Menu</a>
+              </li>
+
+              <li class="mobile-item">
+                <a class="mobile-link link" href="./locations.html">Locations</a>
+              </li>
+
+              <li class="mobile-item">
+                <a class="mobile-link link" href="./about.html">About Us</a>
+              </li>
+
+              <li class="mobile-item">
+                <a class="mobile-link link" href="./news.html">News</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -125,52 +161,138 @@
           </div>
         </div>
       </section>
-      <!--More news section-->
+      <!--News section-->
       <section class="news">
         <div class="container">
-          <div class="news-header">
-            <h2 class="news-title">More to Explore</h2>
+          <div class="news-wrap">
+            <h2 class="news-title">What's new at our coffee shop</h2>
             <a class="news-link link" href="./news.html">View All</a>
           </div>
           <ul class="news-list">
             <li class="news-item">
-              <img
-                class="news-img"
-                src="./images/news-article-page/img-2.jpg"
-                alt="Three women are drinking coffee"
-                width="384"
-                height="280"
-              />
-              <p class="news-text">Apr 10, 2025</p>
-              <h3 class="news-subtitle">
-                Celebrate the Season with Our New Spring Drink Specials Today
-              </h3>
+              <a href="./news.html" class="link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/home-page/news1-1x.avif.avif 1x,
+                      ./images/desktop/home-page/news1-2x.avif      2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/home-page/news1-1x.avif 1x,
+                      ./images/tablet/home-page/news1-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/home-page/news1-1x.avif 1x,
+                      ./images/mobile/home-page/news1-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                  <img
+                    class="news-img"
+                    src="./images/desktop/home-page/news1-1x.avif"
+                    alt="Three women are drinking coffe"
+                  />
+                </picture>
+
+                <div class="news-wrapper">
+                  <p class="news-text">Apr 10, 2025</p>
+                  <h3 class="news-subtitle">
+                    Celebrate the season with our new spring drink specials today
+                  </h3>
+                </div>
+              </a>
             </li>
             <li class="news-item">
-              <img
-                class="news-img"
-                src="./images/news-article-page/img-3.jpg"
-                alt="Barista smilles"
-                width="384"
-                height="280"
-              />
-              <p class="news-text">Apr 2, 2025</p>
-              <h3 class="news-subtitle">
-                Our New Brewhaus Flushing Location Is Now Officially Open
-              </h3>
+              <a href="./news.html" class="link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/home-page/news2-1x.avif.avif 1x,
+                      ./images/desktop/home-page/news2-2x.avif      2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/home-page/news2-1x.avif 1x,
+                      ./images/tablet/home-page/news2-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/home-page/news2-1x.avif 1x,
+                      ./images/mobile/home-page/news2-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                  <img
+                    class="news-img"
+                    src="./images/desktop/home-page/news2-1x.avif"
+                    alt="A barista preparing coffee"
+                  />
+                </picture>
+                <div class="news-wrapper">
+                  <p class="news-text">Apr 2, 2025</p>
+                  <h3 class="news-subtitle">
+                    Our new brewhaus flushing location is now officially open
+                  </h3>
+                </div>
+              </a>
             </li>
             <li class="news-item">
-              <img
-                class="news-img"
-                src="./images/news-article-page/img-4.jpg"
-                alt="Coffee equipment"
-                width="384"
-                height="280"
-              />
-              <p class="news-text">Mar 23, 2025</p>
-              <h3 class="news-subtitle">
-                Introducing Our Exciting New Loyalty Program for Coffee Lovers
-              </h3>
+              <a href="./news.html" class="link">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/home-page/news3-1x.avif 1x,
+                      ./images/desktop/home-page/news3-2x.avif 2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/home-page/news3-1x.avif 1x,
+                      ./images/tablet/home-page/news3-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/home-page/news3-1x.avif 1x,
+                      ./images/mobile/home-page/news3-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                  <img
+                    class="news-img"
+                    src="./images/desktop/home-page/news3-1x.avif"
+                    alt="A coffee gaiser"
+                  />
+                </picture>
+
+                <div class="news-wrapper">
+                  <p class="news-text">Mar 23, 2025</p>
+                  <h3 class="news-subtitle">
+                    Introducing Our Exciting New Loyalty Program for Coffee Lovers
+                  </h3>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -307,40 +429,6 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrap">
-          <div class="footer-adress">
-            <div class="footer-logo-thumb">
-              <a class="footer-logo link" href="./index.html" title="Company logo">
-                <svg class="footer-logo">
-                  <use href="./images/sprite.svg#icon-hero-logo"></use>
-                </svg>
-              </a>
-            </div>
-
-            <h2 class="footer-title">
-              Life Begins <br />
-              After Coffee
-            </h2>
-            <address class="footer-contact">
-              <ul>
-                <li class="footer-contact-item">
-                  <a class="footer-link link" href="tel:+12125550198">
-                    <svg class="footer-contact-icon">
-                      <use href="./images/sprite.svg#icon-footer-phone"></use>
-                    </svg>
-                    +1 (212) 555-0198</a
-                  >
-                </li>
-                <li class="footer-contact-item">
-                  <a class="footer-link link" href="mailto:hello@bhaus.com">
-                    <svg class="footer-contact-icon">
-                      <use href="./images/sprite.svg#icon-footer-mail"></use>
-                    </svg>
-                    hello@bhaus.com</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </div>
           <div class="footer-nav">
             <div class="footer-nav-main">
               <p class="footer-text">Main</p>
@@ -362,7 +450,7 @@
                   <a class="footer-link link" href="./menu.html#coffee">Coffee</a>
                 </li>
                 <li class="footer-item">
-                  <a class="footer-link link" href="./menu.html#cold-drinks">Cold Drinks</a>
+                  <a class="footer-link link" href="./menu.html#cold-drinks">Cold drinks</a>
                 </li>
                 <li class="footer-item">
                   <a class="footer-link link" href="./menu.html#bakery">Bakery</a>
@@ -370,7 +458,7 @@
               </ul>
             </div>
             <div class="footer-nav-social">
-              <p class="footer-text">Follow Us</p>
+              <p class="footer-text">Follow us</p>
               <ul class="footer-list social">
                 <li class="footer-item follow">
                   <a class="footer-social link" href="" aria-label="Instagram">
@@ -397,11 +485,67 @@
               </ul>
             </div>
           </div>
-        </div>
+          <div class="footer-address">
+            <div class="footer-logo-wrapper">
+              <a class="footer-logo-link link" href="./index.html" title="Company logo">
+                <svg class="footer-logo">
+                  <use href="./images/sprite.svg#icon-hero-logo"></use>
+                </svg>
+              </a>
+              <h2 class="footer-title">
+                Life begins <br />
+                after coffee
+              </h2>
+            </div>
 
+            <address>
+              <ul class="footer-contact">
+                <li class="footer-contact-item">
+                  <a class="footer-link link" href="tel:+12125550198">
+                    <svg class="footer-contact-icon">
+                      <use href="./images/sprite.svg#icon-footer-phone"></use>
+                    </svg>
+                    +1 (212) 555-0198</a
+                  >
+                </li>
+                <li class="footer-contact-item">
+                  <a class="footer-link link" href="mailto:hello@bhaus.com">
+                    <svg class="footer-contact-icon">
+                      <use href="./images/sprite.svg#icon-footer-mail"></use>
+                    </svg>
+                    hello@bhaus.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/home-page/footer-brewhouse-1x.avif 1x,
+              ./images/desktop/home-page/footer-brewhouse-2x.avif 2x
+            "
+            media="(min-width: 1440px)"
+            type="image/avif"
+          />
+          <source
+            srcset="./images/tablet/home-page/footer-brewhouse-1x.avif 1x,
+      ./images/tablet/home-page/footer-brewhouse-2x.avif 2 x"
+            media="(min-width: 768px)"
+            media="(min-width: 768px)"
+            type="image/avif"
+          />
+          <source
+            srcset="./images/mobile/home-page/footer-brewhouse-1x.avif 1x,
+            ./images/mobile/home-page/footer-brewhouse-2x.avif 2 x"
+            media="(max-width: 767px)"
+            type="image/avif"
+          />
+        </picture>
         <img
           class="footer-img"
-          src="./images/home-page/footer-images/footer-brewhouse.svg"
+          src="./images/desktop/home-page/brewhaus-1x.avif"
           alt="Brewhaus Logo"
           width="1200"
           height="224"
@@ -413,5 +557,6 @@
         <a class="footer-licenses-text link" href="./licenses.html">Licenses</a>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

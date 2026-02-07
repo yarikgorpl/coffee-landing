@@ -21,61 +21,92 @@
     <link rel="stylesheet" href="./css/locations.css" />
   </head>
   <body>
+    <div class="slogan-wrap" data-slogan>
+      <p class="slogan-text" data-text>
+        Buy one coffee, get one free — this week only (April 14-20)
+      </p>
+      <button
+        class="slogan-btn"
+        type="button"
+        title="Close notification"
+        aria-label="Close notification"
+        data-slogan-close
+      >
+        <svg class="slogan-close-icon" width="12" height="12">
+          <use href="./images/sprite.svg#icon-hero-close-btn"></use>
+        </svg>
+      </button>
+    </div>
     <header class="header">
-      <div class="header-slogan-wrap" data-slogan>
-        <p class="header-text">Buy one coffee, get one free — this week only (April 14-20)</p>
-        <button
-          data-slogan-close
-          class="header-btn"
-          type="button"
-          title="Close notification"
-          aria-label="Close notification"
-        >
-          <svg class="header-close" width="12" height="12">
-            <use href="./images/sprite.svg#icon-hero-close-btn"></use>
-          </svg>
-        </button>
-      </div>
       <div class="container">
-        <nav class="header-nav">
-          <ul class="header-list">
-            <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
+        <div class="nav-wrap">
+          <nav class="header-nav">
+            <ul class="header-list">
+              <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
 
-            <li class="header-item">
-              <a class="header-link link current" href="./locations.html">Locations</a>
-            </li>
+              <li class="header-item">
+                <a class="header-link link" href="./locations.html">Locations</a>
+              </li>
+            </ul>
 
-            <li class="header-item">
-              <a class="header-logo link" href="./index.html" title="Company logo">
-                <svg class="header-logo">
-                  <use href="./images/sprite.svg#icon-hero-logo"></use>
-                </svg>
-              </a>
-            </li>
+            <a class="header-link-logo link" href="./index.html" title="Company logo">
+              <svg class="header-logo" width="26" height="26">
+                <use href="./images/sprite.svg#icon-hero-logo"></use>
+              </svg>
+            </a>
 
-            <li class="header-item">
-              <a class="header-link link" href="./about.html">About Us</a>
-            </li>
+            <ul class="header-list">
+              <li class="header-item">
+                <a class="header-link link" href="./about.html">About Us</a>
+              </li>
 
-            <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
-          </ul>
-        </nav>
+              <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
+            </ul>
+          </nav>
+          <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg class="menu-icon" width="20px" height="20px" aria-label="Switch mobile menu">
+              <use class="icon-open-menu" href="./images/sprite.svg#icon-mobile-menu-open"></use>
+              <use class="icon-close-menu" href="./images/sprite.svg#icon-mobile-menu-close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+          <nav class="mobile-nav">
+            <ul class="mobile-list">
+              <li class="mobile-item">
+                <a class="mobile-link link" href="./menu.html">Menu</a>
+              </li>
+
+              <li class="mobile-item">
+                <a class="mobile-link link" href="./locations.html">Locations</a>
+              </li>
+
+              <li class="mobile-item">
+                <a class="mobile-link link" href="./about.html">About Us</a>
+              </li>
+
+              <li class="mobile-item">
+                <a class="mobile-link link" href="./news.html">News</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
       <!--Location section -->
       <section class="location">
         <div class="container">
-          <h2 class="location-title">Locations</h2>
+          <h2 class="location-title">Nearby Cafés</h2>
           <p class="location-text">Find a Brewhaus nearby and stop in for your favorite drink.</p>
           <div class="location-wrap">
-            <img
-              class="location-img"
-              src="./images/home-page/location-images/map.jpg"
-              alt="Our location on the map"
-              width="588"
-              height="444"
-            />
             <ul class="location-list list" id="locations">
               <li class="location-item">
                 <p class="location-city">Brooklyn</p>
@@ -111,6 +142,39 @@
                 <a class="location-link link" href="#">Get Directions</a>
               </li>
             </ul>
+            <picture>
+              <source
+                srcset="
+                  ./images/desktop/home-page/map-1x.avif 1x,
+                  ./images/desktop/home-page/map-2x.avif 2x
+                "
+                media="(min-width: 1440px)"
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  ./images/tablet/home-page/map-1x.avif 1x,
+                  ./images/tablet/home-page/map-2x.avif 2x
+                "
+                media="(min-width: 768px)"
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  ./images/mobile/home-page/map-1x.avif 1x,
+                  ./images/mobile/home-page/map-2x.avif 2x
+                "
+                media="(max-width: 767px)"
+                type="image/avif"
+              />
+              <img
+                class="location-img"
+                src="./images/desktop/home-page/map-1x.avif"
+                alt="Our location on the map"
+                width="588px"
+                height="444px"
+              />
+            </picture>
           </div>
           <h3 class="location-subtitle">Need Help?</h3>
           <ul class="help-list list">
@@ -265,40 +329,6 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrap">
-          <div class="footer-adress">
-            <div class="footer-logo-thumb">
-              <a class="footer-logo link" href="./index.html" title="Company logo">
-                <svg class="footer-logo">
-                  <use href="./images/sprite.svg#icon-hero-logo"></use>
-                </svg>
-              </a>
-            </div>
-
-            <h2 class="footer-title">
-              Life Begins <br />
-              After Coffee
-            </h2>
-            <address class="footer-contact">
-              <ul>
-                <li class="footer-contact-item">
-                  <a class="footer-link link" href="tel:+12125550198">
-                    <svg class="footer-contact-icon">
-                      <use href="./images/sprite.svg#icon-footer-phone"></use>
-                    </svg>
-                    +1 (212) 555-0198</a
-                  >
-                </li>
-                <li class="footer-contact-item">
-                  <a class="footer-link link" href="mailto:hello@bhaus.com">
-                    <svg class="footer-contact-icon">
-                      <use href="./images/sprite.svg#icon-footer-mail"></use>
-                    </svg>
-                    hello@bhaus.com</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </div>
           <div class="footer-nav">
             <div class="footer-nav-main">
               <p class="footer-text">Main</p>
@@ -320,7 +350,7 @@
                   <a class="footer-link link" href="./menu.html#coffee">Coffee</a>
                 </li>
                 <li class="footer-item">
-                  <a class="footer-link link" href="./menu.html#cold-drinks">Cold Drinks</a>
+                  <a class="footer-link link" href="./menu.html#cold-drinks">Cold drinks</a>
                 </li>
                 <li class="footer-item">
                   <a class="footer-link link" href="./menu.html#bakery">Bakery</a>
@@ -328,7 +358,7 @@
               </ul>
             </div>
             <div class="footer-nav-social">
-              <p class="footer-text">Follow Us</p>
+              <p class="footer-text">Follow us</p>
               <ul class="footer-list social">
                 <li class="footer-item follow">
                   <a class="footer-social link" href="" aria-label="Instagram">
@@ -355,11 +385,67 @@
               </ul>
             </div>
           </div>
-        </div>
+          <div class="footer-address">
+            <div class="footer-logo-wrapper">
+              <a class="footer-logo-link link" href="./index.html" title="Company logo">
+                <svg class="footer-logo">
+                  <use href="./images/sprite.svg#icon-hero-logo"></use>
+                </svg>
+              </a>
+              <h2 class="footer-title">
+                Life begins <br />
+                after coffee
+              </h2>
+            </div>
 
+            <address>
+              <ul class="footer-contact">
+                <li class="footer-contact-item">
+                  <a class="footer-link link" href="tel:+12125550198">
+                    <svg class="footer-contact-icon">
+                      <use href="./images/sprite.svg#icon-footer-phone"></use>
+                    </svg>
+                    +1 (212) 555-0198</a
+                  >
+                </li>
+                <li class="footer-contact-item">
+                  <a class="footer-link link" href="mailto:hello@bhaus.com">
+                    <svg class="footer-contact-icon">
+                      <use href="./images/sprite.svg#icon-footer-mail"></use>
+                    </svg>
+                    hello@bhaus.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/home-page/footer-brewhouse-1x.avif 1x,
+              ./images/desktop/home-page/footer-brewhouse-2x.avif 2x
+            "
+            media="(min-width: 1440px)"
+            type="image/avif"
+          />
+          <source
+            srcset="./images/tablet/home-page/footer-brewhouse-1x.avif 1x,
+      ./images/tablet/home-page/footer-brewhouse-2x.avif 2 x"
+            media="(min-width: 768px)"
+            media="(min-width: 768px)"
+            type="image/avif"
+          />
+          <source
+            srcset="./images/mobile/home-page/footer-brewhouse-1x.avif 1x,
+            ./images/mobile/home-page/footer-brewhouse-2x.avif 2 x"
+            media="(max-width: 767px)"
+            type="image/avif"
+          />
+        </picture>
         <img
           class="footer-img"
-          src="./images/home-page/footer-images/footer-brewhouse.svg"
+          src="./images/desktop/home-page/brewhaus-1x.avif"
           alt="Brewhaus Logo"
           width="1200"
           height="224"
@@ -371,6 +457,6 @@
         <a class="footer-licenses-text link" href="./licenses.html">Licenses</a>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
