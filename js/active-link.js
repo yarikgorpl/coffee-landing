@@ -1,6 +1,6 @@
 function setActiveMenuLink() {
   const hash = window.location.hash;
-  document.querySelectorAll('.menu-link').forEach(link => {
+  document.querySelectorAll('.menu-filter-link').forEach(link => {
     link.classList.toggle('active', link.getAttribute('href') === hash);
   });
 }

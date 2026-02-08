@@ -115,6 +115,16 @@
               <a class="hero-link link" href="./about.html">About Us</a>
             </li>
           </ul>
+          <img
+            class="hero-image"
+            data-menu-img
+            srcset="
+              ./images/mobile/menu-page/hero-1x.avif 1x,
+              ./images/mobile/menu-page/hero-2x.avif 2x
+            "
+            src="./images/mobile/menu-page/hero-1x.avif"
+            alt="The cup of espresso"
+          />
         </div>
       </section>
       <!-- Ticker section -->
@@ -253,12 +263,15 @@
             <ul class="menu-filter">
               <li class="menu-filter-item">
                 <a class="menu-filter-link link" href="#coffee"
-                  ><img
-                    class="menu-filter-img"
-                    src="./images/menu-page/filter-images/coffee.jpg"
+                  >
+                  <img class="menu-filter-img"
+                    srcset="
+              ./images/desktop/menu-page/filter/filter1-1x.avif 1x,
+              ./images/desktop/menu-page/filter/filter1-2x.avif 2x"
+                    src="./images/desktop/menu-page/filter/filter1-1x.avif"
                     alt="Coffee"
-                    width="56"
-                    height="56"
+                    width="56px"
+                    height="56px"
                   />
                   <p class="menu-filter-category">Coffee</p>
                 </a>
@@ -267,10 +280,13 @@
                 <a class="menu-filter-link link" href="#cold-drinks"
                   ><img
                     class="menu-filter-img"
-                    src="./images/menu-page/filter-images/cold-drinks.jpg"
+                    srcset="
+              ./images/desktop/menu-page/filter/filter2-1x.avif 1x,
+              ./images/desktop/menu-page/filter/filter2-2x.avif 2x"
+                    src="./images/desktop/menu-page/filter/filter2-1x.avif"
                     alt="Cold Drinks"
-                    width="56"
-                    height="56"
+                    width="56px"
+                    height="56px"
                   />
                   <p class="menu-filter-category">Cold drinks</p>
                 </a>
@@ -279,10 +295,13 @@
                 <a class="menu-filter-link link" href="#bakery"
                   ><img
                     class="menu-filter-img"
-                    src="./images/menu-page/filter-images/bakery.jpg"
+                    srcset="
+              ./images/desktop/menu-page/filter/filter3-1x.avif 1x,
+              ./images/desktop/menu-page/filter/filter3-2x.avif 2x"
+                    src="./images/desktop/menu-page/filter/filter3-1x.avif"
                     alt="Bakery"
-                    width="56"
-                    height="56"
+                    width="56px"
+                    height="56px"
                   />
                   <p class="menu-filter-category">Bakery</p>
                 </a>
@@ -298,13 +317,40 @@
                 <li class="menu-item new">
                   <a class="menu-link link" href="./product-cards/cold-brew.html" id="cold-brew">
                     <p class="menu-suptext">New</p>
-                    <img
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/coffee/cold-brew-1x.avif 1x,
+                ./images/desktop/menu-page/coffee/cold-brew-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/coffee/cold-brew-1x.avif 1x,
+                ./images/tablet/menu-page/coffee/cold-brew-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/coffee/cold-brew-1x.avif 1x,
+                ./images/mobile/menu-page/coffee/cold-brew-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+            <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/coffe/cold-brew.jpg"
+                      src="./images/desktop/menu-page/coffee/cold-brew-1x.avif"
                       alt="Cold Brew"
                       width="282"
                       height="282"
                     />
+          </picture>
+                 
                     <h3 class="menu-subtitle">
                       Cold Brew <span class="menu-price">&#36;6.75</span>
                     </h3>
@@ -314,13 +360,39 @@
                 <li class="menu-item new">
                   <a class="menu-link link" href="./product-cards/macchiato.html" id="macchiato">
                     <p class="menu-suptext">New</p>
-                    <img
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/coffee/macchiato-1x.avif 1x,
+                ./images/desktop/menu-page/coffee/macchiato-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/coffee/macchiato-1x.avif 1x,
+                ./images/tablet/menu-page/coffee/macchiato-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/coffee/macchiato-1x.avif 1x,
+                ./images/mobile/menu-page/coffee/macchiato-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/coffe/macchiato.jpg"
+                      src="./images/desktop/menu-page/coffee/macchiato-1x.avif"
                       alt="Macchiato"
                       width="282"
                       height="282"
                     />
+          </picture>                
                     <h3 class="menu-subtitle">
                       Macchiato <span class="menu-price">&#36;6.10</span>
                     </h3>
@@ -329,13 +401,40 @@
 
                 <li class="menu-item">
                   <a class="menu-link link" href="./product-cards/espresso.html" id="espresso">
-                    <img
+                              <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/coffee/espresso-1x.avif 1x,
+                ./images/desktop/menu-page/coffee/espresso-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/coffee/espresso-1x.avif 1x,
+                ./images/tablet/menu-page/coffee/espresso-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/coffee/espresso-1x.avif 1x,
+                ./images/mobile/menu-page/coffee/espresso-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/coffe/espresso.jpg"
+                      src="./images/desktop/menu-page/coffee/espresso-1x.avif"
                       alt="Espresso"
                       width="282"
                       height="282"
                     />
+          </picture>
+                   
                     <h3 class="menu-subtitle">
                       Espresso <span class="menu-price">&#36;4.25</span>
                     </h3>
@@ -348,13 +447,40 @@
                     href="./product-cards/black-coffee.html"
                     id="black-coffee"
                   >
-                    <img
+                            <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/coffee/black-coffee-1x.avif 1x,
+                ./images/desktop/menu-page/coffee/black-coffee-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/coffee/black-coffee-1x.avif 1x,
+                ./images/tablet/menu-page/coffee/black-coffee-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/coffee/black-coffee-1x.avif 1x,
+                ./images/mobile/menu-page/coffee/black-coffee-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/coffe/black-coffee.jpg"
+                      src="./images/desktop/menu-page/coffee/black-coffee-1x.avif"
                       alt="Black Coffee"
                       width="282"
                       height="282"
                     />
+          </picture>
+
                     <h3 class="menu-subtitle">
                       Black Coffee <span class="menu-price">&#36;4.90</span>
                     </h3>
@@ -363,13 +489,39 @@
 
                 <li class="menu-item">
                   <a class="menu-link link" href="./product-cards/cappuccino.html" id="cappuccino">
-                    <img
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/coffee/cappuccino-1x.avif 1x,
+                ./images/desktop/menu-page/coffee/cappuccino-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/coffee/cappuccino-1x.avif 1x,
+                ./images/tablet/menu-page/coffee/cappuccino-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/coffee/cappuccino-1x.avif 1x,
+                ./images/mobile/menu-page/coffee/cappuccino-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/coffe/cappuccino.jpg"
+                      src="./images/desktop/menu-page/coffee/cappuccino-1x.avif"
                       alt="Cappuccino"
                       width="282"
                       height="282"
                     />
+          </picture>               
                     <h3 class="menu-subtitle">
                       Cappuccino <span class="menu-price">&#36;5.25</span>
                     </h3>
@@ -378,11 +530,40 @@
 
                 <li class="menu-item">
                   <a class="menu-link link" href="./product-cards/flat-white.html" id="flat-white">
-                    <img
+                              <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/coffee/flat-white-1x.avif 1x,
+                ./images/desktop/menu-page/coffee/flat-white-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/coffee/flat-white-1x.avif 1x,
+                ./images/tablet/menu-page/coffee/flat-white-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/coffee/flat-white-1x.avif 1x,
+                ./images/mobile/menu-page/coffee/flat-white-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/coffe/flat-white.jpg"
+                      src="./images/desktop/menu-page/coffee/flat-white-1x.avif"
                       alt="Flat White"
+                      width="282"
+                      height="282"
                     />
+          </picture>
+
                     <h3 class="menu-subtitle">
                       Flat White <span class="menu-price">&#36;5.50</span>
                     </h3>
@@ -391,37 +572,117 @@
 
                 <li class="menu-item">
                   <a class="menu-link link" href="./product-cards/latte.html" id="latte">
-                    <img
+                              <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/coffee/latte-1x.avif 1x,
+                ./images/desktop/menu-page/coffee/latte-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/coffee/latte-1x.avif 1x,
+                ./images/tablet/menu-page/coffee/latte-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/coffee/latte-1x.avif 1x,
+                ./images/mobile/menu-page/coffee/latte-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/coffe/latte.jpg"
+                      src="./images/desktop/menu-page/coffee/latte-1x.avif"
                       alt="Latte"
                       width="282"
                       height="282"
                     />
+          </picture>
                     <h3 class="menu-subtitle">Latte <span class="menu-price">&#36;4.80</span></h3>
                   </a>
                 </li>
 
                 <li class="menu-item">
                   <a class="menu-link link" href="./product-cards/mocha.html" id="mocha">
-                    <img
+                              <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/coffee/mocha-1x.avif 1x,
+                ./images/desktop/menu-page/coffee/mocha-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/coffee/mocha-1x.avif 1x,
+                ./images/tablet/menu-page/coffee/mocha-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/coffee/mocha-1x.avif 1x,
+                ./images/mobile/menu-page/coffee/mocha-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/coffe/mocha.jpg"
+                      src="./images/desktop/menu-page/coffee/mocha-1x.avif"
                       alt="Mocha"
+                      width="282"
+                      height="282"
                     />
+          </picture>
                     <h3 class="menu-subtitle">Mocha <span class="menu-price">&#36;7.15</span></h3>
                   </a>
                 </li>
 
                 <li class="menu-item">
                   <a class="menu-link link" href="./product-cards/americano.html" id="americano">
-                    <img
+                              <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/coffee/americano-1x.avif 1x,
+                ./images/desktop/menu-page/coffee/americano-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/coffee/americano-1x.avif 1x,
+                ./images/tablet/menu-page/coffee/americano-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/coffee/americano-1x.avif 1x,
+                ./images/mobile/menu-page/coffee/americano-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/coffe/americano.jpg"
+                      src="./images/desktop/menu-page/coffee/americano-1x.avif"
                       alt="Americano"
                       width="282"
                       height="282"
                     />
+          </picture>
                     <h3 class="menu-subtitle">
                       Americano <span class="menu-price">&#36;5.30</span>
                     </h3>
@@ -440,13 +701,39 @@
                     id="virgin-mojito"
                   >
                     <p class="menu-suptext">New</p>
-                    <img
+            <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/cold-drinks/virgin-mojito-1x.avif 1x,
+                ./images/desktop/menu-page/cold-drinks/virgin-mojito-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/cold-drinks/virgin-mojito-1x.avif 1x,
+                ./images/tablet/menu-page/cold-drinks/virgin-mojito-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/cold-drinks/virgin-mojito-1x.avif 1x,
+                ./images/mobile/menu-page/cold-drinks/virgin-mojito-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/cold-drinks/virgin-mojito.jpg"
+                      src="./images/desktop/menu-page/cold-drinks/virgin-mojito-1x.avif"
                       alt="Virgin Mojito"
                       width="282"
                       height="282"
                     />
+          </picture>
                     <h3 class="menu-subtitle">
                       Virgin Mojito <span class="menu-price">&#36;6.20</span>
                     </h3>
@@ -454,13 +741,39 @@
                 </li>
                 <li class="menu-item">
                   <a class="menu-link link" href="./product-cards/iced-latte.html" id="iced-latte">
-                    <img
+            <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/cold-drinks/iced-latte-1x.avif 1x,
+                ./images/desktop/menu-page/cold-drinks/iced-latte-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/cold-drinks/iced-latte-1x.avif 1x,
+                ./images/tablet/menu-page/cold-drinks/iced-latte-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/cold-drinks/iced-latte-1x.avif 1x,
+                ./images/mobile/menu-page/cold-drinks/iced-latte-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/cold-drinks/iced-latte.jpg"
+                      src="./images/desktop/menu-page/cold-drinks/iced-latte-1x.avif"
                       alt="Iced Latte"
                       width="282"
                       height="282"
                     />
+          </picture>
                     <h3 class="menu-subtitle">
                       Iced Latte <span class="menu-price">&#36;4.45</span>
                     </h3>
@@ -472,13 +785,40 @@
                     href="./product-cards/iced-americano.html"
                     id="iced-americano"
                   >
-                    <img
+            <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/cold-drinks/iced-americano-1x.avif 1x,
+                ./images/desktop/menu-page/cold-drinks/iced-americano-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/cold-drinks/iced-americano-1x.avif 1x,
+                ./images/tablet/menu-page/cold-drinks/iced-americano-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/cold-drinks/iced-americano-1x.avif 1x,
+                ./images/mobile/menu-page/cold-drinks/iced-americano-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/cold-drinks/iced-americano.jpg"
+                      src="./images/desktop/menu-page/cold-drinks/iced-americano-1x.avif"
                       alt="Iced Americano"
                       width="282"
                       height="282"
                     />
+          </picture>
+
                     <h3 class="menu-subtitle">
                       Iced Americano <span class="menu-price">&#36;3.95</span>
                     </h3>
@@ -487,13 +827,40 @@
 
                 <li class="menu-item">
                   <a class="menu-link link" href="./product-cards/iced-mocha.html" id="iced-mocha">
-                    <img
+            <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/cold-drinks/iced-mocha-1x.avif 1x,
+                ./images/desktop/menu-page/cold-drinks/iced-mocha-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/cold-drinks/iced-mocha-1x.avif 1x,
+                ./images/tablet/menu-page/cold-drinks/iced-mocha-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/cold-drinks/iced-mocha-1x.avif 1x,
+                ./images/mobile/menu-page/cold-drinks/iced-mocha-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/cold-drinks/iced-mocha.jpg"
+                      src="./images/desktop/menu-page/cold-drinks/iced-mocha-1x.avif"
                       alt="Iced Mocha"
                       width="282"
                       height="282"
                     />
+          </picture>
+
                     <h3 class="menu-subtitle">
                       Iced Mocha <span class="menu-price">&#36;5.75</span>
                     </h3>
@@ -501,13 +868,40 @@
                 </li>
                 <li class="menu-item">
                   <a class="menu-link link" href="./product-cards/iced-tea.html" id="iced-tea">
-                    <img
+            <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/cold-drinks/iced-tea-1x.avif 1x,
+                ./images/desktop/menu-page/cold-drinks/iced-tea-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/cold-drinks/iced-tea-1x.avif 1x,
+                ./images/tablet/menu-page/cold-drinks/iced-tea-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/cold-drinks/iced-tea-1x.avif 1x,
+                ./images/mobile/menu-page/cold-drinks/iced-tea-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/cold-drinks/iced-tea.jpg"
+                      src="./images/desktop/menu-page/cold-drinks/iced-tea-1x.avif"
                       alt="Iced Tea"
                       width="282"
                       height="282"
                     />
+          </picture>
+
                     <h3 class="menu-subtitle">
                       Iced Tea <span class="menu-price">&#36;4.35</span>
                     </h3>
@@ -515,13 +909,40 @@
                 </li>
                 <li class="menu-item">
                   <a class="menu-link link" href="./product-cards/bubble-tea.html" id="bubble-tea">
-                    <img
+            <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/cold-drinks/bubble-tea-1x.avif 1x,
+                ./images/desktop/menu-page/cold-drinks/bubble-tea-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/cold-drinks/bubble-tea-1x.avif 1x,
+                ./images/tablet/menu-page/cold-drinks/bubble-tea-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/cold-drinks/bubble-tea-1x.avif 1x,
+                ./images/mobile/menu-page/cold-drinks/bubble-tea-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/cold-drinks/bubble-tea.jpg"
+                      src="./images/desktop/menu-page/cold-drinks/bubble-tea-1x.avif"
                       alt="Bubble Tea"
                       width="282"
                       height="282"
                     />
+          </picture>
+
                     <h3 class="menu-subtitle">
                       Bubble Tea <span class="menu-price">&#36;6.75</span>
                     </h3>
@@ -536,25 +957,77 @@
                 <li class="menu-item new">
                   <a class="menu-link link" href="./product-cards/brownie.html" id="brownie">
                     <p class="menu-suptext">New</p>
-                    <img
+            <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/bakery/brownie-1x.avif 1x,
+                ./images/desktop/menu-page/bakery/brownie-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/bakery/brownie-1x.avif 1x,
+                ./images/tablet/menu-page/bakery/brownie-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/bakery/brownie-1x.avif 1x,
+                ./images/mobile/menu-page/bakery/brownie-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/bakery/brownie.jpg"
+                      src="./images/desktop/menu-page/bakery/brownie-1x.avif"
                       alt="Brownie"
                       width="282"
                       height="282"
                     />
+          </picture>
                     <h3 class="menu-subtitle">Brownie <span class="menu-price">&#36;2.15</span></h3>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a class="menu-link link" href="./product-cards/macaroon.html" id="macaroon">
-                    <img
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/bakery/macaroon-1x.avif 1x,
+                ./images/desktop/menu-page/bakery/macaroon-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/bakery/macaroon-1x.avif 1x,
+                ./images/tablet/menu-page/bakery/macaroon-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/bakery/macaroon-1x.avif 1x,
+                ./images/mobile/menu-page/bakery/macaroon-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/bakery/macaroon.jpg"
+                      src="./images/desktop/menu-page/bakery/macaroon-1x.avif"
                       alt="Macaroon"
                       width="282"
                       height="282"
                     />
+          </picture>
                     <h3 class="menu-subtitle">
                       Macaroon <span class="menu-price">&#36;2.60</span>
                     </h3>
@@ -562,38 +1035,117 @@
                 </li>
                 <li class="menu-item">
                   <a class="menu-link link" href="./product-cards/donut.html" id="donut">
-                    <img
+            <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/bakery/donut-1x.avif 1x,
+                ./images/desktop/menu-page/bakery/donut-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/bakery/donut-1x.avif 1x,
+                ./images/tablet/menu-page/bakery/donut-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/bakery/donut-1x.avif 1x,
+                ./images/mobile/menu-page/bakery/donut-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                      <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/bakery/donut.jpg"
+                      src="./images/desktop/menu-page/bakery/donut-1x.avif"
                       alt="Donut"
                       width="282"
                       height="282"
                     />
+          </picture>
+
                     <h3 class="menu-subtitle">Donut <span class="menu-price">&#36;1.40</span></h3>
                   </a>
                 </li>
 
                 <li class="menu-item">
                   <a class="menu-link link" href="./product-cards/muffin.html" id="muffin">
-                    <img
+                                <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/bakery/muffin-1x.avif 1x,
+                ./images/desktop/menu-page/bakery/muffin-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/bakery/muffin-1x.avif 1x,
+                ./images/tablet/menu-page/bakery/muffin-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/bakery/muffin-1x.avif 1x,
+                ./images/mobile/menu-page/bakery/muffin-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/bakery/muffin.jpg"
+                      src="./images/desktop/menu-page/bakery/muffin-1x.avif"
                       alt="Muffin"
                       width="282"
                       height="282"
                     />
+          </picture>
                     <h3 class="menu-subtitle">Muffin <span class="menu-price">&#36;1.80</span></h3>
                   </a>
                 </li>
                 <li class="menu-item">
                   <a class="menu-link link" href="./product-cards/biscotti.html" id="biscotti">
-                    <img
+            <picture>
+            <source
+              srcset="
+                ./images/desktop/menu-page/bakery/biscotti-1x.avif 1x,
+                ./images/desktop/menu-page/bakery/biscotti-2x.avif 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/tablet/menu-page/bakery/biscotti-1x.avif 1x,
+                ./images/tablet/menu-page/bakery/biscotti-2x.avif 2x
+              "
+              media="(min-width: 768px)"
+              type="image/avif"
+            />
+            <source
+              srcset="
+                ./images/mobile/menu-page/bakery/biscotti-1x.avif 1x,
+                ./images/mobile/menu-page/bakery/biscotti-2x.avif 2x
+              "
+              media="(max-width: 767px)"
+              type="image/avif"
+            />
+                          <img
                       class="menu-img"
-                      src="./images/menu-page/menu-images/bakery/biscotti.jpg"
+                      src="./images/desktop/menu-page/bakery/biscotti-1x.avif"
                       alt="Biscotti"
                       width="282"
                       height="282"
                     />
+          </picture>
                     <h3 class="menu-subtitle">
                       Biscotti <span class="menu-price">&#36;1.50</span>
                     </h3>
@@ -613,7 +1165,7 @@
               <use href="./images/sprite.svg#icon-banner-hands"></use>
             </svg>
           </div>
-          <h3 class="banner-subtitle">Order Online</h3>
+          <h3 class="banner-title">Order Online</h3>
           <p class="banner-text">Get your favorites delivered fast.</p>
           <ul class="banner-list">
             <li class="banner-item">
@@ -908,7 +1460,89 @@
         <a class="footer-licenses-text link" href="./licenses.html">Licenses</a>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal" data-modal>
+        <button
+          class="modal-close-btn"
+          type="button"
+          title="Close notification"
+          aria-label="Close notification"
+          data-modal-close
+        >
+          <svg class="modal-close-icon" width="12" height="12">
+            <use href="./images/sprite.svg#icon-hero-close-btn"></use>
+          </svg>
+        </button>
+        <form>
+          <h2 class="modal-title">Order Your Favorite Coffee</h2>
+          <p class="modal-text">Get your favorite Brewhaus drinks delivered to your door.</p>
+          <label class="modal-label">
+            Your name
+            <input
+              class="modal-input"
+              type="text"
+              name="username"
+              placeholder="Jack Meadows"
+              required
+            />
+          </label>
+          <label class="modal-label">
+            Your address
+            <input
+              class="modal-input"
+              type="text"
+              name="address"
+              placeholder="123 Main St"
+              required
+            />
+          </label>
+
+          <label class="modal-label"
+            >Select Drink
+            <select class="modal-menu" name="menu" multiple size="6" required>
+              <optgroup label="Coffe">
+                <option value="cold-brew">Cold Brew</option>
+                <option value="macchiato">Macchiato</option>
+                <option value="espresso">Espresso</option>
+                <option value="black-coffee">Black Coffee</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="flat-white">Flat White</option>
+                <option value="latte">Latte</option>
+                <option value="mocha">Mocha</option>
+                <option value="americano">Americano</option>
+              </optgroup>
+              <optgroup label="Cold Drinks">
+                <option value="virjin-mochito">Virgin Mochito</option>
+                <option value="iced-latte">Iced Latte</option>
+                <option value="iced-americano">Iced Americano</option>
+                <option value="iced-mocha">Iced Mocha</option>
+                <option value="iced-tea">Iced Tea</option>
+                <option value="bubble-tea">Bubble Tea</option>
+              </optgroup>
+              <optgroup label="Bakery">
+                <option value="brownie">Brownie</option>
+                <option value="macarons">Macarons</option>
+                <option value="donut ">Donut</option>
+                <option value="muffin">Muffin</option>
+                <option value="biscotti">Biscotti</option>
+              </optgroup>
+            </select>
+          </label>
+          <label class="modal-label">
+            Options
+            <textarea
+              class="modal-textarea"
+              name="options"
+              placeholder="Enter the quantity of cups"
+            ></textarea>
+          </label>
+          <button class="modal-submit-btn" type="submit">Place Order</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/slogan.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/active-link.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
