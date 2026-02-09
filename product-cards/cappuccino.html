@@ -20,30 +20,46 @@
     <link rel="stylesheet" href="../css/product-item.css" />
   </head>
   <body>
+    <div class="slogan-wrap" data-slogan>
+      <p class="slogan-text" data-text>
+        Buy one coffee, get one free — this week only (April 14-20)
+      </p>
+      <button
+        class="slogan-btn"
+        type="button"
+        title="Close notification"
+        aria-label="Close notification"
+        data-slogan-close
+      >
+        <svg class="slogan-close-icon" width="12" height="12">
+          <use href="../images/sprite.svg#icon-hero-close-btn"></use>
+        </svg>
+      </button>
+    </div>
     <header class="header">
       <div class="container">
         <div class="nav-wrap">
           <nav class="header-nav">
             <ul class="header-list">
-              <li class="header-item"><a class="header-link link" href="./menu.html">Menu</a></li>
+              <li class="header-item"><a class="header-link link" href="../menu.html">Menu</a></li>
 
               <li class="header-item">
-                <a class="header-link link" href="./locations.html">Locations</a>
+                <a class="header-link link" href="../locations.html">Locations</a>
               </li>
             </ul>
 
-            <a class="header-link-logo link" href="./index.html" title="Company logo">
+            <a class="header-link-logo link" href="../index.html" title="Company logo">
               <svg class="header-logo" width="26" height="26">
-                <use href="./images/sprite.svg#icon-hero-logo"></use>
+                <use href="../images/sprite.svg#icon-hero-logo"></use>
               </svg>
             </a>
 
             <ul class="header-list">
               <li class="header-item">
-                <a class="header-link link" href="./about.html">About Us</a>
+                <a class="header-link link" href="../about.html">About Us</a>
               </li>
 
-              <li class="header-item"><a class="header-link link" href="./news.html">News</a></li>
+              <li class="header-item"><a class="header-link link" href="../news.html">News</a></li>
             </ul>
           </nav>
           <button
@@ -54,8 +70,8 @@
             data-menu-button
           >
             <svg class="menu-icon" width="20px" height="20px" aria-label="Switch mobile menu">
-              <use class="icon-open-menu" href="./images/sprite.svg#icon-mobile-menu-open"></use>
-              <use class="icon-close-menu" href="./images/sprite.svg#icon-mobile-menu-close"></use>
+              <use class="icon-open-menu" href="../images/sprite.svg#icon-mobile-menu-open"></use>
+              <use class="icon-close-menu" href="../images/sprite.svg#icon-mobile-menu-close"></use>
             </svg>
           </button>
         </div>
@@ -64,19 +80,19 @@
           <nav class="mobile-nav">
             <ul class="mobile-list">
               <li class="mobile-item">
-                <a class="mobile-link link" href="./menu.html">Menu</a>
+                <a class="mobile-link link" href="../menu.html">Menu</a>
               </li>
 
               <li class="mobile-item">
-                <a class="mobile-link link" href="./locations.html">Locations</a>
+                <a class="mobile-link link" href="../locations.html">Locations</a>
               </li>
 
               <li class="mobile-item">
-                <a class="mobile-link link" href="./about.html">About Us</a>
+                <a class="mobile-link link" href="../about.html">About Us</a>
               </li>
 
               <li class="mobile-item">
-                <a class="mobile-link link" href="./news.html">News</a>
+                <a class="mobile-link link" href="../news.html">News</a>
               </li>
             </ul>
           </nav>
@@ -89,13 +105,22 @@
         <div class="container second">
           <div class="product-info-wrap">
             <div class="img-wrap">
-              <img
-                class="product-img"
-                src="../images/product-cards/coffee/cappuccino.jpg"
-                alt="The cup of Cappuccino"
-                width="400"
-                height="400"
-              />
+              <picture>
+                <source srcset="
+                      ../images/desktop/menu-page/coffee/cappuccino-1x.avif 1x,
+                      ../images/desktop/menu-page/coffee/cappuccino-2x.avif 2x
+                    " media="(min-width: 1440px)" type="image/avif" />
+                <source srcset="
+                      ../images/tablet/menu-page/coffee/cappuccino-1x.avif 1x,
+                      ../images/tablet/menu-page/coffee/cappuccino-1x.avif 2x
+                    " media="(min-width: 768px)" type="image/avif" />
+                <source srcset="
+                      ../images/mobile/menu-page/coffee/cappuccino-1x.avif 1x,
+                      ../images/mobile/menu-page/coffee/cappuccino-2x.avif 2x
+                    " media="(max-width: 767px)" type="image/avif" />
+                <img class="product-img" src="./images/desktop/menu-page/coffee/cappuccino-1x.avif"
+                  alt="The cup of Cappuccino" width="400" height="400" />
+              </picture>
             </div>
             <div class="info-wrap">
               <h1 class="product-title">Cappuccino</h1>
@@ -200,38 +225,43 @@
       <!--Banner section -->
       <section class="banner">
         <div class="container">
-          <h2 class="visually-hidden">Online Ordering</h2>
+          <h2 class="visually-hidden">Order online</h2>
           <div class="banner-thumb">
             <svg class="banner-icon">
               <use href="../images/sprite.svg#icon-banner-hands"></use>
             </svg>
           </div>
-          <h3 class="banner-subtitle">Order Online</h3>
+          <h3 class="banner-title">Order Online</h3>
           <p class="banner-text">Get your favorites delivered fast.</p>
           <ul class="banner-list">
             <li class="banner-item">
-              <a class="banner-link link uber" href="#" title="Order with Uber Eats">
+              <button
+                type="button"
+                class="banner-link link uber"
+                data-modal-open
+                title="Order with Uber Eats"
+              >
                 <svg class="banner-uber">
                   <use href="../images/sprite.svg#icon-banner-uber"></use>
                 </svg>
                 <svg class="banner-uber">
                   <use href="../images/sprite.svg#icon-banner-eats"></use>
                 </svg>
-              </a>
+              </button>
             </li>
             <li class="banner-item">
-              <a class="banner-link link" href="" title="Home">
+              <button type="button" class="banner-link link" data-modal-open title="Home">
                 <svg class="banner-delivery">
                   <use href="../images/sprite.svg#icon-banner-home"></use>
                 </svg>
-              </a>
+              </button>
             </li>
             <li class="banner-item">
-              <a class="banner-link link" href="" title="More options">
+              <button type="button" class="banner-link link" data-modal-open title="More options">
                 <svg class="banner-delivery">
                   <use href="../images/sprite.svg#icon-banner-vector"></use>
                 </svg>
-              </a>
+              </button>
             </li>
           </ul>
         </div>
@@ -372,27 +402,27 @@
             <div class="footer-nav-main">
               <p class="footer-text">Main</p>
               <ul class="footer-list">
-                <li class="footer-item"><a class="footer-link link" href="./menu.html">Menu</a></li>
+                <li class="footer-item"><a class="footer-link link" href="../menu.html">Menu</a></li>
                 <li class="footer-item">
-                  <a class="footer-link link" href="./locations.html">Locations</a>
+                  <a class="footer-link link" href="../locations.html">Locations</a>
                 </li>
                 <li class="footer-item">
-                  <a class="footer-link link" href="./about.html">About us</a>
+                  <a class="footer-link link" href="../about.html">About us</a>
                 </li>
-                <li class="footer-item"><a class="footer-link link" href="./news.html">News</a></li>
+                <li class="footer-item"><a class="footer-link link" href="../news.html">News</a></li>
               </ul>
             </div>
             <div class="footer-nav-categories">
               <p class="footer-text">Categories</p>
               <ul class="footer-list">
                 <li class="footer-item">
-                  <a class="footer-link link" href="./menu.html#coffee">Coffee</a>
+                  <a class="footer-link link" href="../menu.html#coffee">Coffee</a>
                 </li>
                 <li class="footer-item">
-                  <a class="footer-link link" href="./menu.html#cold-drinks">Cold drinks</a>
+                  <a class="footer-link link" href="../menu.html#cold-drinks">Cold drinks</a>
                 </li>
                 <li class="footer-item">
-                  <a class="footer-link link" href="./menu.html#bakery">Bakery</a>
+                  <a class="footer-link link" href="../menu.html#bakery">Bakery</a>
                 </li>
               </ul>
             </div>
@@ -402,14 +432,14 @@
                 <li class="footer-item follow">
                   <a class="footer-social link" href="" aria-label="Instagram">
                     <svg class="footer-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#icon-footer-instagram"></use>
+                      <use href="../images/sprite.svg#icon-footer-instagram"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="footer-item follow">
                   <a class="footer-social link" href="" aria-label="Facebook">
                     <svg class="footer-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#icon-footer-facebook"></use>
+                      <use href="../images/sprite.svg#icon-footer-facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -417,7 +447,7 @@
                 <li class="footer-item follow">
                   <a class="footer-social link" href="" aria-label="Twitter">
                     <svg class="footer-icon" width="20" height="20">
-                      <use href="./images/sprite.svg#icon-footer-twitterX"></use>
+                      <use href="../images/sprite.svg#icon-footer-twitterX"></use>
                     </svg>
                   </a>
                 </li>
@@ -426,9 +456,9 @@
           </div>
           <div class="footer-address">
             <div class="footer-logo-wrapper">
-              <a class="footer-logo-link link" href="./index.html" title="Company logo">
+              <a class="footer-logo-link link" href="../index.html" title="Company logo">
                 <svg class="footer-logo">
-                  <use href="./images/sprite.svg#icon-hero-logo"></use>
+                  <use href="../images/sprite.svg#icon-hero-logo"></use>
                 </svg>
               </a>
               <h2 class="footer-title">
@@ -442,7 +472,7 @@
                 <li class="footer-contact-item">
                   <a class="footer-link link" href="tel:+12125550198">
                     <svg class="footer-contact-icon">
-                      <use href="./images/sprite.svg#icon-footer-phone"></use>
+                      <use href="../images/sprite.svg#icon-footer-phone"></use>
                     </svg>
                     +1 (212) 555-0198</a
                   >
@@ -450,7 +480,7 @@
                 <li class="footer-contact-item">
                   <a class="footer-link link" href="mailto:hello@bhaus.com">
                     <svg class="footer-contact-icon">
-                      <use href="./images/sprite.svg#icon-footer-mail"></use>
+                      <use href="../images/sprite.svg#icon-footer-mail"></use>
                     </svg>
                     hello@bhaus.com</a
                   >
@@ -484,7 +514,7 @@
         </picture>
         <img
           class="footer-img"
-          src="./images/desktop/home-page/brewhaus-1x.avif"
+          src="../images/desktop/home-page/brewhaus-1x.avif"
           alt="Brewhaus Logo"
           width="1200"
           height="224"
@@ -492,10 +522,10 @@
       </div>
 
       <div class="footer-licenses">
-        <a class="footer-licenses-text link" href="./changelog.html">2025 &copy; Brewhaus</a>
-        <a class="footer-licenses-text link" href="./licenses.html">Licenses</a>
+        <a class="footer-licenses-text link" href="../changelog.html">2025 &copy; Brewhaus</a>
+        <a class="footer-licenses-text link" href="../licenses.html">Licenses</a>
       </div>
     </footer>
-    <script src="./js/menu.js"></script>
+    <script src="../js/menu.js"></script>
   </body>
 </html>

@@ -390,7 +390,8 @@ body {
 }
 .location-link {
   display: inline-block;
-  padding: 10px 86.5px 12px 86.5px;
+  padding: 10px 86px 12px 86px;
+  width: 100%;
   text-align: center;
   border-radius: 26px;
   color: var(--primary-link-color);
