@@ -385,6 +385,7 @@ body {
   gap: 24px;
   background-color: var(--secondary-bg-color);
   overflow: hidden;
+  -webkit-user-select: none;
   user-select: none;
 }
 .ticker-list {
@@ -438,8 +439,7 @@ body {
   text-align: center;
   background-color: #fcf3d9;
 }
-.values-icon-thumb {
-}
+
 .values-logo {
   margin-left: auto;
   margin-right: auto;
@@ -463,7 +463,6 @@ body {
 }
 
 .values-title {
-  margin: 0 auto;
   margin-bottom: 32px;
   font-family: 'Calistoga', sans-serif;
   font-size: 24px;
@@ -496,18 +495,19 @@ body {
   color: var(--primary-bg-color);
   background-color: transparent;
 }
-
-.values-list {
-}
 .values-item {
-  flex-basis: 588px;
-  border-radius: 24px;
-  background-color: var(--primary-bg-color);
+  border-radius: 32px;
   overflow: hidden;
+  &:nth-child(2n + 1) {
+    max-width: 312px;
+    height: 252px;
+    background-color: var(--primary-bg-color);
+  }
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
-.values-item:not(:first-child, :last-child) {
-  max-width: 282px;
-}
+
 .values-item:nth-child(odd) {
   position: relative;
   display: flex;
@@ -532,7 +532,7 @@ body {
   margin-bottom: 2px;
   font-family: 'Calistoga', sans-serif;
   color: var(--secondary-text-color);
-  font-size: 56px;
+  font-size: 40px;
   line-height: 1.16;
 }
 .values-description {
@@ -542,146 +542,96 @@ body {
   line-height: 1.24;
   letter-spacing: 0.01em;
 }
-/* .values {
-  padding-top: 160px;
-  text-align: center;
-  background-color: #fcf3d9;
+
+@media screen and (min-width: 768px) {
+  .values {
+    max-width: 768px;
+    padding-top: 160px;
+  }
+  .values-icon-thumb {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+  .values-title {
+    font-size: 32px;
+    text-align: center;
+  }
+  .values-nav {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+  .values-link {
+    padding: 10px 16px 12px 16px;
+  }
+  .values-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .values-item {
+    width: calc((100% - 24px) / 2);
+    &:nth-child(2n + 1) {
+      height: 332px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+  .values-subtitle {
+    font-size: 56px;
+  }
 }
-.values-icon-thumb {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 32px;
-}
-.values-logo {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 56px;
-  height: 56px;
-  background-color: var(--primary-bg-color);
-  border-radius: 50%;
-}
-.values-img {
-  fill: var(--white-bg-color);
-  transform: scale(1) translateY(0);
-  transition: transform 250ms linear;
-}
-.values-logo:hover .values-img,
-.values-logo:focus .values-img {
-  transform: scale(1.15) translateY(-6px);
+@media screen and (min-width: 1440px) {
+  .values {
+    max-width: 1440px;
+    padding-top: 160px;
+  }
+  .values-item {
+    max-width: 588px;
+    &:nth-child(2n + 1) {
+      max-width: 588px;
+      height: 360px;
+    }
+  }
+  .values-item:not(:first-child, :last-child) {
+    width: 282px;
+    height: 360px;
+  }
 }
 
-.values-title {
-  margin: 0 auto;
-  margin-bottom: 32px;
-  max-width: 640px;
-  font-family: 'Calistoga', sans-serif;
-  font-size: 32px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-}
-.values-nav {
-  margin-bottom: 80px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.values-link {
-  display: flex;
-  padding: 10px 16px 12px 16px;
-  justify-content: center;
-  align-items: center;
-  width: 141px;
-  height: 51px;
-  border-radius: 26px;
-  border: 1px solid var(--primary-bg-color);
-  background-color: var(--primary-bg-color);
-  color: var(--primary-link-color);
-  transition:
-    color 250ms linear,
-    background-color 250ms linear;
-}
-
-.values-link:hover,
-.values-link:focus {
-  color: var(--primary-bg-color);
-  background-color: transparent;
-}
-
-.values-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-.values-item {
-  flex-basis: 588px;
-  border-radius: 24px;
-  background-color: var(--primary-bg-color);
-  overflow: hidden;
-}
-.values-item:not(:first-child, :last-child) {
-  max-width: 282px;
-}
-.values-item:nth-child(odd) {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.values-icon-right {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  fill: var(--secondary-svg-fill);
-}
-.values-icon-left {
-  position: absolute;
-  bottom: 24px;
-  left: 24px;
-  fill: var(--secondary-svg-fill);
-}
-.values-subtitle {
-  margin-bottom: 2px;
-  font-family: 'Calistoga', sans-serif;
-  color: var(--secondary-text-color);
-  font-size: 56px;
-  line-height: 1.16;
-}
-.values-description {
-  font-family: 'Calistoga', sans-serif;
-  color: var(--secondary-text-color);
-  font-size: 20px;
-  line-height: 1.24;
-  letter-spacing: 0.01em;
-}
- */
 /*-----------Philisophi styles----------*/
 .philosophy {
-  padding-top: 160px;
+  max-width: 360px;
+  padding-top: 104px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   background-color: #fcf3d9;
 }
 .philosophy-title {
-  margin-bottom: 64px;
-
+  margin-bottom: 48px;
+  margin-bottom: 32px;
   font-family: 'Calistoga', sans-serif;
-  font-size: 64px;
+  font-size: 32px;
   line-height: 1.16;
 }
 .philosophy-list {
-  margin-bottom: 24px;
-  display: flex;
-  gap: 24px;
+  margin-bottom: 16px;
 }
 
 .philosophy-item {
   padding: 32px 80px 36px;
   border-radius: 24px;
   background-color: rgba(29, 78, 26, 0.03);
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
+
 .philosophy-icon {
   margin-bottom: 20px;
   fill: var(--main-svg-fill);
@@ -701,6 +651,56 @@ body {
 .philosophy-banner {
   border-radius: 24px;
 }
+
+@media screen and (min-width: 768px) {
+  .philosophy {
+    max-width: 768px;
+    padding-top: 160px;
+  }
+  .philosophy-title {
+    font-size: 56px;
+  }
+  .philosophy-list {
+    margin-bottom: 24px;
+    display: flex;
+    gap: 24px;
+  }
+  .philosophy-item {
+    width: calc((100% - 48px) / 2);
+    padding: 32px 24px 36px;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .philosophy {
+    max-width: 1440px;
+    padding-top: 160px;
+  }
+  .philosophy-title {
+    font-size: 64px;
+  }
+  .philosophy-item {
+    padding: 32px 80px 36px;
+  }
+}
+
+/* 
+
+.philosophy-list {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 24px;
+}
+
+.philosophy-item {
+  padding: 32px 80px 36px;
+  border-radius: 24px;
+  background-color: rgba(29, 78, 26, 0.03);
+}
+*/
 /*--------------About us styles--------------*/
 .about {
   max-width: 360px;
