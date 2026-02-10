@@ -100,7 +100,7 @@
       </div>
     </header>    <main>
       <!--Product info section -->
-      <section class="product">
+      <section class="product" data-img>
         <div class="container second">
           <div class="product-info-wrap">
             <div class="img-wrap">
@@ -111,13 +111,13 @@
                     " media="(min-width: 1440px)" type="image/avif" />
                 <source srcset="
                       ../images/tablet/menu-page/cold-drinks/iced-latte-1x.avif 1x,
-                      ../images/tablet/menu-page/cold-drinks/iced-latte-1x.avif 2x
+                      ../images/tablet/menu-page/cold-drinks/iced-latte-2x.avif 2x
                     " media="(min-width: 768px)" type="image/avif" />
                 <source srcset="
                       ../images/mobile/menu-page/cold-drinks/iced-latte-1x.avif 1x,
-                      ../images/mobile/menu-page/cold-drinks/iced-latte-1x.avif 2x
+                      ../images/mobile/menu-page/cold-drinks/iced-latte-2x.avif 2x
                     " media="(max-width: 767px)" type="image/avif" />
-                <img class="product-img" src="./images/desktop/menu-page/cold-drinks/iced-latte-1x.avif"
+                <img class="product-img" src="../images/desktop/menu-page/cold-drinks/iced-latte-1x.avif"
                   alt="The cup of Iced Latte" width="400" height="400" />
               </picture>
             </div>
@@ -177,13 +177,24 @@
           <ul class="popular-list">
             <li class="popular-item">
               <a class="popular-card link" href="../product-cards/iced-tea.html">
-                <img
-                  class="popular-img"
-                  src="../images/product-cards/cold-drinks/iced-tea.jpg"
+                            <picture>
+                <source srcset="
+                      ../images/desktop/menu-page/cold-drinks/iced-tea-1x.avif 1x,
+                      ../images/desktop/menu-page/cold-drinks/iced-tea-2x.avif 2x
+                    " media="(min-width: 1440px)" type="image/avif" />
+                <source srcset="
+                      ../images/tablet/menu-page/cold-drinks/iced-tea-1x.avif 1x,
+                      ../images/tablet/menu-page/cold-drinks/iced-tea-2x.avif 2x
+                    " media="(min-width: 768px)" type="image/avif" />
+                <source srcset="
+                      ../images/mobile/menu-page/cold-drinks/iced-tea-1x.avif 1x,
+                      ../images/mobile/menu-page/cold-drinks/iced-tea-2x.avif 2x
+                    " media="(max-width: 767px)" type="image/avif" />
+                <img class="popular-img" 
+                src="../images/desktop/menu-page/cold-drinks/iced-tea-1x.avif "
                   alt="The cup of Iced Tea"
-                  width="304"
-                  height="304"
-                />
+                  width="304" height="304" />
+              </picture>
                 <h3 class="popular-subtitle">
                   Iced Tea<span class="popular-price">&dollar;4.35</span>
                 </h3>
@@ -191,13 +202,24 @@
             </li>
             <li class="popular-item">
               <a class="popular-card link" href="../product-cards/espresso.html">
-                <img
-                  class="popular-img"
-                  src="../images/product-cards/coffee/espresso.jpg"
+                            <picture>
+                <source srcset="
+                      ../images/desktop/menu-page/coffee/espresso-1x.avif 1x,
+                      ../images/desktop/menu-page/coffee/espresso-2x.avif 2x
+                    " media="(min-width: 1440px)" type="image/avif" />
+                <source srcset="
+                      ../images/tablet/menu-page/coffee/espresso-1x.avif 1x,
+                      ../images/tablet/menu-page/coffee/espresso-2x.avif 2x
+                    " media="(min-width: 768px)" type="image/avif" />
+                <source srcset="
+                      ../images/mobile/menu-page/coffee/espresso-1x.avif 1x,
+                      ../images/mobile/menu-page/coffee/espresso-2x.avif 2x
+                    " media="(max-width: 767px)" type="image/avif" />
+                <img class="popular-img" 
+                src="../images/desktop/menu-page/coffee/espresso-1x.avif "
                   alt="The cup of Espresso"
-                  width="304"
-                  height="304"
-                />
+                  width="304" height="304" />
+              </picture>
                 <h3 class="popular-subtitle">
                   Espresso <span class="popular-price">&dollar;4.25</span>
                 </h3>
@@ -205,13 +227,24 @@
             </li>
             <li class="popular-item">
               <a class="popular-card link" href="../product-cards/mocha.html">
-                <img
-                  class="popular-img"
-                  src="../images/product-cards/coffee/mocha.jpg"
+                            <picture>
+                <source srcset="
+                      ../images/desktop/menu-page/coffee/mocha-1x.avif 1x,
+                      ../images/desktop/menu-page/coffee/mocha-2x.avif 2x
+                    " media="(min-width: 1440px)" type="image/avif" />
+                <source srcset="
+                      ../images/tablet/menu-page/coffee/mocha-1x.avif 1x,
+                      ../images/tablet/menu-page/coffee/mocha-2x.avif 2x
+                    " media="(min-width: 768px)" type="image/avif" />
+                <source srcset="
+                      ../images/mobile/menu-page/coffee/mocha-1x.avif 1x,
+                      ../images/mobile/menu-page/coffee/mocha-2x.avif 2x
+                    " media="(max-width: 767px)" type="image/avif" />
+                <img class="popular-img" 
+                src="../images/desktop/menu-page/coffee/mocha-1x.avif "
                   alt="The cup of Mocha"
-                  width="304"
-                  height="304"
-                />
+                  width="304" height="304" />
+              </picture>
                 <h3 class="popular-subtitle">
                   Mocha<span class="popular-price">&dollar;7.15</span>
                 </h3>
@@ -524,6 +557,7 @@
         <a class="footer-licenses-text link" href="../licenses.html">Licenses</a>
       </div>
     </footer>
-    <script src="../js/menu.js"></script>
-  </body>
-</html>
+      <script src="../js/menu.js"></script>
+      <script src="../js/item.js"></script>
+    </body>
+  </html>

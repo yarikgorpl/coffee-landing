@@ -341,6 +341,9 @@ body {
   margin-right: auto;
   background-color: var(--white-bg-color);
 }
+.product.is-open {
+  padding-top: 172px;
+}
 .product-img {
   margin-bottom: 32px;
   border-radius: 24px;

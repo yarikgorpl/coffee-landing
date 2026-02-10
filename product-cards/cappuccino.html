@@ -101,7 +101,7 @@
     </header>
     <main>
       <!--Product info section -->
-      <section class="product">
+      <section class="product" data-img>
         <div class="container second">
           <div class="product-info-wrap">
             <div class="img-wrap">
@@ -112,13 +112,13 @@
                     " media="(min-width: 1440px)" type="image/avif" />
                 <source srcset="
                       ../images/tablet/menu-page/coffee/cappuccino-1x.avif 1x,
-                      ../images/tablet/menu-page/coffee/cappuccino-1x.avif 2x
+                      ../images/tablet/menu-page/coffee/cappuccino-2x.avif 2x
                     " media="(min-width: 768px)" type="image/avif" />
                 <source srcset="
                       ../images/mobile/menu-page/coffee/cappuccino-1x.avif 1x,
                       ../images/mobile/menu-page/coffee/cappuccino-2x.avif 2x
                     " media="(max-width: 767px)" type="image/avif" />
-                <img class="product-img" src="./images/desktop/menu-page/coffee/cappuccino-1x.avif"
+                <img class="product-img" src="../images/desktop/menu-page/coffee/cappuccino-1x.avif"
                   alt="The cup of Cappuccino" width="400" height="400" />
               </picture>
             </div>
@@ -178,13 +178,24 @@
           <ul class="popular-list">
             <li class="popular-item">
               <a class="popular-card link" href="../product-cards/latte.html">
-                <img
-                  class="popular-img"
-                  src="../images/product-cards/coffee/latte.jpg"
+                              <picture>
+                <source 
+                  srcset="../images/desktop/menu-page/coffee/latte-1x.avif 1x,
+                        ../images/desktop/menu-page/coffee/latte-2x.avif 2x" 
+                  media="(min-width: 1440px)" type="image/avif" />
+                <source
+                  srcset="../images/tablet/menu-page/coffee/latte-1x.avif 1x,
+                                ../images/tablet/menu-page/coffee/latte-2x.avif 2x"
+                  media="(min-width: 768px)" type="image/avif" />
+                <source 
+                  srcset="../images/mobile/menu-page/coffee/latte-1x.avif 1x,
+                        ../images/mobile/menu-page/coffee/latte-2x.avif 2x"
+                  media="(max-width: 767px)" type="image/avif" />
+                <img class="popular-img" src="./images/desktop/menu-page/coffee/latte-1x.avif"
                   alt="The cup of Latte"
                   width="304"
-                  height="304"
-                />
+                  height="304"/>
+              </picture>
                 <h3 class="popular-subtitle">
                   Latte<span class="popular-price">&dollar;4.80</span>
                 </h3>
@@ -192,13 +203,24 @@
             </li>
             <li class="popular-item">
               <a class="popular-card link" href="../product-cards/donut.html">
-                <img
-                  class="popular-img"
-                  src="../images/product-cards/bakery/donut.jpg"
+                              <picture>
+                <source 
+                  srcset="../images/desktop/menu-page/bakery/donut-1x.avif 1x,
+                        ../images/desktop/menu-page/bakery/donut-2x.avif 2x" 
+                  media="(min-width: 1440px)" type="image/avif" />
+                <source
+                  srcset="../images/tablet/menu-page/bakery/donut-1x.avif 1x,
+                                ../images/tablet/menu-page/bakery/donut-2x.avif 2x"
+                  media="(min-width: 768px)" type="image/avif" />
+                <source 
+                  srcset="../images/mobile/menu-page/bakery/donut-1x.avif 1x,
+                        ../images/mobile/menu-page/bakery/donut-2x.avif 2x"
+                  media="(max-width: 767px)" type="image/avif" />
+                <img class="popular-img" src="./images/desktop/menu-page/bakery/donut-1x.avif"
                   alt="Our donut"
                   width="304"
-                  height="304"
-                />
+                  height="304"/>
+              </picture>
                 <h3 class="popular-subtitle">
                   Donut <span class="popular-price">&dollar;1.40</span>
                 </h3>
@@ -207,13 +229,24 @@
             <li class="popular-item new">
               <p class="popular-suptext">New</p>
               <a class="popular-card link" href="../product-cards/macchiato.html">
-                <img
-                  class="popular-img"
-                  src="../images/product-cards/coffee/macchiato.jpg"
+                              <picture>
+                <source 
+                  srcset="../images/desktop/menu-page/coffee/macchiato-1x.avif 1x,
+                        ../images/desktop/menu-page/coffee/macchiato-2x.avif 2x" 
+                  media="(min-width: 1440px)" type="image/avif" />
+                <source
+                  srcset="../images/tablet/menu-page/coffee/macchiato-1x.avif 1x,
+                                ../images/tablet/menu-page/coffee/macchiato-2x.avif 2x"
+                  media="(min-width: 768px)" type="image/avif" />
+                <source 
+                  srcset="../images/mobile/menu-page/coffee/macchiato-1x.avif 1x,
+                        ../images/mobile/menu-page/coffee/macchiato-2x.avif 2x"
+                  media="(max-width: 767px)" type="image/avif" />
+                <img class="popular-img" src="./images/desktop/menu-page/coffee/macchiato-1x.avif"
                   alt="The cup of Macchiato"
                   width="304"
-                  height="304"
-                />
+                  height="304"/>
+              </picture>
                 <h3 class="popular-subtitle">
                   Macchiato<span class="popular-price">&dollar;6.10</span>
                 </h3>
@@ -526,6 +559,7 @@
         <a class="footer-licenses-text link" href="../licenses.html">Licenses</a>
       </div>
     </footer>
-    <script src="../js/menu.js"></script>
-  </body>
-</html>
+      <script src="../js/menu.js"></script>
+      <script src="../js/item.js"></script>
+    </body>
+  </html>

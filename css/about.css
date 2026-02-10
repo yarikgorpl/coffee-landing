@@ -321,29 +321,50 @@ body {
   .nav-wrap {
     display: flex;
     padding: 12px;
-
     border-radius: 32px;
   }
 }
 
 /*-------------------Hero styles-------------------*/
+
 .hero {
+  max-width: 360px;
+  padding-top: 48px;
   padding-bottom: 104px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   background-color: #1d4e1a;
 }
 .hero-title {
   margin-bottom: 12px;
   font-family: 'Calistoga', sans-serif;
-  color: var(--secondary-text-color);
-  font-size: 96px;
+  font-size: 48px;
   line-height: 1.12;
+  color: var(--secondary-text-color);
 }
 .hero-text {
-  color: var(--secondary-text-color);
   font-size: 18px;
   line-height: 1.28;
   letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    padding-top: 60px;
+  }
+  .hero-title {
+    font-size: 80px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    max-width: 1440px;
+  }
+  .hero-title {
+    font-size: 96px;
+  }
 }
 
 /*-------------------Ticker styles-------------------*/
@@ -408,7 +429,120 @@ body {
 }
 
 /*-------------Values styles-----------*/
+
 .values {
+  max-width: 360px;
+  padding-top: 104px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #fcf3d9;
+}
+.values-icon-thumb {
+}
+.values-logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 56px;
+  height: 56px;
+  background-color: var(--primary-bg-color);
+  border-radius: 50%;
+}
+.values-img {
+  fill: var(--white-bg-color);
+  transform: scale(1) translateY(0);
+  transition: transform 250ms linear;
+}
+.values-logo:hover .values-img,
+.values-logo:focus .values-img {
+  transform: scale(1.15) translateY(-6px);
+}
+
+.values-title {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  font-family: 'Calistoga', sans-serif;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.values-nav {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.values-link {
+  display: flex;
+  padding: 10px 109px 12px 109px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 26px;
+  border: 1px solid var(--primary-bg-color);
+  background-color: var(--primary-bg-color);
+  color: var(--primary-link-color);
+  transition:
+    color 250ms linear,
+    background-color 250ms linear;
+}
+
+.values-link:hover,
+.values-link:focus {
+  color: var(--primary-bg-color);
+  background-color: transparent;
+}
+
+.values-list {
+}
+.values-item {
+  flex-basis: 588px;
+  border-radius: 24px;
+  background-color: var(--primary-bg-color);
+  overflow: hidden;
+}
+.values-item:not(:first-child, :last-child) {
+  max-width: 282px;
+}
+.values-item:nth-child(odd) {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.values-icon-right {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  fill: var(--secondary-svg-fill);
+}
+.values-icon-left {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  fill: var(--secondary-svg-fill);
+}
+.values-subtitle {
+  margin-bottom: 2px;
+  font-family: 'Calistoga', sans-serif;
+  color: var(--secondary-text-color);
+  font-size: 56px;
+  line-height: 1.16;
+}
+.values-description {
+  font-family: 'Calistoga', sans-serif;
+  color: var(--secondary-text-color);
+  font-size: 20px;
+  line-height: 1.24;
+  letter-spacing: 0.01em;
+}
+/* .values {
   padding-top: 160px;
   text-align: center;
   background-color: #fcf3d9;
@@ -523,6 +657,7 @@ body {
   line-height: 1.24;
   letter-spacing: 0.01em;
 }
+ */
 /*-----------Philisophi styles----------*/
 .philosophy {
   padding-top: 160px;

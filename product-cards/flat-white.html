@@ -100,7 +100,7 @@
       </div>
     </header>    <main>
       <!--Product info section -->
-      <section class="product">
+      <section class="product" data-img>
         <div class="container second">
           <div class="product-info-wrap">
             <div class="img-wrap">
@@ -111,13 +111,13 @@
                     " media="(min-width: 1440px)" type="image/avif" />
                 <source srcset="
                       ../images/tablet/menu-page/coffee/flat-white-1x.avif 1x,
-                      ../images/tablet/menu-page/coffee/flat-white-1x.avif 2x
+                      ../images/tablet/menu-page/coffee/flat-white-2x.avif 2x
                     " media="(min-width: 768px)" type="image/avif" />
                 <source srcset="
                       ../images/mobile/menu-page/coffee/flat-white-1x.avif 1x,
-                      ../images/mobile/menu-page/coffee/flat-white-1x.avif 2x
+                      ../images/mobile/menu-page/coffee/flat-white-2x.avif 2x
                     " media="(max-width: 767px)" type="image/avif" />
-                <img class="product-img" src="./images/desktop/menu-page/coffee/flat-white-1x.avif"
+                <img class="product-img" src="../images/desktop/menu-page/coffee/flat-white-1x.avif"
                   alt="The cup of Flat White" width="400" height="400" />
               </picture>
             </div>
@@ -175,13 +175,24 @@
             <li class="popular-item new">
               <p class="popular-suptext">New</p>
               <a class="popular-card link" href="../product-cards/virgin-mojito.html">
-                <img
-                  class="popular-img"
-                  src="../images/product-cards/cold-drinks/virgin-mojito.jpg"
+              <picture>
+                <source srcset="
+                      ../images/desktop/menu-page/cold-drinks/virgin-mojito-1x.avif 1x,
+                      ../images/desktop/menu-page/cold-drinks/virgin-mojito-2x.avif 2x
+                    " media="(min-width: 1440px)" type="image/avif" />
+                <source srcset="
+                      ../images/tablet/menu-page/cold-drinks/virgin-mojito-1x.avif 1x,
+                      ../images/tablet/menu-page/cold-drinks/virgin-mojito-2x.avif 2x
+                    " media="(min-width: 768px)" type="image/avif" />
+                <source srcset="
+                      ../images/mobile/menu-page/cold-drinks/virgin-mojito-1x.avif 1x,
+                      ../images/mobile/menu-page/cold-drinks/virgin-mojito-2x.avif 2x
+                    " media="(max-width: 767px)" type="image/avif" />
+                <img class="popular-img" 
+                src="../images/desktop/menu-page/cold-drinks/virgin-mojito-1x.avif "
                   alt="The cup of Virgin Mojito"
-                  width="304"
-                  height="304"
-                />
+                  width="304" height="304" />
+              </picture>
                 <h3 class="popular-subtitle">
                   Virgin Mojito<span class="popular-price">&dollar;6.75</span>
                 </h3>
@@ -189,13 +200,24 @@
             </li>
             <li class="popular-item">
               <a class="popular-card link" href="../product-cards/donut.html">
-                <img
-                  class="popular-img"
-                  src="../images/product-cards/bakery/donut.jpg"
+             <picture>
+                <source srcset="
+                      ../images/desktop/menu-page/bakery/donut-1x.avif 1x,
+                      ../images/desktop/menu-page/bakery/donut-2x.avif 2x
+                    " media="(min-width: 1440px)" type="image/avif" />
+                <source srcset="
+                      ../images/tablet/menu-page/bakery/donut-1x.avif 1x,
+                      ../images/tablet/menu-page/bakery/donut-2x.avif 2x
+                    " media="(min-width: 768px)" type="image/avif" />
+                <source srcset="
+                      ../images/mobile/menu-page/bakery/donut-1x.avif 1x,
+                      ../images/mobile/menu-page/bakery/donut-2x.avif 2x
+                    " media="(max-width: 767px)" type="image/avif" />
+                <img class="popular-img" 
+                src="../images/desktop/menu-page/bakery/donut-1x.avif "
                   alt="Our Donut"
-                  width="304"
-                  height="304"
-                />
+                  width="304" height="304" />
+              </picture>
                 <h3 class="popular-subtitle">
                   Donut <span class="popular-price">&dollar;1.40</span>
                 </h3>
@@ -204,13 +226,24 @@
             <li class="popular-item new">
               <p class="popular-suptext">New</p>
               <a class="popular-card link" href="../product-cards/brownie.html">
-                <img
-                  class="popular-img"
-                  src="../images/product-cards/bakery/brownie.jpg"
+                               <picture>
+                <source srcset="
+                      ../images/desktop/menu-page/bakery/brownie-1x.avif 1x,
+                      ../images/desktop/menu-page/bakery/brownie-2x.avif 2x
+                    " media="(min-width: 1440px)" type="image/avif" />
+                <source srcset="
+                      ../images/tablet/menu-page/bakery/brownie-1x.avif 1x,
+                      ../images/tablet/menu-page/bakery/brownie-2x.avif 2x
+                    " media="(min-width: 768px)" type="image/avif" />
+                <source srcset="
+                      ../images/mobile/menu-page/bakery/brownie-1x.avif 1x,
+                      ../images/mobile/menu-page/bakery/brownie-2x.avif 2x
+                    " media="(max-width: 767px)" type="image/avif" />
+                <img class="popular-img" 
+                src="../images/desktop/menu-page/bakery/brownie-1x.avif "
                   alt="Our Brownie"
-                  width="304"
-                  height="304"
-                />
+                  width="304" height="304" />
+              </picture>
                 <h3 class="popular-subtitle">
                   Brownie<span class="popular-price">&dollar;2.15</span>
                 </h3>
@@ -523,6 +556,7 @@
         <a class="footer-licenses-text link" href="../licenses.html">Licenses</a>
       </div>
     </footer>
-    <script src="../js/menu.js"></script>
-  </body>
-</html>
+      <script src="../js/menu.js"></script>
+      <script src="../js/item.js"></script>
+    </body>
+  </html>

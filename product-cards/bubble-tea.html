@@ -101,7 +101,7 @@
     </header>
     <main>
       <!--Product info section -->
-      <section class="product">
+      <section class="product" data-img>
         <div class="container second">
           <div class="product-info-wrap">
             <div class="img-wrap">
@@ -112,13 +112,13 @@
                     " media="(min-width: 1440px)" type="image/avif" />
                 <source srcset="
                       ../images/tablet/menu-page/cold-drinks/bubble-tea-1x.avif 1x,
-                      ../images/tablet/menu-page/cold-drinks/bubble-tea-1x.avif 2x
+                      ../images/tablet/menu-page/cold-drinks/bubble-tea-2x.avif 2x
                     " media="(min-width: 768px)" type="image/avif" />
                 <source srcset="
                       ../images/mobile/menu-page/cold-drinks/bubble-tea-1x.avif 1x,
-                      ../images/mobile/menu-page/cold-drinks/bubble-tea-1x.avif 2x
+                      ../images/mobile/menu-page/cold-drinks/bubble-tea-2x.avif 2x
                     " media="(max-width: 767px)" type="image/avif" />
-                <img class="product-img" src="./images/desktop/menu-page/cold-drinks/bubble-tea-1x.avif"
+                <img class="product-img" src="../images/desktop/menu-page/cold-drinks/bubble-tea-1x.avif"
                   alt="The cup of Bubble Tea" width="400" height="400" />
               </picture>
             </div>
@@ -175,13 +175,24 @@
           <ul class="popular-list">
             <li class="popular-item">
               <a class="popular-card link" href="../product-cards/flat-white.html">
-                <img
-                  class="popular-img"
-                  src="../images/product-cards/coffee/flat-white.jpg"
+              <picture>
+                <source 
+                  srcset="../images/desktop/menu-page/coffee/flat-white-1x.avif 1x,
+                        ../images/desktop/menu-page/coffee/flat-white-2x.avif 2x" 
+                  media="(min-width: 1440px)" type="image/avif" />
+                <source
+                  srcset="../images/tablet/menu-page/coffee/flat-white-1x.avif 1x,
+                                ../images/tablet/menu-page/coffee/flat-white-2x.avif 2x"
+                  media="(min-width: 768px)" type="image/avif" />
+                <source 
+                  srcset="../images/mobile/menu-page/coffee/flat-white-1x.avif 1x,
+                        ../images/mobile/menu-page/coffee/flat-white-2x.avif 2x"
+                  media="(max-width: 767px)" type="image/avif" />
+                <img class="popular-img" src="./images/desktop/menu-page/coffee/flat-white-1x.avif"
                   alt="The cup of Flat White"
                   width="304"
-                  height="304"
-                />
+                  height="304"/>
+              </picture>
                 <h3 class="popular-subtitle">
                   Flat White <span class="popular-price">&dollar;5.50</span>
                 </h3>
@@ -189,13 +200,24 @@
             </li>
             <li class="popular-item">
               <a class="popular-card link" href="../product-cards/cappuccino.html">
-                <img
-                  class="popular-img"
-                  src="../images/product-cards/coffee/cappuccino.jpg"
+              <picture>
+                <source 
+                  srcset="../images/desktop/menu-page/coffee/cappuccino-1x.avif 1x,
+                        ../images/desktop/menu-page/coffee/cappuccino-2x.avif 2x" 
+                  media="(min-width: 1440px)" type="image/avif" />
+                <source
+                  srcset="../images/tablet/menu-page/coffee/cappuccino-1x.avif 1x,
+                                ../images/tablet/menu-page/coffee/cappuccino-2x.avif 2x"
+                  media="(min-width: 768px)" type="image/avif" />
+                <source 
+                  srcset="../images/mobile/menu-page/coffee/cappuccino-1x.avif 1x,
+                        ../images/mobile/menu-page/coffee/cappuccino-2x.avif 2x"
+                  media="(max-width: 767px)" type="image/avif" />
+                <img class="popular-img" src="./images/desktop/menu-page/coffee/cappuccino-1x.avif"
                   alt="The cup of Cappuccino"
                   width="304"
-                  height="304"
-                />
+                  height="304"/>
+              </picture>
                 <h3 class="popular-subtitle">
                   Cappuccino<span class="popular-price">&dollar;5.25</span>
                 </h3>
@@ -203,13 +225,24 @@
             </li>
             <li class="popular-item">
               <a class="popular-card link" href="../product-cards/biscotti.html">
-                <img
-                  class="popular-img"
-                  src="../images/product-cards/bakery/biscotti.jpg"
+                              <picture>
+                <source 
+                  srcset="../images/desktop/menu-page//bakery/biscotti-1x.avif 1x,
+                        ../images/desktop/menu-page//bakery/biscotti-2x.avif 2x" 
+                  media="(min-width: 1440px)" type="image/avif" />
+                <source
+                  srcset="../images/tablet/menu-page//bakery/biscotti-1x.avif 1x,
+                                ../images/tablet/menu-page//bakery/biscotti-2x.avif 2x"
+                  media="(min-width: 768px)" type="image/avif" />
+                <source 
+                  srcset="../images/mobile/menu-page//bakery/biscotti-1x.avif 1x,
+                        ../images/mobile/menu-page//bakery/biscotti-2x.avif 2x"
+                  media="(max-width: 767px)" type="image/avif" />
+                <img class="popular-img" src="./images/desktop/menu-page//bakery/biscotti-1x.avif"
                   alt="Our biscotti"
                   width="304"
-                  height="304"
-                />
+                  height="304"/>
+              </picture>
                 <h3 class="popular-subtitle">
                   Biscotti<span class="popular-price">&dollar;1.50</span>
                 </h3>
@@ -523,5 +556,6 @@
       </div>
     </footer>
     <script src="../js/menu.js"></script>
-  </body>
+      <script src="../js/item.js"></script>
+    </body>
 </html>

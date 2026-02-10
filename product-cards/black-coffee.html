@@ -101,7 +101,7 @@
     </header>
     <main>
       <!--Product info section -->
-      <section class="product">
+      <section class="product" data-img>
         <div class="container second">
           <div class="product-info-wrap">
             <div class="img-wrap">
@@ -112,13 +112,13 @@
                     " media="(min-width: 1440px)" type="image/avif" />
                 <source srcset="
                       ../images/tablet/menu-page/coffee/black-coffee-1x.avif 1x,
-                      ../images/tablet/menu-page/coffee/black-coffee-1x.avif 2x
+                      ../images/tablet/menu-page/coffee/black-coffee-2x.avif 2x
                     " media="(min-width: 768px)" type="image/avif" />
                 <source srcset="
                       ../images/mobile/menu-page/coffee/black-coffee-1x.avif 1x,
-                      ../images/mobile/menu-page/coffee/black-coffee-1x.avif 2x
+                      ../images/mobile/menu-page/coffee/black-coffee-2x.avif 2x
                     " media="(max-width: 767px)" type="image/avif" />
-                <img class="product-img" src="./images/desktop/menu-page/coffee/black-coffee-1x.avif"
+                <img class="product-img" src="../images/desktop/menu-page/coffee/black-coffee-1x.avif"
                   alt="The cup of Black Coffee" width="400" height="400" />
               </picture>
             </div>
@@ -175,13 +175,24 @@
           <ul class="popular-list">
             <li class="popular-item">
               <a class="popular-card link" href="../product-cards/iced-tea.html">
-                <img
-                  class="popular-img"
-                  src="../images/product-cards/cold-drinks/iced-tea.jpg"
+              <picture>
+                <source 
+                  srcset="../images/desktop/menu-page/cold-drinks/iced-tea-1x.avif 1x,
+                        ../images/desktop/menu-page/cold-drinks/iced-tea-2x.avif 2x" 
+                  media="(min-width: 1440px)" type="image/avif" />
+                <source
+                  srcset="../images/tablet/menu-page/cold-drinks/iced-tea-1x.avif 1x,
+                                ../images/tablet/menu-page/cold-drinks/iced-tea-2x.avif 2x"
+                  media="(min-width: 768px)" type="image/avif" />
+                <source 
+                  srcset="../images/mobile/menu-page/cold-drinks/iced-tea-1x.avif 1x,
+                        ../images/mobile/menu-page/cold-drinks/iced-tea-2x.avif 2x"
+                  media="(max-width: 767px)" type="image/avif" />
+                <img class="popular-img" src="./images/desktop/menu-page/cold-drinks/iced-tea-1x.avif"
                   alt="The cup of Iced Tea"
                   width="304"
-                  height="304"
-                />
+                  height="304"/>
+              </picture>
                 <h3 class="popular-subtitle">
                   Iced Tea <span class="popular-price">&dollar;4.35</span>
                 </h3>
@@ -189,13 +200,24 @@
             </li>
             <li class="popular-item">
               <a class="popular-card link" href="../product-cards/cappuccino.html">
-                <img
-                  class="popular-img"
-                  src="../images/product-cards/coffee/cappuccino.jpg"
+                              <picture>
+                <source 
+                  srcset="../images/desktop/menu-page/coffee/cappuccino-1x.avif 1x,
+                        ../images/desktop/menu-page/coffee/cappuccino-2x.avif 2x" 
+                  media="(min-width: 1440px)" type="image/avif" />
+                <source
+                  srcset="../images/tablet/menu-page/coffee/cappuccino-1x.avif 1x,
+                                ../images/tablet/menu-page/coffee/cappuccino-2x.avif 2x"
+                  media="(min-width: 768px)" type="image/avif" />
+                <source 
+                  srcset="../images/mobile/menu-page/coffee/cappuccino-1x.avif 1x,
+                        ../images/mobile/menu-page/coffee/cappuccino-2x.avif 2x"
+                  media="(max-width: 767px)" type="image/avif" />
+                <img class="popular-img" src="./images/desktop/menu-page/coffee/cappuccino-1x.avif"
                   alt="The cup of Cappuccino"
                   width="304"
-                  height="304"
-                />
+                  height="304"/>
+              </picture> 
                 <h3 class="popular-subtitle">
                   Cappuccino<span class="popular-price">&dollar;5.25</span>
                 </h3>
@@ -204,13 +226,24 @@
             <li class="popular-item new">
               <p class="popular-suptext">New</p>
               <a class="popular-card link" href="../product-cards/virgin-mojito.html">
-                <img
-                  class="popular-img"
-                  src="../images/product-cards/cold-drinks/virgin-mojito.jpg"
+                              <picture>
+                <source 
+                  srcset="../images/desktop/menu-page/cold-drinks/virgin-mojito-1x.avif 1x,
+                        ../images/desktop/menu-page/cold-drinks/virgin-mojito-2x.avif 2x" 
+                  media="(min-width: 1440px)" type="image/avif" />
+                <source
+                  srcset="../images/tablet/menu-page/cold-drinks/virgin-mojito-1x.avif 1x,
+                                ../images/tablet/menu-page/cold-drinks/virgin-mojito-2x.avif 2x"
+                  media="(min-width: 768px)" type="image/avif" />
+                <source 
+                  srcset="../images/mobile/menu-page/cold-drinks/virgin-mojito-1x.avif 1x,
+                        ../images/mobile/menu-page/cold-drinks/virgin-mojito-2x.avif 2x"
+                  media="(max-width: 767px)" type="image/avif" />
+                <img class="popular-img" src="./images/desktop/menu-page/cold-drinks/virgin-mojito-1x.avif"
                   alt="The cup of Virgin Mojito"
                   width="304"
-                  height="304"
-                />
+                  height="304"/>
+              </picture>
                 <h3 class="popular-subtitle">
                   Virgin Mojito <span class="popular-price">&dollar;6.20</span>
                 </h3>
@@ -524,5 +557,6 @@
       </div>
     </footer>
     <script src="../js/menu.js"></script>
-  </body>
+      <script src="../js/item.js"></script>
+    </body>
 </html>
