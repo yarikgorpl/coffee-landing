@@ -1189,7 +1189,6 @@ body {
   padding: 10px 128px 12px 128px;
   text-align: center;
   border-radius: 26px;
-
   color: var(--primary-link-color);
   border: 1px solid var(--primary-bg-color);
   background-color: var(--primary-bg-color);
@@ -1232,6 +1231,7 @@ body {
   color: var(--primary-text-color);
   text-transform: capitalize;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;

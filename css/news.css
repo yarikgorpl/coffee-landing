@@ -74,7 +74,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 24px;
-  background-color: var(--primary-bg-color);
+  background-color: var(--white-bg-color);
 }
 .header-nav {
   margin-right: auto;
@@ -330,13 +330,17 @@ body {
 
 /*-------------------Hero styles-------------------*/
 .hero {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 48px;
   text-align: center;
   background-color: var(--white-bg-color);
 }
 .hero-title {
   margin-bottom: 12px;
   font-family: 'Calistoga', sans-serif;
-  font-size: 96px;
+  font-size: 48px;
   line-height: 1.12;
 }
 .hero-text {
@@ -344,28 +348,42 @@ body {
   line-height: 1.28;
   letter-spacing: 0.02em;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    padding-top: 48px;
+  }
+  .hero-title {
+    font-size: 80px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    max-width: 1440px;
+  }
+  .hero-title {
+    font-size: 80px;
+  }
+}
 /*-------------------News styles-------------*/
 .news {
-  padding-top: 80px;
-  padding-bottom: 160px;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 64px;
+  padding-bottom: 104px;
   background-color: var(--white-bg-color);
 }
 
-.news-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
 .news-item {
-  width: 384px;
-  border-radius: 24px;
-  overflow: hidden;
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
 .news-img {
   margin-bottom: 16px;
-  border-radius: 24px;
+  border-radius: 42px;
   transform: scale(1);
   transition: transform 250ms linear;
 }
@@ -386,7 +404,39 @@ body {
   font-size: 20px;
   line-height: 1.24;
   letter-spacing: 0.01em;
+  text-transform: capitalize;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 768px) {
+  .news {
+    max-width: 768px;
+    padding-top: 80px;
+    padding-bottom: 160px;
+  }
+  .news-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .news-item {
+    width: calc((100% - 24px) / 2);
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .news {
+    max-width: 1440px;
+  }
+  .news-item {
+    width: calc((100% - 48px) / 3);
+  }
 }
 /*-------------------Ticker styles-------------------*/
 @keyframes ticker-move {
@@ -406,6 +456,7 @@ body {
   gap: 24px;
   background-color: var(--secondary-bg-color);
   overflow: hidden;
+  -webkit-user-select: none;
   user-select: none;
 }
 .ticker-list {
