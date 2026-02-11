@@ -21,6 +21,22 @@
     <link rel="stylesheet" href="./css/news-article.css" />
   </head>
   <body>
+    <div class="slogan-wrap" data-slogan>
+      <p class="slogan-text" data-text>
+        Buy one coffee, get one free — this week only (April 14-20)
+      </p>
+      <button
+        class="slogan-btn"
+        type="button"
+        title="Close notification"
+        aria-label="Close notification"
+        data-slogan-close
+      >
+        <svg class="slogan-close-icon" width="12" height="12">
+          <use href="./images/sprite.svg#icon-hero-close-btn"></use>
+        </svg>
+      </button>
+    </div>
     <header class="header">
       <div class="container">
         <div class="nav-wrap">
@@ -84,24 +100,23 @@
         </div>
       </div>
     </header>
+
     <main>
       <!-- Article section -->
       <section class="content">
         <div class="container">
           <div class="content-wrap">
-            <div class="content-back">
-              <img
-                class="content-img"
-                src="./images/news-article-page/news-article-vector.svg"
-                alt="arrow"
-              />
-              <a class="content-btn link" href="./news.html"> Back to News</a>
+            <div class="content-back">            
+              <a class="content-btn link" href="./news.html">
+                  <svg class="content-btn-icon" width="14px" height="14px">
+                <use href="./images/sprite.svg#icon-back-to-news"></use>
+              </svg>  Back to News</a>
             </div>
             <article class="content-news">
               <div class="content-header">
                 <p class="content-date">Apr 10, 2025</p>
                 <h1 class="content-title">
-                  Your Favorite Syrups Are Now Available Sugar-Free in All Drinks
+                  Your favorite syrups are now available sugar-free in all drinks
                 </h1>
                 <p class="content-text">
                   Your favorite flavors, now with zero sugar. All syrups are available sugar-free,
@@ -110,15 +125,38 @@
                 </p>
               </div>
               <div class="content-img-wrapper">
-                <img
-                  class="content-img"
-                  src="./images/news-article-page/img-1.jpg"
-                  alt="Coffee cup"
-                  width="672"
-                  height="440"
-                />
+                                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/news-page/hands-1x.avif 1x,
+                      ./images/desktop/news-page/hands-2x.avif 2x
+                    "
+                    media="(min-width: 1440px)"
+                    type="image/avif"                  />
+                  <source
+                    srcset="
+                      ./images/tablet/news-page/hands-1x.avif 1x,
+                      ./images/tablet/news-page/hands-2x.avif 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/news-page/hands-1x.avif 1x,
+                      ./images/mobile/news-page/hands-2x.avif 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/avif"
+                  />
+                  <img
+                    class="news-img"
+                    src="./images/desktop/news-page/hands-1x.avif"
+                  alt="The woman hands near the cooffee cup"
+                  />
+                </picture>
               </div>
-              <div class="content-description-wrap">
+              <div class="content-description-wrapper">
                 <h2 class="content-suptitle">All the flavor you love, without the sugar</h2>
                 <p class="content-description">
                   We know how much our customers enjoy flavored drinks — whether it's a cozy vanilla
@@ -131,7 +169,7 @@
                   it your way without sacrificing taste. We've worked hard to make sure every sip
                   still delivers the flavor you love — smooth, satisfying, and now guilt-free.
                 </p>
-                <h3 class="content-subtitle">Just Ask for Sugar-Free at the Counter</h3>
+                <h3 class="content-subtitle">Just ask for sugar-free at the counter</h3>
                 <p class="content-description">
                   Making the switch is easy. Just let your barista know you'd like your drink made
                   with sugar-free syrup — no extra steps, no extra charge. It's the same handcrafted
@@ -165,7 +203,7 @@
       <section class="news">
         <div class="container">
           <div class="news-wrap">
-            <h2 class="news-title">What's new at our coffee shop</h2>
+            <h2 class="news-title">More to explore</h2>
             <a class="news-link link" href="./news.html">View All</a>
           </div>
           <ul class="news-list">

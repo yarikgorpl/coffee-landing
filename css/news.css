@@ -323,8 +323,8 @@ body {
   .nav-wrap {
     display: flex;
     padding: 12px;
-
     border-radius: 32px;
+    background-color: var(--primary-bg-color);
   }
 }
 
@@ -383,7 +383,7 @@ body {
 
 .news-img {
   margin-bottom: 16px;
-  border-radius: 42px;
+  border-radius: 24px;
   transform: scale(1);
   transition: transform 250ms linear;
 }
