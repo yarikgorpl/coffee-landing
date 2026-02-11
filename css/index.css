@@ -744,7 +744,7 @@ body {
 }
 
 .about-images-poster {
-  border-radius: 64px;
+  border-radius: 24px;
 }
 
 @media screen and (min-width: 768px) {
@@ -771,6 +771,9 @@ body {
     align-items: center;
     width: 242.5px;
     padding: 24px 41.25px;
+  }
+  .about-images-poster {
+    border-radius: 32px;
   }
   .about-item:nth-child(2n + 1) {
     border-right: 1px solid rgba(29, 78, 26, 0.12);
@@ -1021,7 +1024,7 @@ body {
 }
 .location-link {
   display: inline-block;
-  padding: 10px 86px 12px 86px;
+  padding: 10px 84px 12px 84px;
   width: 100%;
   text-align: center;
   border-radius: 26px;
@@ -1186,7 +1189,7 @@ body {
 .news-link {
   display: inline-block;
   margin-bottom: 48px;
-  padding: 10px 128px 12px 128px;
+  padding: 10px 126px 12px 126px;
   text-align: center;
   border-radius: 26px;
   color: var(--primary-link-color);
